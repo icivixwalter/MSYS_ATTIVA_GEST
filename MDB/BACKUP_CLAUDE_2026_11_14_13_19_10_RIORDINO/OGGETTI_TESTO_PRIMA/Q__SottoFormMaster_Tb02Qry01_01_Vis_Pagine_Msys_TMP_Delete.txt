@@ -1,0 +1,2 @@
+DELETE SottoFormMaster_Tb02_Vis_Pagine_Msys_TMP.*
+FROM SottoFormMaster_Tb02_Vis_Pagine_Msys_TMP;

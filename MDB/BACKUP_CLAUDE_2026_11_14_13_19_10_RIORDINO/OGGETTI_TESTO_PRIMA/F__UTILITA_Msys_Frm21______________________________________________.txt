@@ -1,0 +1,64 @@
+Version =19
+VersionRequired =19
+Checksum =-234827585
+Begin Form
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =255
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5669
+    DatasheetFontHeight =10
+    ItemSuffix =1
+    Left =870
+    Top =15
+    Right =8325
+    Bottom =3765
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x480d0a79b017e440
+    End
+    GUID = Begin
+        0xffe12c9211d4ce4685c552f80884f5aa
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000005000000 ,
+        0x0000000000000000000000000000
+    End
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Section
+            Height =1701
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0xc979ef6c1c26e8488b473c9f1f3c645e
+            End
+            Begin
+                Begin Line
+                    OverlapFlags =85
+                    Left =453
+                    Top =510
+                    Width =4139
+                    Height =56
+                    Name ="Linea0"
+                    GUID = Begin
+                        0xb8a9ac22593b8b4f866d682bc8aa0f90
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+'

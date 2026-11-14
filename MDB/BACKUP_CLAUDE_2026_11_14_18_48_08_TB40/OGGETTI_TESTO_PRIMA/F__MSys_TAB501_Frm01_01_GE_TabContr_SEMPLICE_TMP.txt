@@ -1,0 +1,1231 @@
+Version =19
+VersionRequired =19
+Checksum =-445005620
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14055
+    DatasheetFontHeight =10
+    ItemSuffix =59
+    Left =108
+    Top =948
+    Right =6948
+    Bottom =6432
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xab6f24a9186ce640
+    End
+    GUID = Begin
+        0xd457bcb9b9b7244da946eee13cef1426
+    End
+    NameMap = Begin
+        0x0acc0e5500000000003aaa14108f1c449f52b45d7e0bb3a100000000d0a3cfc4 ,
+        0x91a0e64000000000000000004d005300790073005f0054004200300035003000 ,
+        0x31005f00510072007900300031005f00300031005f00470045005f0054006100 ,
+        0x620043006f006e00740072005f00530045004d0050004c004900430045005f00 ,
+        0x54004d0050000000000000003f0d46f75da70641a07187b2b53ed43801000000 ,
+        0x60c5954bf892e64000000000000000004d005300790073005f00540041004200 ,
+        0x3500300032005f00460072006d00300031005f00300031005f00560049005300 ,
+        0x550041004c005f005000410047005f00530045004d0050004c00490043004500 ,
+        0x5f0054004d0050000000000000006beb776c88c78942bb243ce27c5c0ae90000 ,
+        0x000007aacfc491a0e64000000000000000004d005300790073005f0054004100 ,
+        0x42003500300032005f00510072007900300031005f00300031005f0056004900 ,
+        0x5300550041004c005f005000410047005f00530045004d0050004c0049004300 ,
+        0x45005f0054004d00500000000000000035809a2ed3695d4fbe4370df6bac7138 ,
+        0x07000000003aaa14108f1c449f52b45d7e0bb3a143004f0044005f0050005200 ,
+        0x4f0047004500540054004f005f0073000000000000001b5906f62453e94f9389 ,
+        0x6437487a21fb00000000a192887d5a82e64000000000000000004d0073007900 ,
+        0x73005f0044004600310031005f00500052004f00470045005400540049000000 ,
+        0x0000000086dde7fda216e1429b2cd8049a649cf2070000001b5906f62453e94f ,
+        0x93896437487a21fb43004f0044005f00500052004f0047004500540054004f00 ,
+        0x5f0073000000000000004fa233533ef74649901103a743e25cef070000001b59 ,
+        0x06f62453e94f93896437487a21fb500052004f0047004500540054004f005f00 ,
+        0x7300000000000000a3dc2082a8f1c44c94b6fbf8e126c9f207000000003aaa14 ,
+        0x108f1c449f52b45d7e0bb3a1440045004e004f004d005f00500052004f004700 ,
+        0x4500540054004f005f007300000000000000603270800de6d3499d770931f66a ,
+        0x12b507000000003aaa14108f1c449f52b45d7e0bb3a15300630065006c005f00 ,
+        0x62000000000000008d695d2d5503234aaa05517c71cfe79e07000000003aaa14 ,
+        0x108f1c449f52b45d7e0bb3a1440041005400410049004e0053005f0064000000 ,
+        0x00000000de18bf802eb2664da7b41e27d137c9ef070000001b5906f62453e94f ,
+        0x93896437487a21fb44004100540041004100470047005f006400000000000000 ,
+        0x150ad936c4e63b43867dca18c921a1d307000000003aaa14108f1c449f52b45d ,
+        0x7e0bb3a144004100540041004100470047005f006400000000000000535a7600 ,
+        0xd4e3e44ab071f84ed143ebb407000000003aaa14108f1c449f52b45d7e0bb3a1 ,
+        0x4f00520041005f004100470047005f0064000000000000005e0141e37eb26d40 ,
+        0x8ef0db8c32d81e8507000000003aaa14108f1c449f52b45d7e0bb3a14e004f00 ,
+        0x540045005f00500052004f0047004500540054004f005f007300000000000000 ,
+        0x000000000000000000000000000000000c000000050000000000000000000000 ,
+        0x000000000000
+    End
+    RecordSource ="MSys_TB0501_Qry01_01_GE_TabContr_SEMPLICE_TMP"
+    BeforeInsert ="[Event Procedure]"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x0000000000000000000000000000000000000000e7360000292e000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x007af25ef401000070c67a5ff4010000a053bc50f40100000000000000000000 ,
+        0x010403069c007c030fdf8007010009009a0b3408640001000700580202000200 ,
+        0x580203000100413400260ae8f77f00009840782d770000000200000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000000000000000000000000000000000000000000050524956 ,
+        0xe230000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000180000000000102710271027 ,
+        0x00001027000000000000000088007c0300000000000000000000000000000000 ,
+        0x0000000000000000030000000000000000001000503403002888040000000000 ,
+        0x000000000000010000000000000000000000000000000000e7b14b4c03000000 ,
+        0x05000a00ff000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0100000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000088000000534d544a0000000010007800 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080013001e000100000000000000000000000000000000000000000000005044 ,
+        0x4643726561746f723a0000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000000000
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =11817
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x3b7d521c088818458491a351b47bfb5d
+            End
+            Begin
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =273
+                    Top =732
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta36"
+                    Caption ="00___________________________________LE PAGINE DA CARICARE"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0x076561ecf737d04bb0cb4500fc53266a
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5270
+                    Top =1197
+                    Width =1584
+                    ColumnWidth =3120
+                    TabIndex =1
+                    BackColor =65535
+                    ForeColor =255
+                    ColumnInfo ="\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0xe1bf752683d8b5479ce448504004b331
+                    End
+                    Name ="COD_PROGETTO_s_Txt"
+                    ControlSource ="COD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[COD_PROGETTO_s], [Msys_DF11_PROGETTI].[PROGETTO_s],"
+                        " * FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    StatusBarText ="Modello Form utilizzato"
+                    BeforeUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            Left =288
+                            Top =1197
+                            Width =1584
+                            Height =255
+                            BackColor =65535
+                            ForeColor =255
+                            Name ="COD_PROGETTO_s_Lbl"
+                            Caption =">>COD_PROGETTO"
+                            GUID = Begin
+                                0x188b172e5b875c46b3c659672518be96
+                            End
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =108
+                    Top =4722
+                    Width =12315
+                    Height =7095
+                    TabIndex =2
+                    Name ="SFrm_TAB402_VISUAL_PAG_MASTER"
+                    SourceObject ="Form.MSys_TAB502_Frm01_01_VISUAL_PAG_SEMPLICE_TMP"
+                    LinkChildFields ="KeyCOD_PROGETTO_s"
+                    LinkMasterFields ="KeyCOD_PROGETTO_s"
+                    GUID = Begin
+                        0x6e897a7e961f074aa7d8dda3ed5ea1f8
+                    End
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =93
+                            Left =108
+                            Top =4488
+                            Width =5280
+                            Height =240
+                            FontWeight =700
+                            BackColor =62207
+                            Name ="Etichetta49"
+                            Caption ="MSys_TAB502_Frm01_01_VISUAL_PAG_SEMPLICE_TMP"
+                            GUID = Begin
+                                0x4cf39130eed7d84bbcf1580d51008867
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5270
+                    Top =1572
+                    Width =1584
+                    ColumnWidth =4140
+                    TabIndex =5
+                    BackColor =65535
+                    ForeColor =255
+                    ColumnInfo ="\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x86dee63eeb22554582eecdeef1adc208
+                    End
+                    Name ="DENOM_PROGETTO_s_Txt"
+                    ControlSource ="DENOM_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[PROGETTO_s], [Msys_DF11_PROGETTI].[COD_PROGETTO_s],"
+                        " * FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    StatusBarText ="Modello Form utilizzato"
+                    OnDblClick ="[Event Procedure]"
+                    DefaultValue ="\"Comando\""
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            Left =288
+                            Top =1572
+                            Width =1584
+                            Height =255
+                            BackColor =65535
+                            ForeColor =255
+                            Name ="DENOM_PROGETTO_s_Lbl"
+                            Caption =">>DENOM_PROGETTO_s"
+                            GUID = Begin
+                                0xe8ba01ed1eecf940980458877bb10120
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =5203
+                    Top =3084
+                    TabIndex =6
+                    Name ="Scel_b"
+                    ControlSource ="Scel_b"
+                    StatusBarText ="UT_01_Scelto: True=Scelto; False = Non Scelto -"
+                    GUID = Begin
+                        0xcf1656848236f145b3dae36ef08ae2d5
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =328
+                            Top =3027
+                            Width =570
+                            Height =240
+                            Name ="Etichetta52"
+                            Caption ="Scel_b"
+                            GUID = Begin
+                                0x426039cba68b274e94ee82da18537a5f
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5270
+                    Top =3395
+                    Width =1584
+                    TabIndex =7
+                    ColumnInfo ="\"\";\"\";\"8\";\"8\""
+                    GUID = Begin
+                        0x3faa434f6d0dff45be96a7ea81d616bb
+                    End
+                    Name ="DATAINS_d_TXT"
+                    ControlSource ="DATAINS_d"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[DATAAGG_d], [Msys_DF11_PROGETTI].[PROGETTO_s], [Msy"
+                        "s_DF11_PROGETTI].[COD_PROGETTO_s] FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTIO"
+                        "N; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =3395
+                            Width =1584
+                            Height =255
+                            Name ="Etichetta54"
+                            Caption ="DATAINS_d"
+                            GUID = Begin
+                                0x5a0bd95557b9e045b9d21d97dcec06dd
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5270
+                    Top =3770
+                    Width =1584
+                    TabIndex =8
+                    ColumnInfo ="\"\";\"\";\"8\";\"8\""
+                    GUID = Begin
+                        0x8f1b843ae1374c4986a8717c8925faea
+                    End
+                    Name ="DATAAGG_d_TXT"
+                    ControlSource ="DATAAGG_d"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[DATAAGG_d], [Msys_DF11_PROGETTI].[PROGETTO_s], [Msy"
+                        "s_DF11_PROGETTI].[COD_PROGETTO_s] FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTIO"
+                        "N; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =3770
+                            Width =1584
+                            Height =255
+                            Name ="DATAAGG_d_LBL"
+                            Caption ="DATAAGG_d"
+                            GUID = Begin
+                                0x23d2ed5d5ce5074db7d017d0fc5eb950
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5270
+                    Top =4145
+                    Width =1584
+                    ColumnWidth =1335
+                    TabIndex =9
+                    ColumnInfo ="\"\";\"\";\"8\";\"8\""
+                    GUID = Begin
+                        0x6058c6021a0f984f860d4d9130fd7576
+                    End
+                    Name ="ORA_AGG_d_TXT"
+                    ControlSource ="ORA_AGG_d"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[DATAAGG_d], [Msys_DF11_PROGETTI].[PROGETTO_s], [Msy"
+                        "s_DF11_PROGETTI].[COD_PROGETTO_s] FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTIO"
+                        "N; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Format ="Medium Time"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =4145
+                            Width =1584
+                            Height =255
+                            Name ="ORA_AGG_d_LBL"
+                            Caption ="ORA_AGG_d"
+                            GUID = Begin
+                                0x30acdae14e977a458f0a558b048ecf4e
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5270
+                    Top =1947
+                    Width =1584
+                    Height =300
+                    ColumnWidth =2208
+                    TabIndex =3
+                    Name ="COD_FORMS_s_TXT"
+                    GUID = Begin
+                        0x6cdf15c0cba8e54293a8e52243463980
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =1947
+                            Width =1584
+                            Height =300
+                            Name ="COD_FORMS_s_LBG"
+                            Caption ="COD_FORMS_s"
+                            GUID = Begin
+                                0x842ac45164f32d499e892265a3fb25a8
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5270
+                    Top =2367
+                    Width =1584
+                    Height =300
+                    ColumnWidth =4320
+                    TabIndex =4
+                    Name ="NRO_OGGETTO_i_Txt"
+                    ControlSource ="NOTE_PROGETTO_s"
+                    GUID = Begin
+                        0xb5f1504da6f8a14f8e95aaf426a905f5
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =2367
+                            Width =1584
+                            Height =300
+                            Name ="NRO_OGGETTO_i_Lbl"
+                            Caption ="NOTE"
+                            GUID = Begin
+                                0x1b1bbb303dbdd64687e545cd2d782db3
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5277
+                    Top =168
+                    Width =1584
+                    Height =300
+                    BackColor =62207
+                    ForeColor =0
+                    Name ="Help_Txt"
+                    OnDblClick ="[Event Procedure]"
+                    DefaultValue ="\"??\""
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0x0b013bab602154429ab32a49f2c8a3fa
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =168
+                            Width =1584
+                            Height =300
+                            BackColor =16777215
+                            ForeColor =0
+                            Name ="Help_LBL"
+                            Caption ="??"
+                            FontName ="Tahoma"
+                            GUID = Begin
+                                0x1d6e375e17016a489c5f2f03aee01971
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+'//***************************************************************************************************************//
+'//form master : MSys_TUTTI_PROG_FrmM01_01_PROGETTI
+
+'// MODIFICHE: _
+      @2024_10_21_ATTIVO_HELP_FORM_MASTER: imposto l'help che spiega il FUNZIONAMENTO DEL MODO DI CARICARE LE _
+          PAGINE NELLA FORM MASTER PRINCIPALE. Apro il file help in pdf con le spiegazioni di funzionamento _
+          della FORM MASTER PRINCIPALE che utilizza una seconda tabella per caricare le 12 pagine base.
+
+'//***************************************************************************************************************//
+
+Option Compare Database
+Option Explicit
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+'//       LE VARIABILI DI MODULO
+
+'//LE VARIABILI DATABASE
+'//....................................................................//
+    Dim DaoDB As DAO.Database          '//occorre il riferimento alla libreria  Microsoft DAO 3.6 Object Libray
+    
+    
+    
+    Dim DaoWks As DAO.Workspace
+    Dim DaoRs As DAO.Recordset
+
+    Dim ADODB As Database
+    Dim AdodaoRs As Recordset
+    Dim sSql As String                              '//STRINGA SQL
+    '//Dim Path_s As String                         '//la path
+
+
+    '//Contatori
+    Dim icount As Integer
+    Dim dbl_count As Double
+    
+   
+    'Le variabili generiche
+    Dim Vv1 As Variant
+    Dim Dbl1 As Double
+    Dim Int1 As Integer
+    Dim Long1 As Long
+    Dim str1 As String
+    
+    '//Messaggi di errore
+    Dim ProceduraMessaggioErrore_s As String    '//Errore procedura
+    Dim ProceduraAttivaEseguita_s As String     '//Errore Attivita eseguita
+    
+    
+    '//la form
+        Dim frm As Form, ctl As Control
+        Dim frmName_s As String
+
+
+
+
+    
+
+
+
+
+Private Sub COD_PROGETTO_s_TXT_BeforeUpdate(Cancel As Integer)
+    '@aggiornamento, @prima.di.aggiornare
+    Me.DATAAGG_d_TXT = Date
+    Me.ORA_AGG_d_TXT = Now()
+    
+    
+    
+End Sub
+
+Private Sub DENOM_PROGETTO_s_Txt_DblClick(Cancel As Integer)
+    '//APRO LA TABELLA DEI PROGETTI DA CARICARE   @in@modifica@oggi
+        DoCmd.OpenTable "MSys_TAB501_GE_TabContr_SEMPLICE"  'old ----> "MSys_TAB501_GE_TabContr_SEMPLICE"
+        
+        
+End Sub
+
+Private Sub Form_BeforeInsert(Cancel As Integer)
+   '@aggiornamento, @prima.di.aggiornare
+    Me.DATAAGG_d_TXT = Date
+    Me.ORA_AGG_d_TXT = Now()
+ 
+    
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    
+Me.Recalc
+
+End Sub
+
+
+'//COD_PROGETTO_s_Txt_DblClick MenuGestito_s, CodiceMenu_s
+'//========================================================================================================//
+Public Sub COD_PROGETTO_s_TXT_DblClick(Cancel As Integer)
+ 
+'//Modello di impostazione della proprieta Caption nella form Master passata come parametro
+'MODELLO DI PROVA FUNZIONANTE ---> Application.Forms(LA_FORM_MASTER_s)!Pag_04.Caption = "dento la classe"
+'//@CLASSE.MENU.GESTITI _
+    @MENU.GESTITI.CLASSE _
+
+
+
+On Error GoTo Err_COD_PROGETTO_s_Txt_DblClick
+ 
+            
+                Dim COD_PROGETTO_s As String
+                Dim DENOM_PROGETTO_s As String
+                Dim FormAperta_b As Boolean                 '//se la form è aperta = True
+                            
+                
+                COD_PROGETTO_s = Me.COD_PROGETTO_s_TXT
+                'DENOM_PROGETTO_s = Me.DENOM_PROGETTO_s_Txt
+                            
+                  
+                '//SOSPESA ...
+                '//2024_10_22_PROJECT_TMP =SOSPESO L'ATTIVITA DI SALVATAGGIO DEL CODICE IN PROGETTI TMP
+                '//2024_08_23_PROJECT_TMP = Attivazione delle procedura di salvataggio del codice progetto in tmp
+                '//--------------------------------------------------------------------------------//---------------//
+                '//nota: nella tabella PROGETTI_Msys_TB01Qry01_01_PROJECT_TMP viene salvato il codice del progetto _
+                        scelto al fine di poter filtrare le varie form degli oggetti gestiti es: _
+                            MSys_QUERY_Frm01_S01_TUTTE _
+                            MSys_REPORT_Frm01_S01_TUTTI ..... ecc.
+                '//devo inserire all'inizio dell'evento doppio click l'aggiornamento della tabella tmp perchè alla fine _
+                    della routine vi è aggiornamento delle pagine e si perde il valore del codice progetto. Posto all'inizio _
+                    posso eseeguire la cancellazione della tmp e l'aggiornamento della tabella tmp senza problemai di perdita _
+                    di validita dell'area di memoria della variabile vv1
+                            
+                        '//01 svuoto la tabella tmp   **** TODO: controllare se cancellare oppure riutilizzare
+                        'DoCmd.OpenQuery "PROGETTI_Msys_TB01Qry01_01_PROJECT_TMP_Delete"
+                        
+                        '//controllo e stampa dell'area di validita della casella di testo
+                        'Vv1 = Me.COD_PROGETTO_s
+                        'Debug.Print "valore della casella di testo in VV1 = " & Vv1
+                        
+                        '//**** TODO: controllare se cancellare oppure riutilizzare
+                        '//02 inserisco con una query sql il codice del progetto selezionato nella tabella tmp
+                        'sSql = ""
+                        'sSql = sSql & "INSERT INTO PROGETTI_Msys_TB01_PROJECT_TMP ( COD_PROGETTO_s ) "
+                        'sSql = sSql & "SELECT '" & Me.COD_PROGETTO_s_TXT.Value & "' AS COD_PROGETTO_s "
+                        'sSql = sSql & "WITH OWNERACCESS OPTION;"
+                        'Debug.Print sSql
+                        'CurrentDb.Execute sSql
+                '//--------------------------------------------------------------------------------//---------------//
+             
+                  
+            
+                        '//PRIMA CONTROLLO SE ESITE UN PROGETTTO SELEZIONATO A TRUE
+                        '//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+                        '//@CONTROLLO@PROGETTO@NULLO_(se viene deselezionato tutto e non viene scelto nessun progetto rimane impostato su msys)
+                        '//@PROGETTO@NON@SELEZIONATO@_(se tutti i progetti sono False allora avviso di impostare un flag)
+                            
+                            
+                            '//@IN@SOSTITUZIONE
+                            '//controllo se la tabella TUTTI I PROGETTI HA un elemento selezionato
+                              '//sql apro il rs
+                                    Dim Valore_b As Boolean
+                                    'old
+                                    'sSql = ""
+                                    'sSql = sSql & "SELECT MSys_TUTTI_PROG.COD_PROGETTO_s, MSys_TUTTI_PROG.Scel_b "
+                                    'sSql = sSql & "FROM MSys_TUTTI_PROG;"
+                                    'sSql = sSql & "WHERE (((MSys_TUTTI_PROG.Scel_b)=True));"
+                                    
+                                    
+                                    '//@2024.10_22.NUOVO_CODICE
+                                    '//@sostituito.nuovo
+                                    '//codice estrazione MSys_TUTTI_TB01
+                                    sSql = ""
+                                    sSql = sSql & "SELECT MSys_TAB501_GE_TabContr_SEMPLICE.COD_PROGETTO_s, MSys_TAB501_GE_TabContr_SEMPLICE.Scel_b "
+                                    sSql = sSql & "FROM MSys_TAB501_GE_TabContr_SEMPLICE "
+                                    sSql = sSql & "WHERE (((MSys_TAB501_GE_TabContr_SEMPLICE.Scel_b)=True));"
+
+                        
+                                        Valore_b = False
+                                
+                                        'Apro rs estrazione Sql
+                                        Set DaoRs = CurrentDb.OpenRecordset(sSql)
+                                            '//controllo
+                                            Debug.Print sSql
+                                                            
+                                            With DaoRs
+                                                
+                                                'CICLO RS
+                                                '..................................................................................................
+                                                    While Not DaoRs.EOF
+                        
+                        
+                                                    'recupero il valore del campo
+                                                    If .Fields("Scel_b") = True Then
+                                                            Valore_b = True
+                                                            
+                                                            '//SALVO IL CODICE PROGETTO
+                                                            Vv1 = .Fields("COD_PROGETTO_s")
+                                                  
+                                                    End If
+                                               
+                        
+                                                   .MoveNext
+                                                    Wend
+                        
+                                                'FINE CICLO RS
+                                                '..................................................................................................
+                                                                        
+                                                                            
+                                                
+                                            End With
+                                                        
+                                                            
+                                                        
+                                        'Chiudo rs estrazione Sql
+                                        DaoRs.Close
+                                        Set DaoRs = Nothing
+                                        
+                                        '//@PROGETTO@NULLO_(avviso che devi selezionare un progetto) _
+                                            @ERRORE@PROGETTO@NULLO_(avviso che non hai impostato il progetto)
+                                        If Valore_b = False Then
+                                            '//@CONTROLLO@PROGETTO_(SE NON IMPOSTATO @AVVISO DI @IMPOSTAZIONE)
+                                            MsgBox "ATTENZIONE DEVI IMPOSTARE UN PROGETTO!", vbCritical, "CONTROLLO PROGETTI IMPOSTATI"
+                                            Me.Scel_b = True = True
+                                            Me.Requery
+                                            GoTo Exit_COD_PROGETTO_s_Txt_DblClick
+                                        End If
+                                        
+                        '//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+                
+                
+                '//SE IL PROGETTO E' STATO SCELTO ESEGUO L'ACCODAMENTO DEI DATI PROGETTO SULLA TABELLA TMP
+                '//---------------------------------------------------------------------------------//
+                '//codice --->  @INSERTI@CODICI@PROGETTO@TMP_(inserisco i codici del progetto nella casella PROGETTO TMP)
+                '// @2024_03_11_CREATO_INSERIMENTO_CODICI_PROGETTO_IN_TMP
+                
+                 '//SOSPESA ---> prima cancello i dati nella tmp
+                  
+                     'sSql = ""
+                     'sSql = sSql & "DELETE MSys_TUTTI_PROG_tmp.* FROM MSys_TUTTI_PROG_tmp; "
+                     'CurrentDb.Execute (sSql)
+                     
+                     
+                     '//@ma@inserisce@in@tmp ??? = da verificare
+                    
+                     '// SOSPESA ---> dopo accodo i codici del progetto
+                     '//==================================================================//
+                      'sSql = ""
+                      
+                      'sSql = sSql & "INSERT "
+                      'sSql = sSql & "INTO MSys_TUTTI_PROG_TMP "
+                      'sSql = sSql & "( NRO_OGGETTO_i, COD_PROGETTO_s, DENOM_PROGETTO_s ) "
+                      'sSql = sSql & "SELECT "
+                      'sSql = sSql & "MSys_TUTTI_PROG.NRO_OGGETTO_i, "
+                      'sSql = sSql & "MSys_TUTTI_PROG.COD_PROGETTO_s, "
+                      'sSql = sSql & "MSys_TUTTI_PROG.DENOM_PROGETTO_s "
+                      'sSql = sSql & "FROM MSys_TUTTI_PROG "
+                      'sSql = sSql & "WHERE (((MSys_TUTTI_PROG.COD_PROGETTO_s)='" & Me.COD_PROGETTO_s_TXT & "'));"
+                      
+                      
+                      
+                      '//CONTROLLO ED ESECUZIONE
+                      'Debug.Print sSql
+                      
+                      'CurrentDb.Execute (sSql)
+                      
+                      
+                     '//==================================================================//
+                     
+                     '//@attenzione= INSERISCE nella tabella tmp TUTTI I PROGETTI ma bisogna verificare _
+                        se nella tabella collegata inserisce anche le pagine ??? : MSys_TUTTI_PROG_VIS_PAGINE
+                        
+                        '//controllare le pagine inserite ??? : @controllare@salvataggio@da@MASTER---->detail
+                        'todo: finire la procedura.... occorre salvare le pagine del codice progetto _
+                        nella tabella tmp denominata MSys_TUTTI_PROG_VIS_PAGINE_TMP
+                        
+                        '//TODO: MODIFICARE IL SALVATAGGIO DEL CODICE PROGETTO E DELLE PAGINE : _
+                          Le pagine da visualizzare nel TAB CONTROLL MASTER che viene utilizzato dalla FORM MASTER, _
+                          deve avere questo funzionamento SECONDO IL PROGETTO SCELTO: _
+                            01) una volta scelto il progetto, salvo il CODICE DI PROGETTO nella tabella, tmp : _
+                                da MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE in ----> MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE_TMP _
+                                                            qui viene salvatato :       il codice del progetto. _
+                            02) le pagine da visualizzare nella FORM MASTER vengono salvate dalla tabella VISUALIZZA LE PAGINE alla tmp _
+                                da MSys_TUTTI_TB01_FORM_MASTER_VISUAL_PAGINE in ----> MSys_TUTTI_TB01_FORM_MASTER_VISUAL_PAGINE_TMP.
+                                
+                            '//@2024.10_22.NUOVO_CODICE
+                            '//ESECUZIONE DEL PROGETTO: _
+                              01) PRIMA SOSTITUZIONE = svuoto la tabella MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE_TMP dove salvo _
+                                  il codice del progetto nuovo.  CODICE OGGETTI ---> MSys_TUTTI_TB01
+                                  sSql = ""
+                                  sSql = sSql & "DELETE MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE_TMP.* FROM MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE_TMP; "
+                                               
+                                  '//CONTROLLO ED ESECUZIONE
+                                  Debug.Print sSql
+                                  CurrentDb.Execute (sSql)
+                                  
+                              '//01) SALVO CODICE PROGETTO = il codice progetto viene salvato nella tabella MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE_TMP
+                                             
+                                
+                                
+                                
+                             
+                                     
+                                     
+                                    
+                '//---------------------------------------------------------------------------------//
+                
+                
+                
+                '//2022.06.26_AggiornoTabellaTmp,
+                '//@aggiorno.codice.progetto.tmp,
+                '//svuoto la tabella tmp  --
+                '//--------------------------------------------------------------------------------//---------------//
+                '//CON L'EVENTO DOPPIO CLICK attivo il controllo oggetti della form master che è stata modificata _
+                    con in questa data : _
+                    @2022.03.07.modifiche = Modifica del sistema del controllo della form master con questo procedimento _
+                    attivando questi punti : _
+                    01) CICLO OGGETTI FORM _
+                    02) ATTIVO IL RESET _
+                    03) CARICO LE  12 PAGINE _
+                    04) RECALC  della form corrente
+                 '//CICLO OGGETTI = Enumera insieme Forms individuo la form master ed attribuisco alla variabile _
+                                    il nome della form master corrente per utilizzarla nell'accesso della routine pubblica _
+                                    resetta le form
+                
+                '//IMPOSTO LA VARIABILE FORM APERTA A FALSE
+                FormAperta_b = False
+                
+                For Each frm In forms
+                    ' 01) CICLO OGGETTI FORM = Stampa nome della maschera correntemente aperta, ma devi aggiungere il nome _
+                      della pagina corrente
+                      
+                    '//@NOME@MASTER_(CONTROLLO IL NOME DELLA MASTER)_@FORM@MASTER
+                    Debug.Print "nome della master è " & Application.forms.Application.Name
+                    
+                    If frm.Name = "MSys_FORM_M01_GESTIONE_OGGETTI_MSys" Then
+                        frmName_s = frm.Name
+                            Debug.Print frmName_s
+                            FormAperta_b = True
+                            
+                    End If
+                     
+                    If frm.Name = "ANAG_FrmDF01_M01_GESTIONE" Then
+                        frmName_s = frm.Name
+                            Debug.Print frmName_s
+                            FormAperta_b = True
+                    End If
+                    
+                    
+                    If frm.Name = "AA_MSys_FORM_M01_GESTIONE_OGGETTI_MASTER" Then
+                        frmName_s = frm.Name
+                            Debug.Print frmName_s
+                            FormAperta_b = True
+                    End If
+                    
+                    
+            
+                    
+                    
+                    
+                  
+                    
+                 '//NON ESISE LA FORM PREIMPOSTATA ALLORA ASSUME QUELLA APERTA ma deve essere master _
+                    inserita il 2023_07_02 perche quando cambi il nome della form master essa non _
+                    viene riconosciuta fra quelle preimpostate e la procedura si Blocca. In questo _
+                    modo possiamo utilizzare a form master generale anche cambiando denominazione. _
+                        @cambio@denominazione@form@master_(se cambi denominazione alla form master viene utilizzata ugualmente)
+                    
+                    If frmName_s = Null Or frmName_s = "" Then
+                        '//MODIFICATO  inserito il true per la form aperta, in questo modo anche se non è indicato come nome nella stringa _
+                                        precedente la form segnalata come aperta permette l'aggiornamento delle 12 sottoform.
+                        frmName_s = frm.Name
+                            Debug.Print frmName_s
+                            FormAperta_b = True
+
+                    End If
+                                 
+                            '//controllo form corrente
+                            Debug.Print "--------------------------------------------------"
+                            Debug.Print "               form corrente                      "
+                            Debug.Print frm.Name
+                            Debug.Print
+                            Debug.Print "--------------------------------------------------"
+                    
+                        
+                                '//se la form è aperta enumero i controlli
+                                If FormAperta_b = True Then
+                                
+                                    ' Enumera insieme Controls di ciascuna maschera.
+                                    For Each ctl In frm.Controls
+                                        ' Stampa nome di ciascun controllo della form corrente.
+                                        Debug.Print ">>>"; ctl.Name
+                                        If ctl.Name = "SottoForm_01" Then
+                                            'Stop
+                                            
+                                        End If
+                                    
+                                    Next ctl
+                                End If   '//se la form è aperta
+                
+                Next frm
+                        
+                        '//@FORM@MASTER@CHIUSA_(Non carico le pagine ma salto.Vengono resettate le pagine e caricate di nuovo se è aperta la FORM MASTER)
+                        '//se la form è aperta aggiorno le pagine
+                        If FormAperta_b = True Then
+                            
+                            '//@aggiorna.le.pagine - della FORM MASTER, @aggiorna.progetto @chiamo@form@esterne
+                            '//INSIEME FORMS _
+                            Form è l'insieme che rappresenta tutte le maschere aperte a cui puoi fare riferimento con il nome _
+                            ed attivare le sue proprieta come la funzione ..MSys_TUTTE_LE_PAGINE_Carica_pFunction; in questo caso _
+                            l'oggetto form utilizza la variabile frmName_s per individuare quale form master  è aperta ed utilizzare _
+                            la routine di reset delle form; esempio di modello : _
+                                Forms![MSys_FORM_M01_GESTIONE_OGGETTI_MSys].MSys_TUTTE_LE_PAGINE_Carica_pFunction
+                            '// con lo stesso sistema attivo quindi le tre condizioni : RESET + CARICA LE FORM + RECALC
+                            forms(frmName_s).Imposta_N21_RESETTA_LE_SOTTOFORM_Sub           '//02) ATTIVO IL RESET  = per evitare che rimangano visibili.
+                            forms(frmName_s).MSys_TUTTE_LE_PAGINE_Carica_pFunction          '//03) CARICO LE 12 PAGINE RESETTA LE FORM CARICO TUTTE LE 12 PAGINE
+                            forms(frmName_s).Recalc                                         '//04) RECALC  della form corrente _
+                                                                                            se non metti recalc da errore di procedura obbligatorio _
+                                                                                            dopo l'aggiornamento delle 12 pagine.
+                        End If
+                        
+                    
+                '//--------------------------------------------------------------------------------//---------------//
+            
+                    
+                '//CODICI PROGETTO IN TMP: SVUOTA LA TABELLA TMP E SALVA NELLA STESSA I CODICI DI PROGETTO
+                '//--------------------------------------------------------------------------------//---------------//
+            
+                    DoCmd.OpenQuery "MSys_TABELLE_TMP_Qry01_81_DELETE_TUTTE"
+                    
+                    '//sql apro il rs
+                    sSql = ""
+                    sSql = sSql & "SELECT MSys_TABELLE_Tmp.* "
+                    sSql = sSql & "FROM MSys_TABELLE_Tmp;"
+                    
+                    'controllo  @aggiungo.nuovo.record.query
+                    Debug.Print sSql
+                    Set DaoRs = CurrentDb.OpenRecordset(sSql)
+                    
+                    '//controllo se il rs è popolato = FALSE esistono record True senza record
+                    If DaoRs.EOF = True And DaoRs.BOF = True Then
+                        
+                        
+                        DaoRs.AddNew
+                            '//@SALVO@CODICE@PROGETTO@ @TABELLA@TMP
+                            'inserisco un nuovo record con tutti i codici del progetto corrente
+                            DaoRs.Fields("NRO_OGGETTO_i") = 1
+                            DaoRs.Fields("COD_PROGETTO_s") = COD_PROGETTO_s
+                            
+                            '//DaoRs.Fields("NOME_OGGETTO_s") = DENOM_PROGETTO_s    PER ORA NON ESISTE
+                            
+                            
+                        DaoRs.Update
+                        DaoRs.Close
+                        Set DaoRs = Nothing
+                    
+                    End If
+                    
+                '//--------------------------------------------------------------------------------//---------------//
+             
+
+
+
+'//ERRORI ED USCITA
+'//--------------------------------------------------------------------------------//-----------------
+Exit_COD_PROGETTO_s_Txt_DblClick:
+    Exit Sub
+
+Err_COD_PROGETTO_s_Txt_DblClick:
+    MsgBox Err.Description
+    Resume Exit_COD_PROGETTO_s_Txt_DblClick
+
+End Sub
+
+'//*** fine ***
+'//COD_PROGETTO_s_Txt_DblClick MenuGestito_s, CodiceMenu_s
+'//========================================================================================================//
+
+
+
+
+
+
+
+
+'***********************************************************************************************************************
+'                           HELP *** INIZIO ***
+'// @01 = APRO HELP VISUALIZZA PAGINE MASTER
+'***********************************************************************************************************************
+
+
+
+'//EVENTO_DOPPIO_CLICK
+  '//=================================================================================================================//
+  '//MODELLO ROUTINE DOPPIO CLICK = ..... _
+    CODICE----> Help_Txt_DblClick   @2024_10_21_ATTIVO_HELP_FORM_MASTER
+  '//=================================================================================================================//
+  '//Parametri che possono essere cambiati collettivamente:
+  '//--------------------------------------------------------------@
+  '//
+  '//DENOMINAZIONE---------> Help_Txt_DblClick
+  '//TIPO------------------> ROUTINE pubblica.
+  '//ATTIVITA--------------> APRI FILE PDF HELP = Apro il file help
+  '//ProceduraMessaggioErrore_s = "APRI FILE PDF HELP"
+  '//ProceduraAttivaEseguita_s = "Help_Txt_DblClick"
+  '//
+  '//--------------------------------------------------------------@
+  '//PARAMETRI-------------> Nessuno
+  '//VALORE_DI_RITORNO-----> Nulla
+  '//CODICE----------------> Help_Txt_DblClick.01.00
+  '//
+  '//=================================================================================================================//
+  '//NOTE------------------> Apro il file help con il doppio click
+  '// @01 = APRO HELP VISUALIZZA PAGINE MASTER
+  '//
+
+
+  Private Sub Help_Txt_DblClick(Cancel As Integer)
+
+  On Error GoTo Help_Txt_DblClick_Err
+
+    '//APRO_FORM_FALDONI = Chiamo procedura
+    '//---------------------------------------------------------------------------------------//
+    '//CODICE -----------> Help_Txt_DblClick.01.01
+
+            '//Call Help_Txt_DblClick
+    '//---------------------------------------------------------------------------------------//
+    
+   
+    
+    '//APRO_FORM_FALDONI = Apertura form + aggiornamento nome faldoni
+    '//---------------------------------------------------------------------------------------//
+    '//CODICE -----------> Help_Txt_DblClick.01.02
+    
+                '//RESET
+                ProceduraMessaggioErrore_s = ""
+                ProceduraAttivaEseguita_s = ""
+   
+
+                '//IMPOSTO LE VARIABILI
+                ProceduraMessaggioErrore_s = "ERRORE NELLA PROCEDURA : APRI FILE PDF HELP"
+                ProceduraAttivaEseguita_s = "Help_Txt_DblClick"
+
+
+    
+    '//---------------------------------------------------------------------------------------//
+
+
+       '//APRO PATH O FILE GENERICI
+           '//.....................................................................................................
+              '//File da ricercare e la path Viene attivata la procedura solo se sono valorizzate le variabili
+                                               
+              '//IMPOSTO LE VARIABILI PATH E FILE
+              '//
+                Dim MyFile_s As String
+              '//
+                Dim MyPath_s  As String
+
+           
+               
+                 MyFile_s = ""
+                 MyPath_s = ""
+                 
+                 str1 = "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS_OGGETTI\MSYS\OBJECT\HELP\HELP_FORM\"
+                 '//PATH O FILE = Inserire o una path oppure una path+file con percoso esteso.
+                 '
+                 
+                 
+                 MyPath_s = str1
+                 MyFile_s = "HELP_MSys_TUTTI_TB01_FORM_MASTER_GE_PAGINE.pdf"
+                 
+                   '1) ISTANZIO LA CLASSE
+                            '........................................................
+                            
+                            'Recupero la stringa da applicare alla
+                            'successiva classe
+                            '
+                            'sxCODOGGETTO = ""
+                            '//trovo il codice oggetto mediante il codice attivita
+                            'sxCODOGGETTO = TROVA_CLASSE_DI_GESTIONE_pFunct(par_sxCODATTIVITA)
+                             
+                            'ISTANZIO LA CLASSE CLASSE_GESTIONE_OGGETTI_DATABASE
+                            'Assegno e creo l'oggetto di classe
+                            '--->
+                                Dim MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE As CLASSE_GESTIONE_OGGETTI_DATABASE
+                            '--->
+                                Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = New CLASSE_GESTIONE_OGGETTI_DATABASE
+                                
+                                
+                            
+                                'PARAMETRI DI ESTRAZIONE
+                                'Recupero la stringa da applicare alla
+                                'successiva classe
+                                 '---> sxCODOGGETTO = ""
+                                 '---> sxCODOGGETTO = MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.RECUPERO_CODOGGETTO_da_TMP_pbFunct
+                           
+                            
+                            '--->                     Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+            
+                            '........................................................
+                            
+                 
+                  
+                 If str1 > "" Then
+                 
+                 '//IMPOSTO LA VARIABILE OGGETTO = per l'utilizzo della classe
+                 '
+                 '
+                 MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.APRO_PATH_O_FILE_GENERICI_pSub (MyPath_s & MyFile_s)
+                 
+                 
+                 '//RILASCIO LA MEMORIA = rilascio l'oggetto ed attivo il distruttore della classe
+                 '
+                Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+                 
+                 Else
+                         MsgBox "ATTENZIONE I PARAMETRI file e path non sono valorizzati per l'apertura del file - Uscita dalla Routine", vbExclamation
+                 
+                 End If 'If par_FileAtto_s > "" And Str1 > "" Then
+                 
+           '//.....................................................................................................
+          
+Help_Txt_DblClick_Err:
+    Debug.Print "uscita dalla routine : " & ProceduraMessaggioErrore_s
+    Debug.Print ProceduraAttivaEseguita_s
+   
+    Exit Sub
+    
+    MsgBox Err.Description & " " & ProceduraMessaggioErrore_s & " - " & ProceduraAttivaEseguita_s & " --> errore Error$ -> : " & Error$
+    Debug.Print ProceduraMessaggioErrore_s
+    Debug.Print ProceduraAttivaEseguita_s
+    Debug.Assert "BLOCCO PROCEDURA -> " & ProceduraAttivaEseguita_s
+
+    Stop
+    Resume Help_Txt_DblClick_Err
+    
+  End Sub
+  '//'//DENOMINAZIONE---------> Help_Txt_DblClick *** FINE ***
+  '//=================================================================================================================//
+
+
+
+
+'***********************************************************************************************************************
+'                           HELP *** FINE ***
+'
+'***********************************************************************************************************************

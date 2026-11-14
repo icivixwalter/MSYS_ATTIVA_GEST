@@ -1,0 +1,2 @@
+SELECT "->" AS TxtChiavi, MSys_TAB501_GE_TabContr_SEMPLICE.*
+FROM MSys_TAB501_GE_TabContr_SEMPLICE;

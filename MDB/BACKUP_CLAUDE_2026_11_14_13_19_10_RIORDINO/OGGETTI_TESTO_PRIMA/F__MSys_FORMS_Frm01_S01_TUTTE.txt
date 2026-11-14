@@ -1,0 +1,1113 @@
+Version =19
+VersionRequired =19
+Checksum =-234827550
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8900
+    DatasheetFontHeight =10
+    ItemSuffix =39
+    Left =684
+    Top =-240
+    Right =11904
+    Bottom =6288
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x09e426327fcfe540
+    End
+    GUID = Begin
+        0xc718a0561152364e98a29ab2fef89b4d
+    End
+    NameMap = Begin
+        0x0acc0e550000000023a51b525104e04eb289437da3dfe8710000000085ec0b52 ,
+        0x2d6ce64000000000000000004d005300790073005f0046004f0052004d005300 ,
+        0x5f00510072007900300031005f00300031005f00530045004c00450043005400 ,
+        0x5f00540055005400540045000000000000000000000000000000000000000000 ,
+        0x00000700000023a51b525104e04eb289437da3dfe87141007400740072006900 ,
+        0x6200750074006500000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000004700650073007400560053003000 ,
+        0x31005f004e00300031005f0050004100520041004d0045005400520049005f00 ,
+        0x470072007500700070006f005f0043004f0044004900430045005f004f004700 ,
+        0x47004500540054004f0000000000000000000000000000000000000000000000 ,
+        0x0700000023a51b525104e04eb289437da3dfe871450078007000720065007300 ,
+        0x730069006f006e000000000000001461354696ab0148a00a2163649bd0030700 ,
+        0x000023a51b525104e04eb289437da3dfe8714e004f00540041005f004f004700 ,
+        0x47004500540054004f005f0073000000000000008039424a875ab64fb215557a ,
+        0x7d06bbe40700000023a51b525104e04eb289437da3dfe8714e0061006d006500 ,
+        0x31005f007300000000000000bdf18cdff7144240aa15b800d1c3d8df00000000 ,
+        0x2391a346b46be64000000000000000004d005300790073005f0046006f007200 ,
+        0x6d0073000000000000008039424a875ab64fb215557a7d06bbe407000000bdf1 ,
+        0x8cdff7144240aa15b800d1c3d8df4e0061006d00650031005f00730000000000 ,
+        0x00007611a700544a704d9cea3838bbd027fe0700000023a51b525104e04eb289 ,
+        0x437da3dfe8714e0061006d00650032005f007300000000000000b5dc0e1c5296 ,
+        0x0a4cb0d819b1b4272dbe0700000023a51b525104e04eb289437da3dfe8714400 ,
+        0x41005400410049004e0053005f00640000000000000015bf392949836a4db877 ,
+        0xf8fea2c189790700000023a51b525104e04eb289437da3dfe871440041005400 ,
+        0x41004100470047005f0064000000000000009a56137f23ca3a4ea8a742cbb7a3 ,
+        0x2b770700000023a51b525104e04eb289437da3dfe871540049004d0045004f00 ,
+        0x5000450052005f00640000000000000021f3810ea24cdd47980c84c7b752d74d ,
+        0x0700000023a51b525104e04eb289437da3dfe871490044005f00460052004d00 ,
+        0x5f006c006e006700000000000000866fa09c02a1a14b8642cd2ec06e9ae20700 ,
+        0x000023a51b525104e04eb289437da3dfe8715300630065006c005f0062000000 ,
+        0x00000000d5af0720285e65408da8732a5fa669920700000023a51b525104e04e ,
+        0xb289437da3dfe8714e0052004f005f004f00470047004500540054004f005f00 ,
+        0x6900000000000000d5af0720285e65408da8732a5fa6699207000000bdf18cdf ,
+        0xf7144240aa15b800d1c3d8df4e0052004f005f004f0047004700450054005400 ,
+        0x4f005f0069000000000000008e0aa5d9ace17f4da40f068d7df4e28307000000 ,
+        0x23a51b525104e04eb289437da3dfe87143004f004d0041004e0044004f005f00 ,
+        0x7300000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000004d005300790073005f0044004600300031005f00 ,
+        0x43004f004d0041004e004400490000000000000053374e419cde0e4bbf6098b5 ,
+        0xcce264320700000023a51b525104e04eb289437da3dfe8715400490050004f00 ,
+        0x470047004500540054004f005f007300000000000000e7b35ba13fd2774a85b6 ,
+        0xb37eccb6bfa20000000085ec0b522d6ce64000000000000000004d0053005300 ,
+        0x790073005f0044004600300032005f00510072007900300031005f0030003100 ,
+        0x5f00530045004c004500430054005f005400490050004f005f004f0047004700 ,
+        0x4500540054004f0000000000000090b20456ffa8d8458b90bee497c444e50700 ,
+        0x000023a51b525104e04eb289437da3dfe87143004f0044005f00500052004f00 ,
+        0x47004500540054004f005f0073000000000000001b5906f62453e94f93896437 ,
+        0x487a21fb00000000ae375772116ce64000000000000000004d00730079007300 ,
+        0x5f0044004600310031005f00500052004f004700450054005400490000000000 ,
+        0x000086dde7fda216e1429b2cd8049a649cf2070000001b5906f62453e94f9389 ,
+        0x6437487a21fb43004f0044005f00500052004f0047004500540054004f005f00 ,
+        0x73000000000000004fa233533ef74649901103a743e25cef070000001b5906f6 ,
+        0x2453e94f93896437487a21fb500052004f0047004500540054004f005f007300 ,
+        0x000000000000000000000000000000000000000000000c000000050000000000 ,
+        0x000000000000000000000000
+    End
+    RecordSource ="MSys_FORMS_Qry01_01_SELECT_TUTTE"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin Section
+            Height =22112
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x5c16bbfa5bb92c4c8964a2ee6031cd1d
+            End
+            Begin
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =8505
+                    Left =4997
+                    Top =1675
+                    Width =1584
+                    Height =255
+                    ColumnOrder =4
+                    TabIndex =1
+                    BackColor =62207
+                    ForeColor =255
+                    GUID = Begin
+                        0x59da96d973fbc24b9173b911662de63f
+                    End
+                    Name ="Attribute_Txt"
+                    ControlSource ="Attribute"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    StatusBarText ="CODICE OGGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =1675
+                            Width =1584
+                            Height =255
+                            Name ="Attribute_Lbl"
+                            Caption ="Attribute"
+                            GUID = Begin
+                                0x8d4dccd47f2beb4b894eb379a1d7ba65
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =11340
+                    Left =4997
+                    Top =2017
+                    Width =1584
+                    Height =255
+                    ColumnOrder =5
+                    TabIndex =2
+                    BackColor =62207
+                    ForeColor =255
+                    GUID = Begin
+                        0xa32a716a6fbd8649b01549fda79864ad
+                    End
+                    Name ="Expression_TXT"
+                    ControlSource ="Expression"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="6804;1701;2835"
+                    StatusBarText ="NOME OGGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =2017
+                            Width =1584
+                            Height =255
+                            Name ="Expression_Lbl"
+                            Caption ="Expression"
+                            GUID = Begin
+                                0x5a45ae426b37264dba56d38f9eaf112b
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4997
+                    Top =2353
+                    Width =1584
+                    Height =450
+                    ColumnOrder =6
+                    TabIndex =3
+                    Name ="NOTA_OGGETTO"
+                    ControlSource ="NOTA_OGGETTO_s"
+                    StatusBarText ="NOTE"
+                    GUID = Begin
+                        0x9c1e492c03fd2c42854c2029d39f4b23
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =2353
+                            Width =1584
+                            Height =255
+                            Name ="NOTE_Lbl"
+                            Caption ="NOTE"
+                            GUID = Begin
+                                0x9158e16f0fb6704db58b0ab94f411960
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =8505
+                    Left =4997
+                    Top =2872
+                    Width =1584
+                    Height =255
+                    ColumnOrder =7
+                    TabIndex =4
+                    GUID = Begin
+                        0x95b1e22a919bcb49967685d8b1d30c15
+                    End
+                    Name ="TIPOGGETTO"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =2872
+                            Width =1584
+                            Height =255
+                            Name ="TIPOGGETTO_Etichetta"
+                            Caption ="LvExtra"
+                            GUID = Begin
+                                0xfd3bfdaee49dcb45b7c8c4a8092c365c
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =25515
+                    Left =4997
+                    Top =3214
+                    Width =1584
+                    Height =255
+                    ColumnWidth =4905
+                    ColumnOrder =8
+                    TabIndex =5
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x422047818938f548b5819fb19ed9db35
+                    End
+                    Name ="Name1_TXT"
+                    ControlSource ="Name1_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_Forms].[Name1_s] FROM MSys_Forms; "
+                    ColumnWidths ="8505"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =3214
+                            Width =1584
+                            Height =255
+                            Name ="Name1_Lbl"
+                            Caption =">>Name1"
+                            GUID = Begin
+                                0x719fc741ef8b4247ba5830b3579e3255
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4997
+                    Top =3545
+                    Width =1584
+                    Height =300
+                    ColumnOrder =9
+                    TabIndex =6
+                    Name ="Name2_Txt"
+                    ControlSource ="Name2_s"
+                    GUID = Begin
+                        0x964b547eec731d4b9ca8a4ff0907a801
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =3545
+                            Width =1584
+                            Height =300
+                            Name ="Name2_Lbl"
+                            Caption ="Name2"
+                            GUID = Begin
+                                0x3fcbe68a5c2cd043824d38f5588c2458
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =8505
+                    Left =4997
+                    Top =4801
+                    Width =1584
+                    Height =255
+                    ColumnOrder =10
+                    TabIndex =7
+                    GUID = Begin
+                        0x9aacda60c5692d479c6cb066a4cba3a5
+                    End
+                    Name ="EVENTO"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =4801
+                            Width =1584
+                            Height =255
+                            Name ="EVENTO_Etichetta"
+                            Caption ="EVENTO"
+                            GUID = Begin
+                                0x80ed331abd5c1f4f8fe93863ae6f8e84
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =4997
+                    Top =5143
+                    Width =1584
+                    Height =255
+                    ColumnOrder =11
+                    TabIndex =8
+                    GUID = Begin
+                        0x2043b1786cde5347b11b9577a583956d
+                    End
+                    Name ="ATTIVITAEVENTO"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =5143
+                            Width =1584
+                            Height =255
+                            Name ="ATTIVITAEVENTO_Etichetta"
+                            Caption ="ATTIVITAEVENTO"
+                            GUID = Begin
+                                0x32ae68fa925994419cde4e8ed3a4657b
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =4997
+                    Top =5485
+                    Width =1584
+                    Height =255
+                    ColumnOrder =12
+                    TabIndex =9
+                    GUID = Begin
+                        0xc12d4322012a9f48bfefea3554b62359
+                    End
+                    Name ="METODO"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =5485
+                            Width =1584
+                            Height =255
+                            Name ="METODO_Etichetta"
+                            Caption ="METODO"
+                            GUID = Begin
+                                0x5f3a4a3fe50c2b4db14441a0339b6226
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4994
+                    Top =5941
+                    Width =1584
+                    Height =255
+                    ColumnOrder =13
+                    TabIndex =10
+                    Name ="MODFORM"
+                    StatusBarText ="Modello Form utilizzato"
+                    GUID = Begin
+                        0x6ae8c7c601bac248b84c09342fc63542
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =12
+                            Top =5941
+                            Width =1584
+                            Height =255
+                            Name ="MODFORM_Etichetta"
+                            Caption ="MODFORM"
+                            GUID = Begin
+                                0x15670f85597e3640acd026fdd6130fa7
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =4994
+                    Top =6583
+                    Width =1584
+                    Height =255
+                    ColumnOrder =14
+                    TabIndex =11
+                    GUID = Begin
+                        0xb7b34a7a0907ab42ac3e9ac50fb3af4c
+                    End
+                    Name ="CODATTIVITA"
+                    RowSourceType ="Table/Query"
+                    RowSource ="GestVS01_N01_PARAMETRI_Gruppo_CODICE_OGGETTO"
+                    ColumnWidths ="2268;2835;2268"
+                    StatusBarText ="CODICE ATTIVITA"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =12
+                            Top =6583
+                            Width =1584
+                            Height =255
+                            Name ="CODATTIVITA_Etichetta"
+                            Caption ="CODATTIVITA"
+                            GUID = Begin
+                                0x8a7238f338bbba46bec10474d73093cd
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4994
+                    Top =9850
+                    Width =1584
+                    Height =255
+                    ColumnOrder =15
+                    TabIndex =12
+                    Name ="DATAINS"
+                    ControlSource ="DATAINS_d"
+                    Format ="Short Date"
+                    StatusBarText ="DATA INSERIMENTO"
+                    GUID = Begin
+                        0x67b9cc2b11cdf34b85da6b0dec319691
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =12
+                            Top =9850
+                            Width =1584
+                            Height =255
+                            Name ="DATAINS_Etichetta"
+                            Caption ="DATAINS"
+                            GUID = Begin
+                                0xad0c0fc38931124885275e24c41101bd
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4982
+                    Top =10255
+                    Width =1584
+                    Height =255
+                    ColumnOrder =16
+                    TabIndex =13
+                    Name ="DATAAGG"
+                    ControlSource ="DATAAGG_d"
+                    Format ="Short Date"
+                    StatusBarText ="DATA AGGIORNAMENTO"
+                    GUID = Begin
+                        0x0e1c39f965ba6e4d8088067d12465e6c
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Top =10255
+                            Width =1584
+                            Height =255
+                            Name ="DATAAGG_Etichetta"
+                            Caption ="DATAAGG"
+                            GUID = Begin
+                                0x0cd12e994811fe448b3007fef118f1ee
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4982
+                    Top =10711
+                    Width =1584
+                    Height =255
+                    ColumnOrder =17
+                    TabIndex =14
+                    Name ="TIMEOPER"
+                    ControlSource ="TIMEOPER_d"
+                    Format ="Long Time"
+                    StatusBarText ="ORA OPERAZIONE"
+                    GUID = Begin
+                        0x3990285815e62f479149fcdf36a3a905
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Top =10711
+                            Width =1584
+                            Height =255
+                            Name ="TIMEOPER_Etichetta"
+                            Caption ="TIMEOPER"
+                            GUID = Begin
+                                0x53d191b29a48c744aabff8e4782c4974
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4994
+                    Top =11116
+                    Width =1584
+                    Height =255
+                    ColumnOrder =19
+                    TabIndex =15
+                    Name ="ID_FRM_lng_TXT"
+                    ControlSource ="ID_FRM_lng"
+                    GUID = Begin
+                        0x31680b271281064da43248f8ef2c8f52
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =12
+                            Top =11116
+                            Width =1584
+                            Height =255
+                            Name ="ID_FRM_lng_LBL"
+                            Caption ="ID_FRM_lng"
+                            GUID = Begin
+                                0xcd08a2da9da7244c99e188f8820f856f
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =3
+                    Top =3965
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta27"
+                    Caption ="01___________________________________CampiTB01_GESTIONE"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0x0123378a8f189d4aab2a7177c5b6066e
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Top =6268
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta62"
+                    Caption ="----------------------------02"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xc710299721651749969e89298a2527b0
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =5394
+                    Top =4282
+                    ColumnOrder =3
+                    TabIndex =16
+                    Name ="Scel_b"
+                    ControlSource ="Scel_b"
+                    StatusBarText ="UT_01_Scelto: True=Scelto; False = Non Scelto -"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xa2fe5e786ecf574c8cd3cc4e16f99cb4
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =178
+                            Top =4338
+                            Width =570
+                            Height =240
+                            Name ="Etichetta32"
+                            Caption ="Scel_b"
+                            GUID = Begin
+                                0x89f11f35fd218447abcc2e2a695f48a0
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =8505
+                    Left =4982
+                    Top =1360
+                    Width =1584
+                    Height =255
+                    ColumnOrder =2
+                    TabIndex =17
+                    BackColor =62207
+                    ForeColor =255
+                    ColumnInfo ="\"\";\"\";\"3\";\"2\""
+                    GUID = Begin
+                        0x3be404107c7b494a9bb7aca74be1ff0e
+                    End
+                    Name ="NRO_OGGETTO_i_TXT"
+                    ControlSource ="NRO_OGGETTO_i"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_Forms].[NRO_OGGETTO_i], * FROM MSys_Forms WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="2268;2835;2835"
+                    StatusBarText ="CODICE OGGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Top =1360
+                            Width =1584
+                            Height =255
+                            Name ="NRO_OGGETTO_i_LBL"
+                            Caption ="NRO_OGGETTO"
+                            GUID = Begin
+                                0xec7650b5c9ad654a9514b4fd432e66fd
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =12
+                    Top =8290
+                    Width =7155
+                    Height =270
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta33"
+                    Caption ="CM___________________________________UtilitaTabelle = COMANDI DA ESEGUIRE"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xbf64c06213e483499ad61b6dc6f5fdbf
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListWidth =14175
+                    Left =5009
+                    Top =8755
+                    Width =1584
+                    ColumnOrder =18
+                    TabIndex =18
+                    BoundColumn =1
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0xd2a1f3d077ae9648b243f51b87d8e67e
+                    End
+                    Name ="COMANDO_s_TXT"
+                    ControlSource ="COMANDO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF01_COMANDI].[COMANDO_s], [MSys_DF01_COMANDI].[Note_cmd_s] FROM MS"
+                        "ys_DF01_COMANDI GROUP BY [MSys_DF01_COMANDI].[COMANDO_s], [MSys_DF01_COMANDI].[N"
+                        "ote_cmd_s] WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="4536;5103"
+                    StatusBarText ="Modello Form utilizzato"
+                    DefaultValue ="\"Comando\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =27
+                            Top =8755
+                            Width =1584
+                            Height =255
+                            Name ="COMANDO_s_LBL"
+                            Caption ="COMANDO"
+                            GUID = Begin
+                                0x5bf2f4a9a89114429ca6f30470299f66
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =15
+                    Top =9295
+                    Width =7155
+                    Height =270
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta34"
+                    Caption ="AGG___________________________________AGGIORNAMENTI"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x0470c67c0c094b428931fa63ff68c89d
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =8505
+                    Left =4994
+                    Top =7315
+                    Width =1584
+                    Height =255
+                    ColumnOrder =1
+                    TabIndex =19
+                    BackColor =62207
+                    ForeColor =255
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x0af15b850b63064f89d3b2b5d6a1a6bd
+                    End
+                    Name ="CasellaCombinata35"
+                    ControlSource ="TIPOGGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="MSSys_DF02_Qry01_01_SELECT_TIPO_OGGETTO"
+                    ColumnWidths ="2268;2835;2835"
+                    StatusBarText ="CODICE OGGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =12
+                            Top =7315
+                            Width =1584
+                            Height =255
+                            Name ="TIPOGGETTO_s_Lbl"
+                            Caption ="TIPOGGETTO_s"
+                            GUID = Begin
+                                0xc7468c23b63ddf4296b72e99b10e3e9e
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    ListWidth =14175
+                    Left =4997
+                    Top =90
+                    Width =1584
+                    ColumnWidth =1950
+                    ColumnOrder =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0x8225ea42d84ccc4b8f122c1642b19281
+                    End
+                    Name ="COD_PROGETTO_s_TXT"
+                    ControlSource ="COD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[COD_PROGETTO_s], [Msys_DF11_PROGETTI].[PROGETTO_s],"
+                        " * FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="2041"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =15
+                            Top =90
+                            Width =1584
+                            Height =300
+                            Name ="COD_PROGETTO_s_LBL"
+                            Caption ="COD_PROGETTO_s"
+                            GUID = Begin
+                                0xbbba579c8af32a4e8949c8370361d2a0
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+'//Oggetti per il funzionamento : _
+    MODULI: _
+        UTIL_MDL41_01_CONTROLLO_OGGETTI_QUERY_DEL_DB _
+
+
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+'//       LE VARIABILI DI MODULO
+
+
+'//LE VARIABILI DATABASE
+'//....................................................................//
+    Dim DaoDB As DAO.Database          '//occorre il riferimento alla libreria  Microsoft DAO 3.6 Object Libray
+    Dim DaoWks As DAO.Workspace
+    Dim DaoRs As DAO.Recordset
+
+    Dim ADODB As Database
+    Dim AdodaoRs As Recordset
+    Dim sSql As String                          '//STRINGA SQL
+    'Dim Path_s As String                        '//la path
+
+
+    '//Contatori
+    Dim icount As Integer
+    Dim dbl_count As Double
+    
+   
+    'Le variabili generiche
+    Dim Vv1 As Variant
+    Dim Dbl1 As Double
+    Dim Int1 As Integer
+    Dim Long1 As Long
+    Dim str1 As String
+    Dim Bool1   As Boolean
+    '//Messaggi di errore
+    Dim ProceduraMessaggioErrore_s As String    '//Errore procedura
+    Dim ProceduraAttivaEseguita_s As String     '//Errore Attivita eseguita
+
+
+'....................................................................
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+Private Sub Form_Open(Cancel As Integer)
+    
+Me.Recalc
+
+End Sub
+
+Private Sub Name1_TXT_DblClick(Cancel As Integer)
+
+'// FUNZIONE CERCA OGGETTI
+'//--------------------------------------------------------------------------------//-----//
+'//CODICE-------->CERCA_OGGETTI.01.ChiamaFunzione
+'//Parametri per il tipo oggetto, indicare : _
+    par_sxTIPOGGETTO    = "Tabelle"/"Query"/"Form"/"Report"/"Pagine"/"Moduli" _
+    par_sxNOMEOGGETTO   = Nome dell'oggetto
+            
+        Dim sxTIPOGGETTO As String
+        Dim sxNOMEOGGETTO As String
+        Dim str1 As String
+
+        
+        sxTIPOGGETTO = Me.Name1_TXT.Value
+        sxNOMEOGGETTO = Me.Name1_TXT.Value
+        
+        
+            
+            'ISTANZIO LA CLASSE CLASSE_GESTIONE_OGGETTI_FORM
+            'Assegno e creo l'oggetto di classe
+            '
+            Dim MyCls_CLASSE_GESTIONE_OGGETTI_FORM As CLASSE_GESTIONE_OGGETTI_DATABASE
+            Dim sxNameForm As String
+            '
+            Set MyCls_CLASSE_GESTIONE_OGGETTI_FORM = New CLASSE_GESTIONE_OGGETTI_DATABASE
+            
+           
+        
+        '//CHIAMO LA FUNZIONE CONTROLLO OGETTI TABLE
+        '//CODICE----------> pfRICERCA_NEL_DB_OGGETTI_Table.Funzione.Call,  @CERCA.TABELLA  @CERCA.OGGETTO.TABELLA
+        '//--------------------------------------------------------------------------------//----------//
+        '// i parametri ricevuti sono   : par_Scelta db             = path db che puo essere database corrente o esterno
+        '//                             : par_sx_Name_Table         = Nome della Tabella
+        '//                             : par_sx_Proprieta_Table    = La proprieta della tabella
+        '//                             : par_ix_Operazione         = Tipo di operazione da eseguire (1=inserire tabella; 2=cancellare tabella)???
+        '//                             : par_bx_Flag_b             = Segnala se l'operazione è stata effettuata ??? sviluppare
+        '// nota                        : viene chiamata la funzione del modulo UTIL_MDL40_N05_CONTROLLO_OGGETTI_DB_TABLES.CHIAMA_pfRICERCA_NEL_DB_OGGETTI_Table()
+        '// PARAMETRI RESTITUITI        :Boolean                    = True per tabella Trovata, FALSE per una tabella non trovata.
+            
+            str1 = sxNOMEOGGETTO
+            Bool1 = Bool1 = MyCls_CLASSE_GESTIONE_OGGETTI_FORM.pfRICERCA_NEL_DB_OGGETTI_Form("", str1, "Proprieta", 0, 0, False)
+            
+            If Bool1 = False Then
+                MsgBox "L'oggetto Tabella: " & str1 & " .. NON TROVATA ????", vbExclamation, "FUNZIONE DI RICERCA TABELLE"
+            
+            Else
+                MsgBox "L'oggetto Tabella: " & str1 & " E' STATA TROVATA!", vbExclamation, "FUNZIONE DI RICERCA TABELLE"
+            End If
+            
+            
+        '//--------------------------------------------------------------------------------//----------//
+        
+                            Set MyCls_CLASSE_GESTIONE_OGGETTI_FORM = Nothing
+
+
+'//*** FINE ***
+'// FUNZIONE CERCA OGGETTI
+'//--------------------------------------------------------------------------------//-----//
+
+End Sub
+
+Private Sub Scel_b_AfterUpdate()
+    '//NON E'AMMESSA LA SELEZIONE SE il campo TIPO OGGETTO = NULL _
+       ATTENZIONE occorre il tipo oggetto valorizzato altrimenti non puoi AGGIORNARE IL CAMPO SCELTO _
+       @blocco.Scel_b.record.nullo; SE ESISTE ALMENO UN RECORD viene attivata la selezione _
+       vedi codice @SELEZIONA.TRUE.TUTTO.MSys_QUERY.Scel_b
+    If IsNull(Me.TIPOGGETTO_s) = True Then Me.Undo
+    
+End Sub
+
+Private Sub Scel_b_DblClick(Cancel As Integer)
+
+ '//SELEZIONA COLLETTIVA MSys_FORMS
+    '//--------------------------------------------------------------------------------//-------//
+    '//note : seleziona tutto a True se gia impostata altrimente imposta tutto a False _
+              a condizione che la tabella è valorizzata per cui non è ammessa la selezione _
+              se il campo TIPO_OGGETTO  è a null; occorrono almeno 1 record presente _
+              vedi QUESTA CHIAVE ----> @blocco.Scel_b.record.nullo. _
+              @SELEZIONA.TRUE.TUTTO.MSys_FORMS.Scel_b
+        
+        
+        If Me.Scel_b = False Then
+        DoCmd.RunSQL "UPDATE " & _
+                     "MSys_FORMS " & _
+                     "SET " & _
+                     "MSys_FORMS.Scel_b = True " & _
+                     "WITH OWNERACCESS OPTION;"
+                     
+                                 
+                     Me.Refresh
+                    '//refresh + recalc = perche altrimenti blocca il record corrente
+                    Me.Recalc
+                    
+        End If
+        
+        If Me.Scel_b = True Then
+        DoCmd.RunSQL "UPDATE " & _
+                     "MSys_FORMS " & _
+                     "SET " & _
+                     "MSys_FORMS.Scel_b = false " & _
+                     "WITH OWNERACCESS OPTION;"
+                     '//refresh + recalc = perche altrimenti blocca il record corrente
+                     Me.Refresh
+                     Me.Recalc
+
+        End If
+    '//--------------------------------------------------------------------------------//-------//
+    
+    
+
+
+End Sub

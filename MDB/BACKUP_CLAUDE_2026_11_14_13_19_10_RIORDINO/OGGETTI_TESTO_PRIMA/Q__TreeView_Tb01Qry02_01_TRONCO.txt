@@ -1,0 +1,3 @@
+SELECT [Tree].[Id], [Tree].[NomeCartella_s], [Tree].[ParentID]
+FROM Tree
+WITH OWNERACCESS OPTION;

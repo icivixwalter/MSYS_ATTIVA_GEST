@@ -1,0 +1,1619 @@
+Version =19
+VersionRequired =19
+Checksum =444997826
+Begin Form
+    AutoResize = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    TabularCharSet =204
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =19590
+    DatasheetFontHeight =11
+    ItemSuffix =128
+    Left =675
+    Top =2055
+    Right =10260
+    Bottom =8175
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x5d989a49316ce640
+    End
+    GUID = Begin
+        0xb94b6731dac0244ca785d5d9d5ba8ebf
+    End
+    NameMap = Begin
+        0x0acc0e550000000073b921e88f2f47459661f9b5081c909000000000725df7b9 ,
+        0x556ce6400000000000000000500052004f00470045005400540049005f004d00 ,
+        0x7300790073005f005400420030003100510072007900300031005f0030003100 ,
+        0x5f00500052004f004a0045004300540000000000000000000000000000000000 ,
+        0x0000000000000100000000000000000000000000000000000000500052004f00 ,
+        0x470045005400540049005f004d007300790073005f0054004200300032004600 ,
+        0x72006d00300031005f00300031005f005400490050004f005f004f0047004700 ,
+        0x4500540054004900000000000000000000000000000000000000000000000700 ,
+        0x000073b921e88f2f47459661f9b5081c909043004f0044005f00500052004f00 ,
+        0x47004500540054004f005f007300000000000000cae3c4571370064f907abebc ,
+        0x9878363300000000f11f4772116ce64000000000000000004d00730079007300 ,
+        0x5f0044004600310031005f0043004f0044005f00500052004f00470045005400 ,
+        0x54004f000000000000009a2ea65a9f6a514d867d689ecc47501607000000cae3 ,
+        0xc4571370064f907abebc9878363343004f0044005f00500052004f0047004500 ,
+        0x540054004f005f0073000000000000004ffcdab0cd880145bebce187dcca8b7f ,
+        0x07000000cae3c4571370064f907abebc98783633500052004f00470045005400 ,
+        0x54004f005f007300000000000000000000000000000000000000000000000700 ,
+        0x000073b921e88f2f47459661f9b5081c9090500052004f004700450054005400 ,
+        0x4f005f0073000000000000001b5906f62453e94f93896437487a21fb00000000 ,
+        0xae375772116ce64000000000000000004d007300790073005f00440046003100 ,
+        0x31005f00500052004f00470045005400540049000000000000004fa233533ef7 ,
+        0x4649901103a743e25cef070000001b5906f62453e94f93896437487a21fb5000 ,
+        0x52004f0047004500540054004f005f00730000000000000086dde7fda216e142 ,
+        0x9b2cd8049a649cf2070000001b5906f62453e94f93896437487a21fb43004f00 ,
+        0x44005f00500052004f0047004500540054004f005f0073000000000000000000 ,
+        0x00000000000000000000000000000700000073b921e88f2f47459661f9b5081c ,
+        0x90904e004f00540045005f00500052004f0047004500540054004f005f007300 ,
+        0x000000000000000000000000000000000000000000000700000073b921e88f2f ,
+        0x47459661f9b5081c909044004900530043004f005f004f005200490047005f00 ,
+        0x730000000000000098716be6186da7449e90b148a11cdcd30000000051385946 ,
+        0xb46be64000000000000000004d005300790073005f0044004600310030005f00 ,
+        0x440041005400410042004100530045000000000000008a86ba8371e5b541bb48 ,
+        0x36f51dd7395e0700000098716be6186da7449e90b148a11cdcd3440049005300 ,
+        0x43004f005f007300000000000000000000000000000000000000000000000700 ,
+        0x000073b921e88f2f47459661f9b5081c909050004100540048005f004f005200 ,
+        0x490047005f00730000000000000097729282f013ba41aed1c54438b28f900700 ,
+        0x000098716be6186da7449e90b148a11cdcd350004100540048005f0073000000 ,
+        0x00000000000000000000000000000000000000000700000073b921e88f2f4745 ,
+        0x9661f9b5081c9090440041005400410042004100530045005f004f0052004900 ,
+        0x47005f00730000000000000027c68f9596614d46b752a6ee0cd5d4d407000000 ,
+        0x98716be6186da7449e90b148a11cdcd344004100540041004200410053004500 ,
+        0x5f007300000000000000000000000000000000000000000000000700000073b9 ,
+        0x21e88f2f47459661f9b5081c90904e004f00540041005f00500052004f004700 ,
+        0x5f004f005200490047005f007300000000000000000000000000000000000000 ,
+        0x000000000700000073b921e88f2f47459661f9b5081c90904400490053004300 ,
+        0x4f005f0044004500530054005f00730000000000000000000000000000000000 ,
+        0x0000000000000700000073b921e88f2f47459661f9b5081c9090500041005400 ,
+        0x48005f0044004500530054005f00730000000000000000000000000000000000 ,
+        0x0000000000000700000073b921e88f2f47459661f9b5081c9090440041005400 ,
+        0x410042004100530045005f0044004500530054005f0073000000000000000000 ,
+        0x00000000000000000000000000000700000073b921e88f2f47459661f9b5081c ,
+        0x90904e004f00540041005f00500052004f0047005f0044004500530054005f00 ,
+        0x7300000000000000000000000000000000000000000000000700000073b921e8 ,
+        0x8f2f47459661f9b5081c90905300630065006c005f0062000000000000000000 ,
+        0x00000000000000000000000000000700000073b921e88f2f47459661f9b5081c ,
+        0x90905300740061006d005f006200000000000000000000000000000000000000 ,
+        0x000000000700000073b921e88f2f47459661f9b5081c9090430061006e006300 ,
+        0x5f006200000000000000000000000000000000000000000000000700000073b9 ,
+        0x21e88f2f47459661f9b5081c90904100670067005f0062000000000000000000 ,
+        0x00000000000000000000000000000700000073b921e88f2f47459661f9b5081c ,
+        0x909042004c004f00430043005f00620000000000000000000000000000000000 ,
+        0x0000000000000700000073b921e88f2f47459661f9b5081c9090490064004f00 ,
+        0x720064005f006c006e0067000000000000000000000000000000000000000000 ,
+        0x00000700000073b921e88f2f47459661f9b5081c9090490044004b0065007900 ,
+        0x41007200630068005f006c006e00670000000000000000000000000000000000 ,
+        0x0000000000000700000073b921e88f2f47459661f9b5081c90904d0073006700 ,
+        0x300031005f007300000000000000000000000000000000000000000000000700 ,
+        0x000073b921e88f2f47459661f9b5081c9090440041005400410049004e005300 ,
+        0x5f006400000000000000000000000000000000000000000000000700000073b9 ,
+        0x21e88f2f47459661f9b5081c909044004100540041004100470047005f006400 ,
+        0x000000000000000000000000000000000000000000000700000073b921e88f2f ,
+        0x47459661f9b5081c9090540049004d0045004f005000450052005f0064000000 ,
+        0x00000000000000000000000000000000000000000700000073b921e88f2f4745 ,
+        0x9661f9b5081c90904f00520041005f004100470047005f006400000000000000 ,
+        0x000000000000000000000000000000000700000073b921e88f2f47459661f9b5 ,
+        0x081c9090490044005f006c006e00670000000000000000000000000000000000 ,
+        0x0000000000000700000073b921e88f2f47459661f9b5081c90904b0065007900 ,
+        0x43004f0044005f00500052004f0047004500540054004f005f00730000000000 ,
+        0x0000000000000000000000000000000000000700000073b921e88f2f47459661 ,
+        0xf9b5081c9090470052004f00550050005f0043004f0044005f00500052004f00 ,
+        0x47005f0073000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000500052004f0047004500540054004900 ,
+        0x5f004d007300790073005f0054004200300031005f00500052004f004a004500 ,
+        0x43005400000000000000000000000000000000000000000000000700000073b9 ,
+        0x21e88f2f47459661f9b5081c90904e004f00540045005f00470052004f005500 ,
+        0x50005f0043004f0044005f00500052004f0047005f0073000000000000000000 ,
+        0x00000000000000000000000000000c0000000500000000000000000000000000 ,
+        0x00000000
+    End
+    RecordSource ="PROGETTI_Msys_TB01Qry01_01_PROJECT"
+    Caption ="PROGETTO_s_LBL"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x00000000000000008824de7bf77f0000583d2fe5a0000000540065006d006100 ,
+        0x000400019c0008020fdf8007010009009a0b3408640001000700580202000200 ,
+        0x5802030001004134003f2fe5a0000000b05e817cf77f00000000000000000000 ,
+        0xa00000008ed20000180000000000000000000000000000000000000004000000 ,
+        0x020000000101000000010000000000000000000000000000000000000000047f ,
+        0x5343444d0802830724000000f80000002c010000ea0100005353304500000000 ,
+        0x5300480041005200500020004d0058002d0032003600310034004e0020005000 ,
+        0x43004c0036000000000000000000000000000000000000000000000000000000 ,
+        0x00040001d40010010fdf8007010009009a0b3408640001000700580202000200 ,
+        0x5802030001004100340000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000180000000000000000000000000000000000000004000000 ,
+        0x020000000101000000010000000000000000000034001c490d23000200000300 ,
+        0x010101010100981200009e1a0000640064002a002a002a002a00640000000100 ,
+        0x0000000000000000be000a0000810020dc910000010100000000000002000000 ,
+        0x6400640009000000090009000000010000000000050100000501020107000201 ,
+        0x070001010000000000000000000000000000000034089a0b6400640002000700 ,
+        0x4c080000aa0d000060130000661b000060130000661b00000100000001010101 ,
+        0x020000010300000000000000072f000500010102030400000000020202013200 ,
+        0x320032003200320032001e003c000a00e8032404010003050000000000000000 ,
+        0x0000010000001d00000000000400000000000000800005010000000000000000 ,
+        0x00000000
+    End
+    PrtDevNames = Begin
+        0x08001c0030000100000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000003139322e3136382e35302e3233320000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000
+    End
+    OnLoad ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =12632256
+        End
+        Begin FormHeader
+            Height =1134
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0x33c326d7b9cd8e48add3f5190780a210
+            End
+            Begin
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    BorderWidth =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =299
+                    Top =60
+                    Width =6648
+                    Height =528
+                    FontSize =18
+                    BackColor =14211288
+                    ForeColor =1643706
+                    Name ="TIT_00_LBL"
+                    Caption ="PROGETTI_Msys_TB01Frm01_01_PROJECT"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xa8ebbb48148daa4f8443c7f59be3bb84
+                    End
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =9977
+            Name ="Corpo"
+            GUID = Begin
+                0xe80763cfd7dbd34da27f247b42ecc1f1
+            End
+            Begin
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListWidth =25515
+                    Left =5865
+                    Top =2190
+                    Width =1695
+                    Height =345
+                    ColumnWidth =3744
+                    TabIndex =2
+                    BackColor =65535
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0xb6bb22ca591f3f42925947a15961260d
+                    End
+                    Name ="COD_PROGETTO_s_TXT"
+                    ControlSource ="COD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_COD_PROGETTO].[COD_PROGETTO_s], [Msys_DF11_COD_PROGETTO].[PROG"
+                        "ETTO_s], * FROM Msys_DF11_COD_PROGETTO WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="2835;4536;5670;567"
+                    StatusBarText ="CODICE DI PROGETTO"
+                    OnDblClick ="[Event Procedure]"
+                    OnChange ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =2190
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BackColor =65535
+                            ForeColor =8998176
+                            Name ="COD_PROGETTO_s_LBL"
+                            Caption =">>COD_PROGETTO_s"
+                            GUID = Begin
+                                0x40f39ca14b954f4cbab4cd51ce427f30
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =8505
+                    Left =5859
+                    Top =2616
+                    Width =1695
+                    Height =345
+                    ColumnWidth =3885
+                    TabIndex =3
+                    BackColor =65535
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x3e0cba9739e7194faad1c8c1713b59a6
+                    End
+                    Name ="PROGETTO_s_TXT"
+                    ControlSource ="PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Msys_DF11_PROGETTI.PROGETTO_s, Msys_DF11_PROGETTI.COD_PROGETTO_s, * FROM "
+                        "Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="5670;2835"
+                    StatusBarText ="PROGETTO"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =384
+                            Top =2616
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BackColor =65535
+                            ForeColor =8998176
+                            Name ="PROGETTO_s_LBL"
+                            Caption =">>PROGETTO_s"
+                            GUID = Begin
+                                0xcd068c238b227b48a93148cb85f0f6f2
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =3030
+                    Width =1695
+                    Height =345
+                    ColumnWidth =4035
+                    TabIndex =4
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="NOTE_PROGETTO_s_TXT"
+                    ControlSource ="NOTE_PROGETTO_s"
+                    StatusBarText ="NOTE PROGETTO"
+                    GUID = Begin
+                        0xf2f92b2dedf9d94084ed7cf5448767ed
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =3030
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="NOTE_PROGETTO_s_LBL"
+                            Caption ="NOTE_PROGETTO_s"
+                            GUID = Begin
+                                0x67ec14553680a14c8c69c780ce279294
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =4665
+                    Width =1695
+                    Height =345
+                    ColumnWidth =1815
+                    TabIndex =7
+                    ColumnInfo ="\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x88e4a3a61c375840a94fab3536fdd0e9
+                    End
+                    Name ="DISCO_ORIG_s"
+                    ControlSource ="DISCO_ORIG_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[DISCO_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_DF1"
+                        "0_DATABASE].[DISCO_s] ORDER BY [MSys_DF10_DATABASE].[DISCO_s] WITH OWNERACCESS O"
+                        "PTION; "
+                    StatusBarText ="disco C: ecc. di origine del progetto"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =4665
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta11"
+                            Caption ="DISCO_ORIG_s"
+                            GUID = Begin
+                                0x23890125ae5d8a4c84fadfebb334d3db
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =5085
+                    Width =1695
+                    Height =345
+                    ColumnWidth =1470
+                    TabIndex =8
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x687361a6052ebc42a6668bb485dcb369
+                    End
+                    Name ="PATH_ORIG_s"
+                    ControlSource ="PATH_ORIG_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[PATH_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_DF10"
+                        "_DATABASE].[PATH_s] ORDER BY [MSys_DF10_DATABASE].[PATH_s] WITH OWNERACCESS OPTI"
+                        "ON; "
+                    StatusBarText ="la pat completa di origine"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =5085
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta13"
+                            Caption ="PATH_ORIG_s"
+                            GUID = Begin
+                                0x584db0d226d9234489dc1ad0a43f19ed
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =5505
+                    Width =1695
+                    Height =345
+                    ColumnWidth =1995
+                    TabIndex =9
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0xe83b0ca62347344ab8e344b1642648f1
+                    End
+                    Name ="DATABASE_ORIG_s"
+                    ControlSource ="DATABASE_ORIG_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[DATABASE_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_"
+                        "DF10_DATABASE].[DATABASE_s] ORDER BY [MSys_DF10_DATABASE].[DATABASE_s] WITH OWNE"
+                        "RACCESS OPTION; "
+                    StatusBarText ="database di origine che contiene l'intero progetto"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =5505
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta15"
+                            Caption ="DATABASE_ORIG_s"
+                            GUID = Begin
+                                0x2f1bc7b0f596da458bc7df44f8d9496a
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =5925
+                    Width =1695
+                    Height =345
+                    TabIndex =10
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="NOTA_PROG_ORIG_s"
+                    ControlSource ="NOTA_PROG_ORIG_s"
+                    StatusBarText ="NOTA SU PROGETTO DI ORIGINE"
+                    GUID = Begin
+                        0x92309a162f569a499734206ee9741415
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =5925
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta17"
+                            Caption ="NOTA_PROG_ORIG_s"
+                            GUID = Begin
+                                0xfcaeae7fe7f23b4c9669edeb7065410d
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =6345
+                    Width =1695
+                    Height =345
+                    TabIndex =11
+                    ColumnInfo ="\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0xcb3de6b550e1164082162fdf6753c77b
+                    End
+                    Name ="DISCO_DEST_s"
+                    ControlSource ="DISCO_DEST_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[DISCO_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_DF1"
+                        "0_DATABASE].[DISCO_s] ORDER BY [MSys_DF10_DATABASE].[DISCO_s] WITH OWNERACCESS O"
+                        "PTION; "
+                    StatusBarText ="disco C: ecc. DI DESTINAZIONE DEL PROGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =6345
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta21"
+                            Caption ="DISCO_DEST_s"
+                            GUID = Begin
+                                0x1d1521fd54f6e3488f52cd413746aa62
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =6765
+                    Width =1695
+                    Height =345
+                    TabIndex =12
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0xe77a5bb97f88f140b81d8509ec7171a0
+                    End
+                    Name ="PATH_DEST_s"
+                    ControlSource ="PATH_DEST_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[PATH_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_DF10"
+                        "_DATABASE].[PATH_s] ORDER BY [MSys_DF10_DATABASE].[PATH_s] WITH OWNERACCESS OPTI"
+                        "ON; "
+                    StatusBarText ="la pat completa di destinazione"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =6765
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta23"
+                            Caption ="PATH_DEST_s"
+                            GUID = Begin
+                                0x43e1a608e3de644786356d2871d80159
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =7185
+                    Width =1695
+                    Height =345
+                    TabIndex =13
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x79daa64ff65f7c448db0e4b54ccda507
+                    End
+                    Name ="DATABASE_DEST_s"
+                    ControlSource ="DATABASE_DEST_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_DF10_DATABASE].[DATABASE_s] FROM MSys_DF10_DATABASE GROUP BY [MSys_"
+                        "DF10_DATABASE].[DATABASE_s] ORDER BY [MSys_DF10_DATABASE].[DATABASE_s] WITH OWNE"
+                        "RACCESS OPTION; "
+                    StatusBarText ="DATABASE DI DESTINAZIONE  che contiene l'intero progetto"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =7185
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta25"
+                            Caption ="DATABASE_DEST_s"
+                            GUID = Begin
+                                0x9f514c160aad5d43873a676572a8cd1c
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =7605
+                    Width =1695
+                    Height =345
+                    TabIndex =14
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="NOTA_PROG_DEST_s"
+                    ControlSource ="NOTA_PROG_DEST_s"
+                    StatusBarText ="NOTA SU PROGETTO DI DESTINAZIONE"
+                    GUID = Begin
+                        0xd3236732e47791458c82bf73de17912a
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =7605
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta27"
+                            Caption ="NOTA_PROG_DEST_s"
+                            GUID = Begin
+                                0x8f4226fb9290dd419f766f50622d991a
+                            End
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    Left =396
+                    Top =8717
+                    Width =17136
+                    Height =1092
+                    TabIndex =15
+                    Name ="PROGETTI_Msys_TB02Frm01_01_TIPO_OGGETTI"
+                    SourceObject ="Form.PROGETTI_Msys_TB02Frm01_01_TIPO_OGGETTI"
+                    LinkChildFields ="COD_PROGETTO_s"
+                    LinkMasterFields ="COD_PROGETTO_s"
+                    GUID = Begin
+                        0xd471754023171c449319e2a00d816e16
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =396
+                            Top =8333
+                            Width =4416
+                            Height =300
+                            Name ="Etichetta66"
+                            Caption ="PROGETTI_Msys_TB02Frm01_01_TIPO_OGGETTI"
+                            GUID = Begin
+                                0x9527bdd380a1594899e350eeb4e7aeed
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =16065
+                    Top =2535
+                    Width =1695
+                    Height =345
+                    TabIndex =16
+                    Name ="Scel_b"
+                    ControlSource ="Scel_b"
+                    StatusBarText ="UT_01_Scelto: True=Scelto; False = Non Scelto -"
+                    GUID = Begin
+                        0x64a45f7143014d4c8f4ed644c6a6b896
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10590
+                            Top =2535
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta31"
+                            Caption ="Scel_b"
+                            GUID = Begin
+                                0xf2cad561386a194f9ac2354b4eeac7c0
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =16065
+                    Top =2940
+                    Width =1695
+                    Height =345
+                    TabIndex =17
+                    Name ="Stam_b"
+                    ControlSource ="Stam_b"
+                    StatusBarText ="UT_02_Stampato: True=Da Stampare; False = Non Stampare -"
+                    GUID = Begin
+                        0xa889e43e6081f94884af3d8bb019010f
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10590
+                            Top =2940
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta33"
+                            Caption ="Stam_b"
+                            GUID = Begin
+                                0x1eb75c304443b048bd6a526bb972289c
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =15420
+                    Top =3525
+                    Width =1695
+                    Height =345
+                    TabIndex =18
+                    Name ="Canc_b"
+                    ControlSource ="Canc_b"
+                    StatusBarText ="UT_03_Cancella Record: True=Da cancellare; False = Non cancellare -"
+                    GUID = Begin
+                        0xaa3489dcfa7bda41ab7d45edcb3c2011
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =3525
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta35"
+                            Caption ="Canc_b"
+                            GUID = Begin
+                                0x96e518d5360314488c194c8fe70786b4
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =15420
+                    Top =3930
+                    Width =1695
+                    Height =345
+                    TabIndex =19
+                    Name ="Agg_b"
+                    ControlSource ="Agg_b"
+                    StatusBarText ="UT_04_Record Aggiornato : True=Aggiornato; False = Da Aggiornare -"
+                    GUID = Begin
+                        0xaef6bc57f0f57b40b4093934422aba30
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =3930
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta37"
+                            Caption ="Agg_b"
+                            GUID = Begin
+                                0x0d09f41553f76946b8546461b9b3152c
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =15420
+                    Top =4335
+                    Width =1695
+                    Height =345
+                    TabIndex =20
+                    Name ="BLOCC_b"
+                    ControlSource ="BLOCC_b"
+                    StatusBarText ="UT_05_BLOCCO DEL RECORD Record : True=bloccato; False = Non non Bloccato -"
+                    GUID = Begin
+                        0x43a41101ee1b864ca3edf01ce47608c2
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =4335
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta39"
+                            Caption ="BLOCC_b"
+                            GUID = Begin
+                                0xb300565cfc6d054c878097e7bf1f7874
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =4740
+                    Width =1695
+                    Height =345
+                    TabIndex =21
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="IdOrd_lng"
+                    ControlSource ="IdOrd_lng"
+                    StatusBarText ="UT_05 - Id di Ordinamento -"
+                    GUID = Begin
+                        0x11fe6978b2ac274da741df09500c3f34
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =4740
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta43"
+                            Caption ="IdOrd_lng"
+                            GUID = Begin
+                                0xf3743340b116404d8d4791af787261fe
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =5160
+                    Width =1695
+                    Height =345
+                    TabIndex =22
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="IDKeyArch_lng"
+                    ControlSource ="IDKeyArch_lng"
+                    StatusBarText ="UT_06 - Id Key della tabella di Archivio -"
+                    GUID = Begin
+                        0xf3049b733c6c61438005d67da0c80163
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =5160
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta45"
+                            Caption ="IDKeyArch_lng"
+                            GUID = Begin
+                                0x27126e058e8da9478cda6ee668f6b169
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =5580
+                    Width =1695
+                    Height =345
+                    TabIndex =23
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Msg01_s"
+                    ControlSource ="Msg01_s"
+                    StatusBarText ="UT_07 - Messaggio da utilizzare per tutti gli oggetti di lavoro -"
+                    GUID = Begin
+                        0xf7153a17a1e6524a8236f6be43566967
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =5580
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta47"
+                            Caption ="Msg01_s"
+                            GUID = Begin
+                                0x1f2a4e72451e80409a483223e46b9ee9
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =6000
+                    Width =1695
+                    Height =345
+                    TabIndex =24
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="DATAINS_d"
+                    ControlSource ="DATAINS_d"
+                    Format ="Short Date"
+                    StatusBarText ="AG_01 -  DATA INSERIMENTO -"
+                    GUID = Begin
+                        0x18c170cb3521fb428ffa91fbfa24fc2d
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =6000
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta51"
+                            Caption ="DATAINS_d"
+                            GUID = Begin
+                                0x3b4814f5d318e343a99a65b24b6ff3db
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =6420
+                    Width =1695
+                    Height =345
+                    TabIndex =25
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="DATAAGG_d"
+                    ControlSource ="DATAAGG_d"
+                    Format ="Short Date"
+                    StatusBarText ="AG_02 - DATA AGGIORNAMENTO -"
+                    GUID = Begin
+                        0x7ee71e6b1dd1424facc177a78e8470fe
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =6420
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta53"
+                            Caption ="DATAAGG_d"
+                            GUID = Begin
+                                0x4e6c7c7a7208a9438aaed716e2e295ef
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =6840
+                    Width =1695
+                    Height =345
+                    TabIndex =26
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="TIMEOPER_d"
+                    ControlSource ="TIMEOPER_d"
+                    Format ="Long Time"
+                    StatusBarText ="AG_03 - TIME OPERAZIONE -"
+                    GUID = Begin
+                        0x5da36bc55d25d440af01ccf368bc3bbe
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =6840
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta55"
+                            Caption ="TIMEOPER_d"
+                            GUID = Begin
+                                0xea58fbc45f744d4db50b210b0c14ba9d
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =7260
+                    Width =1695
+                    Height =345
+                    TabIndex =27
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ORA_AGG_d"
+                    ControlSource ="ORA_AGG_d"
+                    Format ="Long Time"
+                    StatusBarText ="AG_04 - ORA OPERAZIONE -"
+                    GUID = Begin
+                        0x810e708ab6e1e04b88cf0f9236c66e82
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =7260
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta57"
+                            Caption ="ORA_AGG_d"
+                            GUID = Begin
+                                0x63a958189c9e9b4ca62fae19c21f51d4
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15420
+                    Top =7680
+                    Width =1695
+                    Height =345
+                    TabIndex =28
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ID_lng"
+                    ControlSource ="ID_lng"
+                    StatusBarText ="AG_05 - CONTATORE -"
+                    GUID = Begin
+                        0xee76bf5dff62924aa5f36e9e9e508c50
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =7680
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta61"
+                            Caption ="ID_lng"
+                            GUID = Begin
+                                0x8d86ab5801467a43a7d1c57e64ae2e06
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =8505
+                    Left =15420
+                    Top =8100
+                    Width =1695
+                    Height =345
+                    TabIndex =29
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0x01ddce5626b90b4dac985708df049b32
+                    End
+                    Name ="KeyCOD_PROGETTO_s"
+                    ControlSource ="KeyCOD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Msys_DF11_PROGETTI.COD_PROGETTO_s, Msys_DF11_PROGETTI.PROGETTO_s, * FROM "
+                        "Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="2835;4536"
+                    StatusBarText ="CODICE DI PROGETTO"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10530
+                            Top =8100
+                            Width =4830
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="Etichetta65"
+                            Caption ="KeyCOD_PROGETTO_s"
+                            GUID = Begin
+                                0x28e1ba069f0f644186a1ac49107481e5
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =8505
+                    Left =5865
+                    Top =3630
+                    Width =1695
+                    Height =345
+                    ColumnWidth =2190
+                    TabIndex =5
+                    BackColor =5167783
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0xbccf6afc5004894b8ff840869142a47b
+                    End
+                    Name ="GROUP_COD_PROG_s_TXT"
+                    ControlSource ="GROUP_COD_PROG_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [PROGETTI_Msys_TB01_PROJECT].[GROUP_COD_PROG_s] FROM PROGETTI_Msys_TB01_P"
+                        "ROJECT GROUP BY [PROGETTI_Msys_TB01_PROJECT].[GROUP_COD_PROG_s] ORDER BY [PROGET"
+                        "TI_Msys_TB01_PROJECT].[GROUP_COD_PROG_s] DESC WITH OWNERACCESS OPTION; "
+                    ColumnWidths ="5670;2835"
+                    StatusBarText ="PROGETTO"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =3630
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BackColor =5167783
+                            ForeColor =8998176
+                            Name ="GROUP_COD_PROG_s_"
+                            Caption ="GROUP_COD_PROG_s_LBL"
+                            GUID = Begin
+                                0x9e8105a75e7e0c47af2d176d9c967a23
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5865
+                    Top =4095
+                    Width =1695
+                    Height =345
+                    TabIndex =6
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Testo123"
+                    ControlSource ="NOTE_GROUP_COD_PROG_s"
+                    StatusBarText ="NOTE PROGETTO"
+                    GUID = Begin
+                        0x7350e95667532b4fab4794a7ec0f317e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =390
+                            Top =4095
+                            Width =5415
+                            Height =345
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            ForeColor =8998176
+                            Name ="NOTE_GROUP_COD_PROG_s_LBL"
+                            Caption ="NOTE_GROUP_COD_PROG_s"
+                            GUID = Begin
+                                0x5f26edec6015544c81fcdd2aebde0ea3
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5859
+                    Top =615
+                    Height =228
+                    ColumnWidth =255
+                    FontSize =8
+                    BackColor =62207
+                    BorderColor =0
+                    Name ="Help_Txt"
+                    ControlSource ="=\"?\""
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xc2b654aa115a664db267c2a7080a110c
+                    End
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            BorderWidth =2
+                            OverlapFlags =85
+                            Left =450
+                            Top =615
+                            Width =1344
+                            Height =240
+                            FontSize =8
+                            Name ="Help_LBL"
+                            Caption =">>?"
+                            FontName ="Tahoma"
+                            GUID = Begin
+                                0xc1cc707523fa294fae0463f5666db6eb
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5859
+                    Top =975
+                    Height =228
+                    ColumnWidth =5790
+                    FontSize =8
+                    TabIndex =1
+                    BackColor =62207
+                    BorderColor =0
+                    Name ="NameForm_s_Txt"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xcaf94bfe4ce7214a8e3edc0a6cf66b17
+                    End
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            BorderWidth =2
+                            OverlapFlags =85
+                            Left =450
+                            Top =975
+                            Width =1344
+                            Height =240
+                            FontSize =8
+                            Name ="NameForm_s_Lbl"
+                            Caption ="NAME_FORM"
+                            FontName ="Tahoma"
+                            GUID = Begin
+                                0x33265091e0ce424da7b7c56d37443fb2
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    BorderWidth =2
+                    OverlapFlags =85
+                    Left =450
+                    Top =30
+                    Width =18012
+                    Height =330
+                    FontSize =9
+                    FontWeight =700
+                    BackColor =65535
+                    ForeColor =2366701
+                    Name ="TIT_01_LBL"
+                    Caption ="FORM----->UTILITA PROGETTI  (TIT_01_LBL)    QUERY--->PROGETTI_Msys_TB01Qry01_01_"
+                        "PROJECT"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xdc529e25f5bacc47b5100c7f1bddb94d
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    BorderWidth =2
+                    OverlapFlags =85
+                    Left =405
+                    Top =1650
+                    Width =18012
+                    Height =326
+                    FontSize =9
+                    FontWeight =700
+                    BackColor =16777164
+                    ForeColor =2366701
+                    Name ="TIT_02_LBL"
+                    Caption ="FORM----->CAMPI CODICE PROGETTO  (TIT_01_LBL)"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xe1790666484cef4b9a484bd47ba7f851
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x11e3deafc494134b95214bec5b18ea32
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Dim sSql As String
+
+
+
+
+
+
+Private Sub Form_Load()
+
+'//SU CARICAMENTO IMPOSTO IL NOME DELLA FORM CORRENTE ED IL REQUERY
+'//....................................................................//
+'//NOTE:  assegno il nome della form corrente al campo NOME FORM _
+        E LA VISUALIZZO.
+        
+      myNameForm = Me.Name
+      Debug.Print Vv1
+      '"01) LLPP_IMPEGNI_Frm_S01_12_GRUPPO_IMPEGNI_ANNO - MASTER
+      NameForm_s_Txt = "01) " & myNameForm & " - FORM MASTER"
+      Me.Requery
+      Me.Recalc
+
+'//....................................................................//
+
+End Sub
+
+
+Private Sub Form_Open(Cancel As Integer)
+Me.RecordSource = "PROGETTI_Msys_TB01Qry01_01_PROJECT"
+Me.Recalc
+
+End Sub
+
+
+'//HELP
+Private Sub Help_Txt_DblClick(Cancel As Integer)
+    MsgBox "help da definire???", vbCritical, "HELP PROGETTI"
+
+End Sub
+
+
+
+
+
+
+
+
+
+'//==================================================================================================//
+'//             EVENTI CASELLA DI TESTO @COD_PROGETTO_s_(@CODICE@PROGETTO)   *** INIZIO ***
+'//==================================================================================================//
+'//EVENTI: _
+    '//01_COD_PROGETTO_s_TXT_DblClick       = AGGIORNO LA TABELLA TMP E LA CASELLA DI TESTO FILTRO
+    '//02_COD_PROGETTO_s_DblClick.?         = ?
+    '//03_COD_PROGETTO_s_CHANGE.UPDATE    = AGGIORNO I CAMPI TMP CON L'ARCHIVIO
+
+
+
+
+'//01_COD_PROGETTO_s_TXT_DblClick       = AGGIORNO LA TABELLA TMP E LA CASELLA DI TESTO FILTRO
+Private Sub COD_PROGETTO_s_TXT_DblClick(Cancel As Integer)
+
+    
+    '//01_COD_PROGETTO_s_TXT_DblClick.DELETE = CANCELLO I DATI NELLA TABELLA TMP
+        DoCmd.OpenQuery "PROGETTI_Msys_TB01Qry01_02_PROJECT_TMP_Delete"
+        
+        
+    ' Inserisce il valore di COD_PROGETTO_s nella tabella PROGETTI_Msys_TB01_PROJECT_TMP
+'sSql = "INSERT INTO PROGETTI_Msys_TB01_PROJECT_TMP (COD_PROGETTO_s) VALUES ('" & Me.COD_PROGETTO_s_TXT & "')"
+
+sSql = ""
+sSql = sSql & "INSERT INTO PROGETTI_Msys_TB01_PROJECT_TMP ( COD_PROGETTO_s ) "
+sSql = sSql & "SELECT '" & Me.COD_PROGETTO_s_TXT & "' AS COD_PROGETTO;"
+
+'//CONTROLLO ED ESECUZIONE
+Debug.Print sSql
+CurrentDb.Execute sSql
+    
+        
+        
+    '//02_COD_PROGETTO_s_DblClick.UPDATE = AGGIORNO I CAMPI TMP CON L'ARCHIVIO _
+        Aggiorno la tabella tmp e aggiorno la casella TXT_FILTRO
+        DoCmd.OpenQuery "PROGETTI_Msys_TB01Qry01_03_PROJECT_TMP_UPDATE"
+        
+        Me.Parent!TXT_FILTRO = Me.COD_PROGETTO_s_TXT
+        
+        
+        '//Imposto filtro sottoform_01 corrente dopo la scelta
+        '//Esempio di impostazione della proprieta filter: Me.Filter = "Stato = 'USA'"
+        Vv1 = Me.Parent!TXT_FILTRO
+        
+        Me.Form.Filter = "COD_PROGETTO_s ='" & Vv1 & "'"
+        
+        Me.Form.FilterOn = True
+        Me.Recalc
+        Me.Requery
+    
+    
+    
+End Sub
+
+
+'//03_COD_PROGETTO_s_TXT.CHANGE       = AGGIORNO I CAMPI TXT TMP CON L'ARCHIVIO
+Private Sub COD_PROGETTO_s_TXT_Change()
+        Me.PROGETTO_s_TXT = Me.COD_PROGETTO_s_TXT.Column(1)
+        Me.NOTE_PROGETTO_s_TXT = Me.COD_PROGETTO_s_TXT.Column(2)
+End Sub
+
+
+'//==================================================================================================//
+'//             EVENTI CASELLA DI TESTO @COD_PROGETTO_s_(@CODICE@PROGETTO)   *** FINE ***
+'//==================================================================================================//
+
+
+
+
+
+'//==================================================================================================//
+'//             EVENTI CASELLA DI TESTO @PROGETTO_s_(PROGETTO)   *** INIZIO ***
+'//==================================================================================================//
+
+Private Sub PROGETTO_s_TXT_DblClick(Cancel As Integer)
+    '//APRO LA FORM DI GESTIONE DEL CODICE DEI PROGETTI
+    DoCmd.OpenForm "Msys_DF11_Frm01_M01_GE_CODICE_PROGETTI_TUTTI"
+End Sub
+
+
+'//==================================================================================================//
+'//             EVENTI CASELLA DI TESTO @PROGETTO_s_(PROGETTO)   *** FINE ***
+'//==================================================================================================//

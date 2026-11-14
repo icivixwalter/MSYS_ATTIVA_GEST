@@ -1,0 +1,4 @@
+INSERT INTO SottoFormMaster_Tb01_GE_Msys ( NRO_OGGETTO_i, COD_PROGETTO_s, DENOM_PROGETTO_s, COD_FORMS_s )
+SELECT [SottoFormMaster_Tb01_GE_Msys_TMP].[NRO_OGGETTO_i], [SottoFormMaster_Tb01_GE_Msys_TMP].[COD_PROGETTO_s], [SottoFormMaster_Tb01_GE_Msys_TMP].[DENOM_PROGETTO_s], [SottoFormMaster_Tb01_GE_Msys_TMP].[COD_FORMS_s]
+FROM SottoFormMaster_Tb01_GE_Msys_TMP
+WHERE ((([SottoFormMaster_Tb01_GE_Msys_TMP].[COD_PROGETTO_s])='GE_MENU'));

@@ -1,0 +1,7 @@
+INSERT INTO MSys_ELENCO_ObjProgetti ( Scel_b, Name1_s, IdOrd_lng, NRO_OGGETTO_i, TIPOGGETTO_s, COD_PROGETTO_s, PROGETTO_s, DATAINS_d, TIMEOPER_d )
+SELECT [MSys_TABELLE].[Scel_b], [MSys_TABELLE].[Name1_s], [MSys_TABELLE].[ID_TAB_lng], [MSys_TABELLE].[NRO_OGGETTO_i], "TABELLE" AS TIPOGGETTO_s, "MSys" AS COD_PROGETTO_s, "PROGETTO MSys" AS PROGETTO_s, [MSys_TABELLE].[DATAINS_d], [MSys_TABELLE].[TIMEOPER_d]
+FROM MSys_TABELLE LEFT JOIN MSys_ELENCO_ObjProgetti ON [MSys_TABELLE].[Name1_s]=[MSys_ELENCO_ObjProgetti].[Name1_s]
+WHERE ((([MSys_TABELLE].[Scel_b])=True) 
+                        And 
+                        (([MSys_ELENCO_ObjProgetti].[Name1_s]) Is Null))
+WITH OWNERACCESS OPTION;

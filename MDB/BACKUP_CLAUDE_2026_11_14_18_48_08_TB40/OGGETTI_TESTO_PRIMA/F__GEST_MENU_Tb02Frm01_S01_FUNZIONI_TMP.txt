@@ -1,0 +1,255 @@
+Version =19
+VersionRequired =19
+Checksum =234827621
+Begin Form
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5385
+    RowHeight =330
+    DatasheetFontHeight =10
+    ItemSuffix =12
+    Left =525
+    Top =1755
+    Right =14055
+    Bottom =9615
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xafcafb04fa2ee640
+    End
+    GUID = Begin
+        0x68cf619aebcc734e9191a38535e5d158
+    End
+    NameMap = Begin
+        0x0acc0e55000000002a42d86bb42142449e1ec8f9d2a4162600000000cdbf97bf ,
+        0x956ce640000000000000000047004500530054005f004d0045004e0055005f00 ,
+        0x5400420030003200510072007900300031005f00300031005f00460055004e00 ,
+        0x5a0049004f004e0049005f0054004d005000000000000000b7d342e6f76de448 ,
+        0x85294592d3220c11070000002a42d86bb42142449e1ec8f9d2a4162643006f00 ,
+        0x6400460075006e007a0069006f006e0069005f0073000000000000006dbd191b ,
+        0x935a7b4aae037a70c56ebf66070000002a42d86bb42142449e1ec8f9d2a41626 ,
+        0x460075006e007a0069006f006e0069005f00730000000000000012709a34ebbe ,
+        0xf24aa6917c2cff9a6b58070000002a42d86bb42142449e1ec8f9d2a416264300 ,
+        0x6c00610073007300460075006e007a0069006f006e0069005f00730000000000 ,
+        0x0000c821187168a3534a85514ec8ca9ffe47070000002a42d86bb42142449e1e ,
+        0xc8f9d2a416264e006f0074006500460075006e007a0069006f006e0069005f00 ,
+        0x730000000000000077ef44d077f50d4280ce56f6492e2132070000002a42d86b ,
+        0xb42142449e1ec8f9d2a41626490044000000
+    End
+    RecordSource ="GEST_MENU_TB02Qry01_01_FUNZIONI_TMP"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =2324
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0xd5328adaed4db847a702a7022ce50b84
+            End
+            Begin
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =4
+                    ListWidth =14175
+                    Left =3117
+                    Top =566
+                    ColumnWidth =2715
+                    GUID = Begin
+                        0x68ec98097aa8d845a5e670f273faea64
+                    End
+                    Name ="CodFunzioni_s_txt"
+                    ControlSource ="CodFunzioni_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="3402;2268;1701;1134"
+                    StatusBarText ="03 - Indirizzo esteso (viene aggiornato automaticamente) -"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =566
+                            Width =1215
+                            Height =240
+                            Name ="CodFunzioni_s_LBL"
+                            Caption ="CodFunzioni:"
+                            GUID = Begin
+                                0x0f7e8ee76cd90e49962ffd2625bf4550
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =3117
+                    Top =906
+                    ColumnWidth =2685
+                    TabIndex =1
+                    GUID = Begin
+                        0xe7f85f827224e048a11ffbf2ccedc9d2
+                    End
+                    Name ="Funzioni_s_TXT"
+                    ControlSource ="Funzioni_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="3402;1701;1701"
+                    StatusBarText ="02 - Toponimo -"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =906
+                            Width =1215
+                            Height =240
+                            Name ="Funzioni_s_LBL"
+                            Caption ="Funzioni"
+                            GUID = Begin
+                                0x282452317ca9014ab31a7ba659b2ece7
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =3117
+                    Top =1246
+                    ColumnWidth =2340
+                    TabIndex =2
+                    GUID = Begin
+                        0xeb26ac6857130643ae09e8b306266954
+                    End
+                    Name ="ClassFunzioni_s_TXT"
+                    ControlSource ="ClassFunzioni_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="2268;2835;1701"
+                    StatusBarText ="03 - Indirizzo -"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1246
+                            Width =1215
+                            Height =240
+                            Name ="ClassFunzioni_s_LBL"
+                            Caption ="ClassFunzioni"
+                            GUID = Begin
+                                0x7304234a22c76240b9235130e6748a79
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =5
+                    ListWidth =14175
+                    Left =3117
+                    Top =1586
+                    ColumnWidth =5805
+                    TabIndex =3
+                    GUID = Begin
+                        0xdeadc557e67f184eb0e4c31e4c0dec5b
+                    End
+                    Name ="NoteFunzioni_s_TXT"
+                    ControlSource ="NoteFunzioni_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="1701;3969;1701;1701;1134"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1586
+                            Width =1215
+                            Height =240
+                            Name ="NoteFunzioni_s_LBL"
+                            Caption ="NoteFunzioni"
+                            GUID = Begin
+                                0x14df3f9d6b192e45a42e8592ad91f22f
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =3117
+                    Top =1927
+                    ColumnWidth =1125
+                    TabIndex =4
+                    Name ="TxtStrad"
+                    ControlSource ="ID"
+                    GUID = Begin
+                        0xdc8d0c1169263d46a388ad9600d9857a
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1927
+                            Width =1215
+                            Height =240
+                            Name ="ID_LBL"
+                            Caption ="ID"
+                            GUID = Begin
+                                0xa5dc752cde60544187db370567a3ae19
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Indirizzo_DblClick(Cancel As Integer)
+
+    '//Aggiorna l'indirizzo esteso
+    DoCmd.OpenQuery "A0203_Qry02-42_(IndirizzoEsteso)_(Up)"
+    
+
+
+End Sub

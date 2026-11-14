@@ -1,0 +1,649 @@
+Version =19
+VersionRequired =19
+Checksum =-234827645
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8900
+    DatasheetFontHeight =10
+    ItemSuffix =51
+    Left =2820
+    Top =8520
+    Right =22425
+    Bottom =9855
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xa13a1c98bfcde540
+    End
+    GUID = Begin
+        0x7d4cf316535079479ec426361f8dc54d
+    End
+    NameMap = Begin
+        0x0acc0e550000000098716be6186da7449e90b148a11cdcd30000000051385946 ,
+        0xb46be64000000000000000004d005300790073005f0044004600310030005f00 ,
+        0x440041005400410042004100530045000000000000008a86ba8371e5b541bb48 ,
+        0x36f51dd7395e0700000098716be6186da7449e90b148a11cdcd3440069007300 ,
+        0x63006f005f00730000000000000097729282f013ba41aed1c54438b28f900700 ,
+        0x000098716be6186da7449e90b148a11cdcd350006100740068005f0073000000 ,
+        0x0000000027c68f9596614d46b752a6ee0cd5d4d40700000098716be6186da744 ,
+        0x9e90b148a11cdcd3440061007400610062006100730065005f00730000000000 ,
+        0x00003335212e0326e74aa187a68e2edbaca50700000098716be6186da7449e90 ,
+        0xb148a11cdcd343004f0044005f00440041005400410042004100530045005f00 ,
+        0x73000000000000006ac8d08b428ebb48ae49151488e03a720700000098716be6 ,
+        0x186da7449e90b148a11cdcd35300630065006c005f00620000000000000099eb ,
+        0xbc66aedf8d4484b4a8e295026a370700000098716be6186da7449e90b148a11c ,
+        0xdcd34e004f00540041005f004f00470047004500540054004f005f0073000000 ,
+        0x00000000a74a2f083120ad4d89c3ddc8dcc55f610700000098716be6186da744 ,
+        0x9e90b148a11cdcd343004f0044005f00500052004f0047004500540054004f00 ,
+        0x5f0073000000000000003320466228125544ad9fb15cc691d297070000009871 ,
+        0x6be6186da7449e90b148a11cdcd343004f004d0041004e0044004f005f007300 ,
+        0x0000000000007ff7cfb06e283c44ba7293350d9accfb0000000022208770fb6c ,
+        0xe64000000000000000004d005300790073005f0044004600300031005f004300 ,
+        0x4f004d0041004e00440049005f00510072007900300031005f00300031005f00 ,
+        0x530045004c004500430054005f00540055005400540049000000
+    End
+    RecordSource ="MSys_DF10_DATABASE"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin Section
+            Height =6803
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x47778883b8a48243a3533e34c0bf7716
+            End
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =1575
+                    Width =1584
+                    Height =300
+                    ColumnWidth =660
+                    ColumnOrder =2
+                    TabIndex =2
+                    Name ="Disco_s_Txt"
+                    ControlSource ="Disco_s"
+                    GUID = Begin
+                        0x59e92f214d202e4d9330847c75b8c686
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1575
+                            Width =1584
+                            Height =300
+                            Name ="Disco_s_Lbl"
+                            Caption ="Disco"
+                            GUID = Begin
+                                0x1f245ce1c47290479f72bac4267c47ba
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =285
+                    Top =150
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta36"
+                    Caption ="00___________________________________LE TABELLE"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xa9d6d4b88ce1f7489d26f1a4d636495d
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =1995
+                    Width =1584
+                    Height =300
+                    ColumnWidth =10230
+                    ColumnOrder =3
+                    TabIndex =3
+                    Name ="Path_s_TXT"
+                    ControlSource ="Path_s"
+                    GUID = Begin
+                        0x5afda9f587e5f84f9acde73b2e7651ae
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1995
+                            Width =1584
+                            Height =300
+                            Name ="Path_s_Lbl"
+                            Caption ="Path"
+                            GUID = Begin
+                                0x05259dcbf4a545418b18696c509e023c
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =2415
+                    Width =1584
+                    Height =300
+                    ColumnWidth =3915
+                    ColumnOrder =4
+                    TabIndex =4
+                    Name ="Database_s_Txt"
+                    ControlSource ="Database_s"
+                    OnDblClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x606fbd17f72c9844b583452bef57255f
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2415
+                            Width =1584
+                            Height =300
+                            Name ="Database_s_Lbl"
+                            Caption =">>Database"
+                            GUID = Begin
+                                0x9604ddbf3986154eaacf074cd542cecc
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =1230
+                    Width =1584
+                    Height =300
+                    ColumnWidth =1920
+                    ColumnOrder =5
+                    TabIndex =1
+                    Name ="COD_DATABASE_s_Txt"
+                    ControlSource ="COD_DATABASE_s"
+                    GUID = Begin
+                        0xb4231ac95eeba7428bc87a14c32d26a1
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1230
+                            Width =1584
+                            Height =300
+                            Name ="COD_DATABASE_s_Lbl"
+                            Caption ="COD_DATABASE_s"
+                            GUID = Begin
+                                0x295cc021fee83e428f221c058e78bfa3
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6014
+                    Top =774
+                    ColumnOrder =0
+                    Name ="Cancella_b_TXT"
+                    ControlSource ="Scel_b"
+                    GUID = Begin
+                        0xeaaf2c55135c7447b609a038d30cbdd2
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =660
+                            Width =1584
+                            Height =300
+                            Name ="Scel_b_Lbl"
+                            Caption ="Scel_b"
+                            GUID = Begin
+                                0x6c44a98c662d9f4e9332b95585a2e854
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =2790
+                    Width =1584
+                    Height =300
+                    ColumnWidth =3165
+                    ColumnOrder =1
+                    TabIndex =5
+                    Name ="NOTA_OGGETTO_s_TXT"
+                    ControlSource ="NOTA_OGGETTO_s"
+                    GUID = Begin
+                        0x0630b0aa99bce041aecfd21719d3862e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2790
+                            Width =1584
+                            Height =300
+                            Name ="NOTA_OGGETTO_s_LBL"
+                            Caption ="NOTA_OGGETTO"
+                            GUID = Begin
+                                0xa3bbbc8761c46f4fb28cfe832c30ab81
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =3225
+                    Width =1584
+                    Height =300
+                    TabIndex =6
+                    Name ="COD_PROGETTO_s_TXT"
+                    ControlSource ="COD_PROGETTO_s"
+                    GUID = Begin
+                        0x5b6377e676e35844a64c3b3ce15c3cb3
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =3225
+                            Width =1584
+                            Height =300
+                            Name ="COD_PROGETTO_s_LBL"
+                            Caption ="COD_PROGETTO"
+                            GUID = Begin
+                                0xa59d5b2112242c41a56c51f2cbf272c3
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =4425
+                    Width =1584
+                    TabIndex =7
+                    ColumnInfo ="\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0xc0c855d6d682a048951de770381408d1
+                    End
+                    Name ="COMANDO_s_TXT"
+                    ControlSource ="COMANDO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="MSys_DF01_COMANDI_Qry01_01_SELECT_TUTTI"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =4425
+                            Width =1584
+                            Height =300
+                            Name ="COMANDO_s_Lbl"
+                            Caption ="COMANDO_s"
+                            GUID = Begin
+                                0x41898e868ec0b842b743913b0fa7c5d8
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+'//       LE VARIABILI DI MODULO
+
+'//LE VARIABILI DATABASE
+'//....................................................................//
+    Dim DaoDB As DAO.Database          '//occorre il riferimento alla libreria  Microsoft DAO 3.6 Object Libray
+    Dim DaoWks As DAO.Workspace
+    Dim DaoRs As DAO.Recordset
+
+    Dim ADODB As Database
+    Dim AdodaoRs As Recordset
+    Dim sSql As String                          '//STRINGA SQL
+    '//Dim Path_s As String                        '//la path
+
+
+    '//Contatori
+    Dim icount As Integer
+    Dim dbl_count As Double
+    
+   
+    'Le variabili generiche
+    Dim Vv1 As Variant
+    Dim Dbl1 As Double
+    Dim Int1 As Integer
+    Dim Long1 As Long
+    Dim str1 As String
+    
+    '//Messaggi di errore
+    Dim ProceduraMessaggioErrore_s As String    '//Errore procedura
+    Dim ProceduraAttivaEseguita_s As String     '//Errore Attivita eseguita
+
+   '//variabili generiche
+    Dim gsxOggetto As Object
+
+'
+
+'....................................................................
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+
+'//AGGIORNAMENTO CAMPO COMANDO
+Private Sub COMANDO_s_TXT_AfterUpdate()
+    Dim UltimoCmd_s As String
+    
+    
+    '//reset
+    str1 = ""
+    
+    If Me.COMANDO_s_TXT > "" Then
+        UltimoCmd_s = ""
+        UltimoCmd_s = Me.COMANDO_s_TXT
+        
+        
+          'ISTANZIO LA CLASSE CLASSE_GESTIONE_OGGETTI_FORM
+          'Assegno e creo l'oggetto di classe
+          '
+          Dim MyCls_CLASSE_GESTIONE_OGGETTI_FORM As CLASSE_GESTIONE_OGGETTI_DATABASE
+          Dim sxNameForm As String
+          '
+          Set MyCls_CLASSE_GESTIONE_OGGETTI_FORM = New CLASSE_GESTIONE_OGGETTI_DATABASE
+          
+    
+        
+        '//eseguo il tipo di comando scelto
+        Select Case UltimoCmd_s
+            Case "01_SALVA_TABELLE"
+                    'prima imposto la variabile con la stringa tabelle
+                    gsxOggetto = "Tabelle"
+                    str1 = "CONTROLLO TABELLE"
+                    
+                    'Stop
+            
+            '//TODO: devi utilizzare solo UNA CLASSE DI GESTIONE SISTEMARE
+            '//COLLEGA LE TABELLE
+            Case "COLLEGA_LE_TABELLE"
+                '//CHIAMO la procedura per il collegamento
+                    MyCls_CLASSE_GESTIONE_OGGETTI_FORM.COLLEGA_MSys_TABELLE_LINK_PFunct
+            Case Else
+                MsgBox "NESSUN COMANDO E' ATTIVO SU -> " & UltimoCmd_s & vbCrLf & "- OPERAZIONE NON EFFETTUATA", vbExclamation
+                
+        End Select
+        
+        
+
+        
+    End If
+            'CHIUSURA
+            MyCls_CLASSE_GESTIONE_OGGETTI_FORM = Nothing
+
+End Sub
+
+
+
+'//@OPEN@DB_(routine per l'apertura del DATABASE)
+Private Sub Database_s_Txt_DblClick(Cancel As Integer)
+        
+        '//SOSPESO ---> MyPath_s = "c:\GESTIONI\GESTIONE_LLPP\02_SCANNER\ScannerTmp\"     ' Imposta il percorso.
+        
+        '//SOSPESO ---> TROVA_N01_PATH_pFunct MyPath_s
+        
+        
+        '//CHIAMO LA PROCEDURA ED AGGIORNO LA SOTTOFORM
+        '//........................................................
+            '// imposta le variabile con il valore dei campi
+            Dim MyFile_s As String
+            Dim MyPath_s  As String
+            Dim IDGestione_lng As Long
+            Dim Messaggio_s As String
+            
+            
+            MyFile_s = ""
+            MyPath_s = ""
+            Messaggio_s = ""
+            IDGestione_lng = 0
+            If Me.Database_s_Txt.Value > "" Then
+                MyFile_s = Me.Database_s_Txt.Value
+            End If
+            
+            If Me.Disco_s & Me.Path_s_TXT > "" Then
+                MyPath_s = Me.Disco_s & Me.Path_s_TXT
+                       
+            End If
+            
+            If Me.ID_MyDb > "" Then
+            IDGestione_lng = Me.ID_MyDb
+            
+                        IDGestione_lng = 0
+                
+                       ' If Me!IDGestione_txt.Value > 0 Then
+                       '     IDGestione_lng = Me!IDGestione_txt.Value
+                            'Str1 = TROVA_N02_FILE_SELEZIONATO_pFunct(MyFile_s, MyPath_s, IDGestione_lng)
+                            
+                            '//CHIAMO LA FUNZIONE APRIFILEPDF
+                            '//........................................................
+                            '//Se non trova il file restituisce il messaggio _
+                            "FILE NON TROVATO" che verrà scritto sul campo RICERCA FILE. Se il file viene trova _
+                            la casella di testo TROVA FILE viene valorizzata a null.
+                                    
+                                    'Messaggio_s = ApriFilePdf(MyPath_s, MyFile_s, IDGestione_lng)
+                                    'If Messaggio_s = "FILE NON TROVATO" Then
+                                        'Me.RICERCA_Database_s_Txt = Messaggio_s
+                                        'Me.RICERCA_Database_s_Txt = "FILE TROVATO": Me.DATAAGG_TXT = Date: Me.TIMEOPER_Txt = Now
+                                        'Me.RICERCA_Database_s_Txt.Requery
+                         '           Else
+                        '                '//ha trovato il file la casella di testo viene impostata a null.
+                                        'If Me.RICERCA_Database_s_Txt <> "FILE TROVATO" Or IsNull(Me.RICERCA_Database_s_Txt) = True Then
+                                            
+                                        '    Me.RICERCA_Database_s_Txt = "FILE TROVATO": Me.DATAAGG_TXT = Date: Me.TIMEOPER_Txt = Now
+                                            
+                                        'End If
+                         '           End If
+                            '//........................................................
+                                    
+                            '//REFRESH E BOOKMARK
+                            '//........................................................
+                            '//REFRESH + BOOKMARK= della form è necessario al fine di poter confermare _
+                            l'eventuale aggiornamento del camp FILE_ATTO avvenuto in precedenza altrimenti _
+                            viene dato un errore sul record in fase di aggiornamento (Non applicato AddNew ecc..). _
+                            Il bookmark serve per rimanare sul record corrente
+                                
+                          '      Me.Refresh
+                                '//Imposto per rimanere sul record corrente.
+                               ' Set rst = Me.RecordsetClone
+                                '//Si riposiziona il record nell' Id della tabella che in questo _
+                                caso si chiama IDGestione
+                               ' rst.FindFirst "IDGestione = " & IDGestione_lng
+                               '     If rst.NoMatch Then
+                                        'MsgBox "Record not found"
+                               '     Else
+                                        
+                               '         Me.Bookmark = rst.Bookmark
+                               '     End If
+                               ' rst.Close
+                               ' Set rst = Nothing
+                            '//........................................................
+            
+                                
+                        'Else
+                            
+                           ' MsgBox "ERRORE_CODICE ID NON TROVATO", vbCritical
+                        
+                        'End If
+                        
+            End If
+            
+            '//Imposta le variabili a null
+            str1 = vbNull
+            MyFile_s = vbNull
+            MyPath_s = vbNull
+            IDGestione_lng = vbNull
+            
+            
+        '//CHIAMO LA PROCEDURA ED AGGIORNO LA SOTTOFORM *** FINE ***
+        '//........................................................
+   
+
+
+
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    
+Me.Recalc
+
+End Sub
+
+Private Sub Path_s_TXT_AfterUpdate()
+
+    '//AGGIORNO LA TABELLA TMP
+    
+End Sub

@@ -1,0 +1,58 @@
+Version =19
+VersionRequired =19
+Checksum =-234827585
+Begin Form
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5669
+    DatasheetFontHeight =10
+    ItemSuffix =1
+    Left =870
+    Top =15
+    Right =7980
+    Bottom =3150
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xf12ef04ad417e440
+    End
+    GUID = Begin
+        0x6f09e940ff26184bb06534d210bf7321
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000005000000 ,
+        0x0000000000000000000000000000
+    End
+    DatasheetFontName ="Courier New"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Section
+            Height =1701
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x955e267d77e7654ba8c1a49037058d7e
+            End
+            Begin
+                Begin Line
+                    OverlapFlags =85
+                    Left =396
+                    Top =453
+                    Width =2041
+                    Height =113
+                    Name ="Linea0"
+                    GUID = Begin
+                        0x4f653b33ce19de4a873815ec5478c3e4
+                    End
+                End
+            End
+        End
+    End
+End

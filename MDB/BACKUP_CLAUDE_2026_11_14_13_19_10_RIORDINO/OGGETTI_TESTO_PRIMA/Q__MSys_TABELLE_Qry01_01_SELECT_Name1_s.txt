@@ -1,0 +1,2 @@
+SELECT [MSys_TABELLE].[Name1_s]
+FROM MSys_TABELLE;

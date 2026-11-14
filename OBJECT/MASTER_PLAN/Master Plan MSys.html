@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>Master Plan MSys</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: documento tecnico a colonna singola, figure larghe scorrevoli; le etichette #SS# del progetto fanno da occhiello alle sezioni */
+:root {
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-2: #eceff3;
+  --fg: #1a202b;
+  --muted: #5b6474;
+  --line: #d6dbe3;
+  --line-strong: #8d97a8;
+  --accent: #962c3b;
+  --accent-soft: #f6e6e8;
+  --ok: #2e6a4c;
+  --ok-soft: #e1f0e7;
+  --info: #2b5b8a;
+  --info-soft: #e2ecf6;
+  --warn: #7f5f0c;
+  --warn-soft: #f6eed7;
+  --f-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-head: "IBM Plex Sans Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11151c; --surface: #181e27; --surface-2: #202834; --fg: #e2e6ed; --muted: #98a2b3;
+    --line: #2b3340; --line-strong: #6c7789; --accent: #e57c8b; --accent-soft: #3a2228;
+    --ok: #7fc6a1; --ok-soft: #1c3328; --info: #8cb6e2; --info-soft: #1b2b3d; --warn: #dcb65c; --warn-soft: #352c16;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11151c; --surface: #181e27; --surface-2: #202834; --fg: #e2e6ed; --muted: #98a2b3;
+  --line: #2b3340; --line-strong: #6c7789; --accent: #e57c8b; --accent-soft: #3a2228;
+  --ok: #7fc6a1; --ok-soft: #1c3328; --info: #8cb6e2; --info-soft: #1b2b3d; --warn: #dcb65c; --warn-soft: #352c16;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--f-sans); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--f-head); text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 26px; font-weight: 700; }
+h3 { font-size: 18px; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+code, .mono { font-family: var(--f-mono); font-size: 0.86em; }
+code { background: var(--surface-2); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header.top { display: grid; gap: 14px; }
+.kicker { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lead { font-size: 18px; max-width: 64ch; }
+.meta { font-size: 13px; color: var(--muted); }
+nav.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; padding-top: 6px; border-top: 1px solid var(--line); }
+nav.toc a { text-decoration: none; color: var(--fg); }
+nav.toc a span { font-family: var(--f-mono); font-size: 12px; color: var(--accent); margin-right: 6px; }
+nav.toc a:hover { color: var(--accent); }
+
+section { display: grid; gap: 18px; scroll-margin-top: 16px; }
+.eyebrow { font-family: var(--f-mono); font-size: 13px; color: var(--accent); font-weight: 600; letter-spacing: 0.04em; }
+.sec-head { display: grid; gap: 4px; }
+.sub { display: grid; gap: 12px; margin-top: 10px; }
+
+figure { margin: 0; display: grid; gap: 10px; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+.scroll svg { display: block; width: 100%; min-width: 760px; height: auto; }
+figcaption { font-size: 14px; color: var(--muted); max-width: 80ch; }
+
+/* --- diagrammi --- */
+.dg { color: var(--fg); font-family: var(--f-sans); }
+.dg text { fill: currentColor; font-size: 13px; }
+.dg .bx { fill: var(--surface); stroke: var(--line-strong); stroke-width: 1.2; }
+.dg .bx2 { fill: var(--surface-2); stroke: var(--line-strong); stroke-width: 1.2; }
+.dg .bx-acc { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.dg .ct { fill: none; stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 4 4; }
+.dg .sep { stroke: var(--line-strong); stroke-width: 1; }
+.dg .ln { stroke: currentColor; stroke-width: 1.4; fill: none; }
+.dg .ln-acc { stroke: var(--accent); stroke-width: 1.8; fill: none; }
+.dg .ln-prop { stroke: var(--muted); stroke-width: 1.4; stroke-dasharray: 5 4; fill: none; }
+.dg .mk { fill: currentColor; }
+.dg .mk-acc { fill: var(--accent); }
+.dg .mk-prop { fill: var(--muted); }
+.dg .t-b { font-weight: 600; }
+.dg .t-m { font-family: var(--f-mono); font-size: 11.5px; }
+.dg .t-ms { font-family: var(--f-mono); font-size: 10.5px; fill: var(--muted); }
+.dg .t-s { fill: var(--muted); font-size: 11.5px; }
+.dg .t-acc { fill: var(--accent); }
+.dg .t-lbl { fill: var(--muted); font-size: 11.5px; font-style: italic; }
+.dg .t-cap { fill: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; }
+.dg .t-code { font-family: var(--f-mono); font-size: 11.5px; fill: var(--accent); font-weight: 600; }
+
+/* --- glossario --- */
+dl.gloss { display: grid; grid-template-columns: minmax(170px, 230px) 1fr; gap: 0; margin: 0; border-top: 1px solid var(--line); }
+dl.gloss dt, dl.gloss dd { padding: 12px 0; border-bottom: 1px solid var(--line); margin: 0; }
+dl.gloss dt { font-weight: 600; padding-right: 18px; }
+dl.gloss dd { min-width: 0; }
+dl.gloss dd .key { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+.note { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 12px 16px; max-width: 80ch; border-radius: 0 4px 4px 0; }
+@media (max-width: 560px) {
+  dl.gloss { grid-template-columns: 1fr; }
+  dl.gloss dt { border-bottom: 0; padding-bottom: 0; }
+}
+
+/* --- ciclo di vita --- */
+ol.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; counter-reset: st; }
+ol.steps li { background: var(--surface); padding: 16px 18px; display: grid; gap: 6px; align-content: start; counter-increment: st; }
+ol.steps li::before { content: counter(st, decimal-leading-zero); font-family: var(--f-mono); font-size: 12px; color: var(--accent); font-weight: 600; }
+ol.steps h3 { font-size: 17px; }
+ol.steps p { font-size: 14px; }
+ol.steps .where { font-family: var(--f-mono); font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+@media (max-width: 820px) { ol.steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { ol.steps { grid-template-columns: 1fr; } }
+
+/* --- anatomia del nome --- */
+.anatomy { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 22px 18px; overflow-x: auto; }
+.segs { display: flex; gap: 0; align-items: stretch; width: max-content; }
+.seg { display: grid; gap: 8px; justify-items: start; }
+.seg .v { font-family: var(--f-mono); font-size: 22px; padding: 6px 2px; border-bottom: 3px solid var(--line-strong); }
+.seg .l { font-size: 12px; color: var(--muted); padding: 0 8px 0 2px; max-width: 150px; line-height: 1.35; }
+.seg .l b { display: block; color: var(--fg); font-size: 13px; }
+.seg.p .v { border-color: var(--fg); }
+.seg.m .v { border-color: var(--accent); color: var(--accent); }
+.seg.t .v { border-color: var(--info); color: var(--info); }
+.seg.r .v { border-color: var(--warn); color: var(--warn); }
+.seg.sep .v { color: var(--muted); border-color: transparent; }
+.seg.d .v { border-color: var(--line-strong); }
+
+/* --- tabelle --- */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; background: var(--surface-2); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td code { white-space: nowrap; }
+td.num { font-variant-numeric: tabular-nums; }
+tr.grp td { background: var(--surface-2); font-family: var(--f-head); font-weight: 600; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); padding-block: 6px; }
+.w-wide { min-width: 820px; }
+.w-mid { min-width: 640px; }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.chip.k { background: var(--ok-soft); color: var(--ok); }
+.chip.u { background: var(--info-soft); color: var(--info); }
+.chip.a { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
+.chip.d { background: var(--warn-soft); color: var(--warn); }
+.old { color: var(--muted); }
+.arrow { color: var(--muted); padding-inline: 2px; }
+
+pre.code { margin: 0; font-family: var(--f-mono); font-size: 13px; line-height: 1.55; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; overflow-x: auto; }
+pre.tree { margin: 0; font-family: var(--f-mono); font-size: 13px; line-height: 1.6; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; overflow-x: auto; }
+pre .c { color: var(--muted); }
+pre .h { color: var(--accent); font-weight: 600; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.two > * { min-width: 0; }
+@media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+
+ul.rules, ol.find, ol.road, ol.dec { margin: 0; padding-left: 22px; display: grid; gap: 10px; max-width: 84ch; }
+ol.find li, ol.road li, ol.dec li { padding-left: 4px; }
+ol.find .ev { display: block; font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); margin-top: 3px; overflow-wrap: anywhere; }
+ol.road li b, ol.dec li b { font-family: var(--f-head); font-size: 16px; }
+.reco { font-size: 13px; color: var(--ok); font-weight: 600; }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="kicker">PROGETTI_MDB\MSYS · Access · stato al 14/11/2026</div>
+  <h1>Master Plan MSys</h1>
+  <p class="lead">Una Form MASTER che carica nelle sue 12 pagine le sottoform dichiarate in due tabelle: i <b>progetti</b> e le <b>pagine</b>. Ogni mini-progetto vive nella sua cartella con dati e oggetti separati; il MASTER collega i dati e importa gli oggetti. Questa pagina fissa il quadro d'insieme, le definizioni e la grammatica dei nomi.</p>
+  <p class="meta">Basato sull'inventario in sola lettura di oltre 70 database in <code>PROGETTI_MDB\MSYS</code> (albero nuovo) e <code>PROGETTI_MDB\MSYS_OGGETTI\MSYS\MDB</code> (albero attuale). Le etichette come <code>#18.06</code> rimandano alle sezioni e ai paragrafi del codice della Form MASTER. Aggiornato la sera del 14/11: le tabelle 401 e 402 sono ora il mini-progetto <code>MSys_TB40</code>.</p>
+  <nav class="toc" aria-label="Indice">
+    <a href="#quadro"><span>#01</span>Quadro d'insieme</a>
+    <a href="#definizioni"><span>#02</span>Definizioni</a>
+    <a href="#caricamento"><span>#03</span>Caricamento</a>
+    <a href="#ciclo"><span>#04</span>Ciclo di un oggetto</a>
+    <a href="#nomi"><span>#05</span>Nomi e chiavi</a>
+    <a href="#cartelle"><span>#06</span>Cartelle</a>
+    <a href="#inventario"><span>#07</span>Inventario</a>
+    <a href="#roadmap"><span>#08</span>Roadmap</a>
+    <a href="#decisioni"><span>#09</span>Decisioni</a>
+  </nav>
+</header>
+
+<!-- ============================================================ #01 -->
+<section id="quadro">
+  <div class="sec-head"><div class="eyebrow">#01#</div><h2>Il quadro d'insieme</h2></div>
+  <p>Il sistema ha tre parti. I <b>mini-progetti</b> producono tabelle e oggetti. L'<b>utilità</b> TB30 li porta nel MASTER. L'<b>applicazione MASTER</b> li usa. I dati non vengono mai copiati: il MASTER li legge attraverso un collegamento, quindi un errore nel MASTER non può danneggiare i dati.</p>
+  <figure>
+    <div class="scroll">
+      <svg class="dg" viewBox="0 0 960 450" role="img" aria-label="Architettura: il mini-progetto ha un back-end con le tabelle e un front-end con gli oggetti; il MASTER collega le tabelle del back-end e importa gli oggetti tramite TB30; la Form MASTER legge progetti e pagine in TB40 e assegna le form importate alle 12 pagine.">
+        <defs>
+          <marker id="f1-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+        </defs>
+        <!-- mini-progetto -->
+        <rect class="ct" x="20" y="20" width="310" height="412" rx="6"/>
+        <text class="t-cap" x="36" y="44">MINI-PROGETTO</text>
+        <text class="t-s" x="36" y="62">una cartella per tabella · es. MSys_DF11</text>
+        <rect class="bx" x="40" y="75" width="270" height="56" rx="4"/>
+        <text class="t-m t-b" x="56" y="98">MSys_DF11.mdb</text>
+        <text class="t-s" x="56" y="118">back-end · solo tabelle, i dati</text>
+        <rect class="bx" x="40" y="255" width="270" height="56" rx="4"/>
+        <text class="t-m t-b" x="56" y="278">GE_MSys_DF11.mdb</text>
+        <text class="t-s" x="56" y="298">front-end · form, query, moduli</text>
+        <line class="ln" x1="175" y1="255" x2="175" y2="133" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="185" y="198">collega le tabelle</text>
+        <rect class="bx" x="40" y="368" width="270" height="50" rx="4"/>
+        <text class="t-m t-b" x="56" y="389">OBJECT\</text>
+        <text class="t-s" x="56" y="407">oggetti in testo · storia con git</text>
+        <line class="ln" x1="175" y1="311" x2="175" y2="366" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="185" y="344">esporta (SaveAsText)</text>
+        <!-- collegamento dati -->
+        <line class="ln" x1="310" y1="103" x2="648" y2="103" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="479" y="94" text-anchor="middle">collegamento: i dati restano nel back-end</text>
+        <!-- utilità -->
+        <rect class="bx2" x="385" y="255" width="190" height="56" rx="4"/>
+        <text class="t-m t-b" x="400" y="278">Msys_TB30_UTIL</text>
+        <text class="t-s" x="400" y="298">importa / esporta oggetti</text>
+        <line class="ln" x1="310" y1="283" x2="383" y2="283" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="347" y="274" text-anchor="middle">oggetti</text>
+        <line class="ln" x1="575" y1="283" x2="648" y2="283" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="611" y="274" text-anchor="middle">importa</text>
+        <!-- MASTER -->
+        <rect class="ct" x="630" y="20" width="310" height="412" rx="6"/>
+        <text class="t-cap" x="646" y="44">APPLICAZIONE MASTER</text>
+        <text class="t-m" x="646" y="62">MSYS_ATTIVA_GEST_OGGETTI.mdb</text>
+        <rect class="bx" x="650" y="80" width="270" height="46" rx="4"/>
+        <text class="t-b" x="666" y="99">Tabelle collegate</text>
+        <text class="t-s" x="666" y="117">TB40: Tb01 progetti · Tb02 pagine · …</text>
+        <line class="ln" x1="785" y1="126" x2="785" y2="158" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="795" y="146">legge TB40</text>
+        <rect class="bx-acc" x="650" y="160" width="270" height="56" rx="4"/>
+        <text class="t-b t-acc" x="666" y="183">Form MASTER</text>
+        <text class="t-m" x="666" y="203">12 pagine · SottoForm_01 … _12</text>
+        <rect class="bx" x="650" y="260" width="270" height="46" rx="4"/>
+        <text class="t-b" x="666" y="279">Oggetti importati</text>
+        <text class="t-s" x="666" y="297">form, query, moduli dei mini-progetti</text>
+        <line class="ln" x1="785" y1="260" x2="785" y2="218" marker-end="url(#f1-ar)"/>
+        <text class="t-lbl" x="795" y="243">SourceObject = nome form</text>
+        <rect class="bx" x="650" y="346" width="270" height="56" rx="4"/>
+        <text class="t-b" x="666" y="369">Codice comune</text>
+        <text class="t-m" x="666" y="389">MSys_LOG_EVENTI · MSys_UTIL_OGGETTI</text>
+      </svg>
+    </div>
+    <figcaption>Il mini-progetto tiene i dati nel back-end e gli oggetti nel front-end. Il MASTER collega le tabelle senza copiarle e importa solo gli oggetti. La Form MASTER legge in TB40 (progetti e pagine) quali form mostrare e le assegna alle pagine.</figcaption>
+  </figure>
+</section>
+
+<!-- ============================================================ #02 -->
+<section id="definizioni">
+  <div class="sec-head"><div class="eyebrow">#02#</div><h2>Le definizioni</h2></div>
+  <p class="note">La parola <b>progetto</b> oggi indica tre cose diverse: tutto MSys, una cartella come DF11, una riga della tabella dei progetti del MASTER. Da qui in avanti ognuna ha un nome suo.</p>
+  <dl class="gloss">
+    <dt>Super-progetto MSys</dt>
+    <dd>Tutto il sistema, cioè la cartella <code>MSYS\</code>. <span class="key">Chiave di estrazione: <code>MSys_*</code></span></dd>
+    <dt>Mini-progetto</dt>
+    <dd>Una cartella con un codice di 4 caratteri (<code>DF11</code>, <code>TB40</code>), una tabella principale, le tabelle che dipendono da lei (relazione 1:N) e i loro oggetti. Ha due database: back-end e front-end. Le tabelle dipendenti stanno nello stesso back-end della principale, perché Access applica l'integrità referenziale solo dentro lo stesso file. <span class="key">Chiave: <code>MSys_DF11_*</code></span></dd>
+    <dt>Definizione (DF)</dt>
+    <dd>Mini-progetto con valori stabili che descrivono il sistema: comandi, tipi di oggetto, codici progetto, DLL, percorsi.</dd>
+    <dt>Archivio (TB)</dt>
+    <dd>Mini-progetto con dati che cambiano durante il lavoro. La copia di lavoro temporanea ha suffisso <code>_TMP</code>.</dd>
+    <dt>Back-end</dt>
+    <dd><code>MSys_DF11.mdb</code>: contiene <b>solo tabelle</b>. È il file da proteggere; nessuno ci lavora dentro con le form.</dd>
+    <dt>Front-end</dt>
+    <dd><code>GE_MSys_DF11.mdb</code>: collegamenti alle tabelle, query, form, report, moduli. Si può ricostruire in qualsiasi momento.</dd>
+    <dt>Applicazione MASTER</dt>
+    <dd><code>MSYS_ATTIVA_GEST_OGGETTI.mdb</code>: il front-end che collega le tabelle di tutti i mini-progetti e contiene gli oggetti importati. Non è un mini-progetto.</dd>
+    <dt>Progetto MASTER</dt>
+    <dd>Una riga di <code>MSys_TB40_Tb01_PROGETTI</code> identificata da <code>COD_PROGETTO_s</code>. Dice quale insieme di pagine caricare. Quello attivo ha <code>Scel_b = True</code>.</dd>
+    <dt>Pagina</dt>
+    <dd>Una riga di <code>MSys_TB40_Tb02_PAGINE</code>: numero (1–12), sottomaschera (<code>SottoForm_01</code>…<code>_12</code>), nome della form da caricare, etichetta, visibilità.</dd>
+    <dt>Chiave di estrazione</dt>
+    <dd>La parte iniziale (o una parte in posizione fissa) del nome di un oggetto, usata in un filtro <code>LIKE</code> per trovare un gruppo di oggetti.</dd>
+  </dl>
+</section>
+
+<!-- ============================================================ #03 -->
+<section id="caricamento">
+  <div class="sec-head"><div class="eyebrow">#03#</div><h2>Il meccanismo di caricamento</h2></div>
+  <p>Due tabelle bastano a descrivere cosa mostra la Form MASTER. Un progetto MASTER ha molte pagine; ogni pagina indica il nome di una form che deve già esistere nel database del MASTER.</p>
+  <figure>
+    <div class="scroll">
+      <svg class="dg" viewBox="0 0 960 300" role="img" aria-label="Modello dati: DF11 codici progetto uno a molti con la tabella progetti Tb01; Tb01 uno a molti con la tabella pagine Tb02, entrambe nello stesso back-end MSys_TB40.mdb con integrità referenziale; il campo NOMEOGGETTO_s di Tb02 punta a una form che deve esistere nel MASTER.">
+        <defs>
+          <marker id="f2-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+          <marker id="f2-ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+          <marker id="f2-pr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-prop"/></marker>
+        </defs>
+        <!-- DF11 -->
+        <rect class="bx" x="20" y="40" width="200" height="88" rx="4"/>
+        <text class="t-b" x="34" y="61">DF11 · Codici progetto</text>
+        <line class="sep" x1="20" y1="72" x2="220" y2="72"/>
+        <text class="t-m" x="34" y="92">COD_PROGETTO</text>
+        <text class="t-m" x="34" y="112">DENOMINAZIONE</text>
+        <text class="t-ms" x="20" y="150">Msys_DF11_COD_PROGETTO</text>
+        <text class="t-s" x="20" y="167">anagrafe unica (proposta)</text>
+        <!-- back-end unico TB40 -->
+        <rect class="ct" x="244" y="10" width="502" height="282" rx="6"/>
+        <text class="t-cap" x="258" y="28">MSys_TB40.mdb · UN SOLO BACK-END</text>
+        <text class="t-s" x="495" y="276" text-anchor="middle">integrità referenziale · aggiornamento ed eliminazione a catena</text>
+        <!-- Tb01 -->
+        <rect class="bx" x="260" y="40" width="210" height="122" rx="4"/>
+        <text class="t-b" x="274" y="61">Tb01 · Progetti MASTER</text>
+        <line class="sep" x1="260" y1="72" x2="470" y2="72"/>
+        <text class="t-m" x="274" y="92">COD_PROGETTO_s</text>
+        <text class="t-m" x="274" y="110">DENOM_PROGETTO_s</text>
+        <text class="t-m" x="274" y="128">COD_FORMS_s</text>
+        <text class="t-m" x="274" y="146">Scel_b <tspan class="t-acc">= progetto attivo</tspan></text>
+        <text class="t-ms" x="260" y="184">MSys_TB40_Tb01_PROGETTI</text>
+        <text class="t-s" x="260" y="200">ex MSys_TAB401</text>
+        <!-- Tb02 -->
+        <rect class="bx" x="510" y="40" width="220" height="158" rx="4"/>
+        <text class="t-b" x="524" y="61">Tb02 · Pagine MASTER</text>
+        <line class="sep" x1="510" y1="72" x2="730" y2="72"/>
+        <text class="t-m" x="524" y="92">COD_PROGETTO_s</text>
+        <text class="t-m" x="524" y="110">NRO_OGGETTO_i  1 … 12</text>
+        <text class="t-m" x="524" y="128">TIPOGGETTO_s   SottoForm_nn</text>
+        <text class="t-m t-acc t-b" x="524" y="146">NOMEOGGETTO_s</text>
+        <text class="t-m" x="524" y="164">NOMEpagina_s</text>
+        <text class="t-m" x="524" y="182">VISIBLE_b</text>
+        <text class="t-ms" x="510" y="220">MSys_TB40_Tb02_PAGINE</text>
+        <text class="t-s" x="510" y="236">ex MSys_TAB402</text>
+        <!-- Form -->
+        <rect class="bx-acc" x="770" y="40" width="170" height="88" rx="4"/>
+        <text class="t-b" x="784" y="61">Form nel MASTER</text>
+        <line class="sep" x1="770" y1="72" x2="940" y2="72"/>
+        <text class="t-s" x="784" y="92">importate dai</text>
+        <text class="t-s" x="784" y="110">mini-progetti</text>
+        <text class="t-b t-acc" x="770" y="150">il nome deve esistere</text>
+        <text class="t-s" x="770" y="167">controlli #18.06 · #02.02</text>
+        <!-- relazioni -->
+        <line class="ln-prop" x1="220" y1="88" x2="258" y2="88" marker-end="url(#f2-pr)"/>
+        <text class="t-s" x="239" y="82" text-anchor="middle">1:N</text>
+        <line class="ln" x1="470" y1="88" x2="508" y2="88" marker-end="url(#f2-ar)"/>
+        <text class="t-s" x="489" y="82" text-anchor="middle">1:N</text>
+        <polyline class="ln-acc" points="730,142 750,142 750,88 768,88" marker-end="url(#f2-ac)"/>
+      </svg>
+    </div>
+    <figcaption>Progetti e pagine stanno nello stesso back-end <code>MSys_TB40.mdb</code>: Access impone il legame, quindi non possono esistere pagine senza progetto, e cancellare o rinominare un progetto aggiorna anche le sue pagine. La linea tratteggiata è ancora una proposta: il codice progetto di Tb01 si sceglie da DF11 invece di essere riscritto.</figcaption>
+  </figure>
+
+  <div class="sub">
+    <h3>MSys_TB40: cosa è cambiato il 14/11/2026</h3>
+    <p>Le tabelle 401 e 402 sono diventate un solo mini-progetto. Il MASTER del nuovo albero le collega da <code>MSys_TB40\MDB\MSys_TB40.mdb</code>. Query e form hanno i nuovi nomi, e sono stati aggiornati anche il codice, le origini dati, le sottomaschere e i nomi delle form scritti nei dati delle pagine.</p>
+    <div class="tbl"><table class="w-wide">
+      <thead><tr><th>Tipo</th><th>Prima</th><th>Ora</th></tr></thead>
+      <tbody>
+        <tr><td>tabella</td><td><code>MSys_TAB401_GE_TabContr_MASTER</code> (+ <code>_TMP</code>)</td><td><code>MSys_TB40_Tb01_PROGETTI</code> (+ <code>_TMP</code>)</td></tr>
+        <tr><td>tabella</td><td><code>MSys_TAB402_VISUAL_PAG_MASTER</code> (+ <code>_TMP</code>)</td><td><code>MSys_TB40_Tb02_PAGINE</code> (+ <code>_TMP</code>)</td></tr>
+        <tr><td>query</td><td><code>MSys_TAB401_Qry01_01_GE_TabContr_MASTER</code></td><td><code>MSys_TB40_Qry01_01_SEL_PROGETTI</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB401_Qry01_01_GE_TabContr_MASTER_TMP</code></td><td><code>MSys_TB40_Qry01_02_SEL_PROGETTI_TMP</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB401_Qry01_01_GE_TabContr_MASTER_Insert_toTMP</code></td><td><code>MSys_TB40_Qry01_03_INS_PROGETTI_TMP</code> · <b>SQL corretta</b></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB401_Qry01_01_GE_TabContr_MASTER_TMP_Delete</code></td><td><code>MSys_TB40_Qry01_04_DEL_PROGETTI_TMP</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB402_Qry01_01_VISUAL_PAG_MASTER</code></td><td><code>MSys_TB40_Qry02_01_SEL_PAGINE</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB402_Qry01_01_VISUAL_PAG_MASTER_TMP</code></td><td><code>MSys_TB40_Qry02_02_SEL_PAGINE_TMP</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB402_Qry01_02_VISUAL_PAG_MASTER_Insert_TMP</code></td><td><code>MSys_TB40_Qry02_03_INS_PAGINE_TMP</code></td></tr>
+        <tr><td>query</td><td><code>MSys_TAB402_Qry01_02_VISUAL_PAG_MASTER_Delete_TMP</code></td><td><code>MSys_TB40_Qry02_04_DEL_PAGINE_TMP</code></td></tr>
+        <tr><td>form</td><td><code>MSys_TAB401_Frm01_01_GE_TabContr_MASTER</code> (+ <code>_TMP</code>)</td><td><code>MSys_TB40_Frm01_S01_PROGETTI</code> (+ <code>_TMP</code>)</td></tr>
+        <tr><td>form</td><td><code>MSys_TAB402_Frm01_01_VISUAL_PAG_MASTER</code> (+ <code>_TMP</code>)</td><td><code>MSys_TB40_Frm02_S01_PAGINE</code> (+ <code>_TMP</code>)</td></tr>
+        <tr><td>form</td><td><code>MSys_TAB402_Frm01_02_VISUALIZZA_NOTE</code></td><td><code>MSys_TB40_Frm02_S02_NOTE</code></td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Correzione del 14/11:</b> <code>MSys_TB40_Qry01_03_INS_PROGETTI_TMP</code> inseriva sempre 0 righe, perché univa progetti e TMP con un prodotto incrociato (due tabelle separate da una virgola nel <code>FROM</code>): con la TMP vuota il risultato era vuoto. Ora usa un <code>LEFT JOIN</code> su <code>COD_PROGETTO_s</code> e copia nella TMP il progetto con <code>Scel_b = True</code> che non c'è ancora. Provata: 1 riga inserita, 0 alla seconda esecuzione. Corretta nel MASTER e in <code>GE_MSys_TB40.mdb</code>.</p>
+<pre class="code">INSERT INTO MSys_TB40_Tb01_PROGETTI_TMP ( … )
+SELECT MSys_TB40_Tb01_PROGETTI.…
+FROM MSys_TB40_Tb01_PROGETTI
+     LEFT JOIN MSys_TB40_Tb01_PROGETTI_TMP
+     ON MSys_TB40_Tb01_PROGETTI.COD_PROGETTO_s = MSys_TB40_Tb01_PROGETTI_TMP.COD_PROGETTO_s
+WHERE MSys_TB40_Tb01_PROGETTI.Scel_b = True
+  AND MSys_TB40_Tb01_PROGETTI_TMP.COD_PROGETTO_s Is Null;</pre>
+    <p>Il primo numero dopo il tipo indica la tabella: <code>Qry01</code> lavora sui progetti (Tb01), <code>Qry02</code> sulle pagine (Tb02). Una pagina senza progetto (<code>GestioneFile</code>, ID 78) non è stata copiata: resta nel vecchio file ed è annotata in <code>MSys_TB40\AA_SALVATAGGI</code>.</p>
+  </div>
+
+  <div class="sub">
+    <h3>Cosa succede quando si apre la Form MASTER</h3>
+    <figure>
+      <div class="scroll">
+        <svg class="dg" viewBox="0 0 960 630" role="img" aria-label="Flusso di caricamento: reset, lettura del progetto con Scel_b, lettura delle pagine, controllo preventivo che blocca tutto se manca una form, assegnazione delle form alle sottomaschere. Il doppio click sul codice progetto ricrea le tabelle temporanee e richiama reset e caricamento.">
+          <defs>
+            <marker id="f3-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+            <marker id="f3-ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-acc"/></marker>
+          </defs>
+          <!-- corsia principale -->
+          <rect class="bx2" x="120" y="20" width="360" height="44" rx="22"/>
+          <text class="t-b" x="140" y="47">Apertura Form MASTER</text>
+          <text class="t-code" x="460" y="47" text-anchor="end">#03</text>
+          <line class="ln" x1="300" y1="64" x2="300" y2="88" marker-end="url(#f3-ar)"/>
+
+          <rect class="bx" x="120" y="90" width="360" height="44" rx="4"/>
+          <text x="140" y="117">Reset di sottoform e pagine</text>
+          <text class="t-code" x="466" y="117" text-anchor="end">#08 · #07</text>
+          <line class="ln" x1="300" y1="134" x2="300" y2="158" marker-end="url(#f3-ar)"/>
+
+          <rect class="bx" x="120" y="160" width="360" height="44" rx="4"/>
+          <text x="138" y="187">Legge il progetto con Scel_b = True</text>
+          <text class="t-code" x="466" y="187" text-anchor="end">#18.02</text>
+          <line class="ln" x1="300" y1="204" x2="300" y2="226" marker-end="url(#f3-ar)"/>
+
+          <polygon class="bx" points="300,228 410,262 300,296 190,262"/>
+          <text x="300" y="266" text-anchor="middle">Progetto trovato?</text>
+          <line class="ln" x1="410" y1="262" x2="538" y2="262" marker-end="url(#f3-ar)"/>
+          <text class="t-lbl" x="474" y="254" text-anchor="middle">no</text>
+          <rect class="bx" x="540" y="240" width="260" height="44" rx="4"/>
+          <text x="556" y="267">Avviso e uscita</text>
+          <text class="t-code" x="786" y="267" text-anchor="end">#18.03</text>
+          <line class="ln" x1="300" y1="296" x2="300" y2="320" marker-end="url(#f3-ar)"/>
+          <text class="t-lbl" x="310" y="313">sì</text>
+
+          <rect class="bx" x="120" y="322" width="360" height="44" rx="4"/>
+          <text x="138" y="349">Legge le pagine del progetto (Tb02)</text>
+          <text class="t-code" x="466" y="349" text-anchor="end">#18.05</text>
+          <line class="ln" x1="300" y1="366" x2="300" y2="386" marker-end="url(#f3-ar)"/>
+
+          <polygon class="bx-acc" points="300,388 440,426 300,464 160,426"/>
+          <text x="300" y="422" text-anchor="middle">Tutte le form visibili</text>
+          <text x="300" y="439" text-anchor="middle">esistono?</text>
+          <text class="t-code" x="150" y="430" text-anchor="end">#18.06</text>
+          <line class="ln-acc" x1="440" y1="426" x2="538" y2="426" marker-end="url(#f3-ac)"/>
+          <text class="t-lbl" x="489" y="418" text-anchor="middle">no</text>
+          <rect class="bx-acc" x="540" y="398" width="330" height="56" rx="4"/>
+          <text class="t-b t-acc" x="556" y="421">Caricamento BLOCCATO</text>
+          <text class="t-s" x="556" y="441">un solo messaggio con l'elenco delle form mancanti</text>
+          <line class="ln" x1="300" y1="464" x2="300" y2="486" marker-end="url(#f3-ar)"/>
+          <text class="t-lbl" x="310" y="479">sì</text>
+
+          <rect class="bx" x="120" y="488" width="360" height="56" rx="4"/>
+          <text x="138" y="511">Per ogni pagina: SourceObject,</text>
+          <text x="138" y="531">Visible e Caption su SottoForm_nn</text>
+          <text class="t-code" x="466" y="511" text-anchor="end">#18.07 → #09</text>
+          <line class="ln" x1="300" y1="544" x2="300" y2="566" marker-end="url(#f3-ar)"/>
+
+          <rect class="bx2" x="120" y="568" width="360" height="44" rx="22"/>
+          <text class="t-b" x="140" y="595">Pagine visibili, form pronta</text>
+          <text class="t-code" x="460" y="595" text-anchor="end">#03.05</text>
+
+          <!-- corsia laterale: doppio click nella sottomaschera 401 -->
+          <rect class="bx" x="600" y="20" width="330" height="56" rx="4"/>
+          <text class="t-b" x="616" y="43">Doppio click sul codice progetto</text>
+          <text class="t-s" x="616" y="63">MSys_TB40_Frm01_S01_PROGETTI · #06</text>
+          <line class="ln" x1="765" y1="76" x2="765" y2="106" marker-end="url(#f3-ar)"/>
+          <rect class="bx" x="600" y="108" width="330" height="56" rx="4"/>
+          <text class="t-b" x="616" y="131">Ricrea le tabelle temporanee</text>
+          <text class="t-s" x="616" y="151">TMP di Tb01 e Tb02 · #06.04 – #06.06</text>
+          <polyline class="ln" points="600,136 540,136 540,112 482,112" marker-end="url(#f3-ar)"/>
+          <text class="t-lbl" x="540" y="100" text-anchor="middle">richiama #08 + #18</text>
+        </svg>
+      </div>
+      <figcaption>Il controllo preventivo <code>#18.06</code> verifica tutte le form visibili prima di caricarne anche una sola: se ne manca una, nessuna pagina viene caricata e un unico messaggio elenca ID, numero, pagina e nome. Lo stesso percorso parte dal doppio click sul codice progetto nella sottomaschera dei progetti.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ #04 -->
+<section id="ciclo">
+  <div class="sec-head"><div class="eyebrow">#04#</div><h2>Il ciclo di vita di un oggetto</h2></div>
+  <p>Una sottoform arriva nella Form MASTER sempre per gli stessi sei passi. Ogni passo ha un posto preciso, e un controllo impedisce di saltare quello prima.</p>
+  <ol class="steps">
+    <li><h3>Costruisci</h3><p>Crei form, query e moduli nel front-end del mini-progetto, con i nomi della sezione #05. I dati restano nel back-end.</p><span class="where">GE_MSys_DF11.mdb</span></li>
+    <li><h3>Esporta</h3><p>Salvi gli oggetti in testo nella cartella OBJECT e fai commit con git: copia di sicurezza e storia delle modifiche.</p><span class="where">OBJECT\ · git</span></li>
+    <li><h3>Importa</h3><p>Dal MASTER importi gli oggetti e colleghi le tabelle del back-end con l'utilità TB30.</p><span class="where">Msys_TB30_UTIL · Frm21 IMPORTA_OGGETTI</span></li>
+    <li><h3>Registra</h3><p>In TB40, tabella Tb02, aggiungi le pagine del progetto. Un nome di form inesistente viene rifiutato subito.</p><span class="where">MSys_TB40_Frm02_S01_PAGINE · #02.02</span></li>
+    <li><h3>Attiva</h3><p>In TB40, tabella Tb01, spunti <code>Scel_b</code> sul progetto. Il controllo sulla spunta è progettato ma non ancora installato.</p><span class="where">MSys_TB40_Frm01_S01_PROGETTI · #08 (proposto)</span></li>
+    <li><h3>Carica</h3><p>La Form MASTER verifica tutte le form del progetto e le assegna alle pagine.</p><span class="where">Form MASTER · #18.06 → #09</span></li>
+  </ol>
+</section>
+
+<!-- ============================================================ #05 -->
+<section id="nomi">
+  <div class="sec-head"><div class="eyebrow">#05#</div><h2>La grammatica dei nomi</h2></div>
+  <p>Un nome è fatto di segmenti in <b>ordine fisso</b> e di <b>larghezza fissa</b>. È questo che rende possibili le chiavi di estrazione: con posizioni fisse un filtro può chiedere "tutte le query di aggiornamento" senza confondersi con le descrizioni.</p>
+
+  <div class="anatomy" role="img" aria-label="Anatomia del nome MSys_DF01_Qry01_01_SEL_COMANDI_TUTTI: progetto, mini-progetto, tipo e numero della tabella, progressivo, ruolo, descrizione.">
+    <div class="segs">
+      <div class="seg p"><span class="v">MSys</span><span class="l"><b>Progetto</b>sempre così</span></div>
+      <div class="seg sep"><span class="v">_</span><span class="l"></span></div>
+      <div class="seg m"><span class="v">DF01</span><span class="l"><b>Mini-progetto</b>4 caratteri</span></div>
+      <div class="seg sep"><span class="v">_</span><span class="l"></span></div>
+      <div class="seg t"><span class="v">Qry01</span><span class="l"><b>Tipo + tabella</b>query sulla Tb01</span></div>
+      <div class="seg sep"><span class="v">_</span><span class="l"></span></div>
+      <div class="seg t"><span class="v">01</span><span class="l"><b>Progressivo</b>2 cifre</span></div>
+      <div class="seg sep"><span class="v">_</span><span class="l"></span></div>
+      <div class="seg r"><span class="v">SEL</span><span class="l"><b>Ruolo</b>3 lettere</span></div>
+      <div class="seg sep"><span class="v">_</span><span class="l"></span></div>
+      <div class="seg d"><span class="v">COMANDI_TUTTI</span><span class="l"><b>Descrizione</b>maiuscolo, libera</span></div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="sub" style="margin-top:0">
+      <h3>Codici dei mini-progetti per fasce</h3>
+      <p>Le fasce ricalcano i codici che usi già: il numero dice da solo a quale famiglia appartiene un mini-progetto.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Fascia</th><th>Famiglia</th><th>Esistenti</th></tr></thead>
+        <tbody>
+          <tr><td><code>DF00</code></td><td>modello da copiare</td><td>DF00, MSYS_BASE</td></tr>
+          <tr><td><code>DF01–DF09</code></td><td>definizioni degli oggetti</td><td>DF01 comandi · DF02 tipi oggetto · DF05 attributi</td></tr>
+          <tr><td><code>DF10–DF19</code></td><td>definizioni di progetto</td><td>DF10 database · DF11 codici · DF12 · DF13 DLL · DF14 path · DF19 controlli</td></tr>
+          <tr><td><code>TB01–TB19</code></td><td>archivi</td><td>TB03 elenco oggetti · TB04 · TB12 file</td></tr>
+          <tr><td><code>TB20–TB29</code></td><td>archivi di supporto</td><td>TB20 proprietà controlli</td></tr>
+          <tr><td><code>TB30–TB39</code></td><td>utilità</td><td>TB30 UTIL</td></tr>
+          <tr><td><code>TB40–TB49</code></td><td>sistema MASTER</td><td>TB40 progetti + pagine</td></tr>
+          <tr><td><code>TB90–TB99</code></td><td>servizio</td><td>TB99 LINK</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="sub" style="margin-top:0">
+      <h3>Tipi di oggetto</h3>
+      <p>Il primo numero dopo il tipo è la tabella del mini-progetto su cui l'oggetto lavora; il secondo è il progressivo.</p>
+      <div class="tbl"><table>
+        <thead><tr><th>Token</th><th>Oggetto</th><th>Esempio</th></tr></thead>
+        <tbody>
+          <tr><td><code>Tb01</code></td><td>tabella</td><td><code>MSys_DF01_Tb01_COMANDI</code></td></tr>
+          <tr><td><code>Qry01_01</code></td><td>query</td><td><code>MSys_DF01_Qry01_01_SEL_COMANDI</code></td></tr>
+          <tr><td><code>Frm01_M01</code></td><td>form principale</td><td><code>MSys_DF01_Frm01_M01_COMANDI</code></td></tr>
+          <tr><td><code>Frm01_S01</code></td><td>sottoform</td><td><code>MSys_DF01_Frm01_S01_COMANDI</code></td></tr>
+          <tr><td><code>Frm01_D01</code></td><td>finestra di dialogo</td><td><code>MSys_TB30_Frm01_D01_PROGRESSO</code></td></tr>
+          <tr><td><code>Rpt01_01</code></td><td>report</td><td><code>MSys_DF01_Rpt01_01_COMANDI</code></td></tr>
+          <tr><td><code>Mdl01</code></td><td>modulo</td><td><code>MSys_DF01_Mdl01_COLLEGA_COMANDI</code></td></tr>
+          <tr><td><code>Cls01</code></td><td>classe</td><td><code>MSys_TB30_Cls01_GESTIONE_OGGETTI</code></td></tr>
+          <tr><td><code>Mcr01</code></td><td>macro</td><td><code>MSys_DF01_Mcr01_AVVIO</code></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>Ruolo delle query</h3>
+    <div class="tbl"><table class="w-mid">
+      <thead><tr><th>Ruolo</th><th>Tipo di query Access</th><th>Ruolo</th><th>Tipo di query Access</th></tr></thead>
+      <tbody>
+        <tr><td><code>SEL</code></td><td>selezione</td><td><code>INS</code></td><td>accodamento</td></tr>
+        <tr><td><code>GRP</code></td><td>raggruppamento, totali</td><td><code>UPD</code></td><td>aggiornamento</td></tr>
+        <tr><td><code>UNI</code></td><td>unione</td><td><code>DEL</code></td><td>eliminazione</td></tr>
+        <tr><td><code>XTB</code></td><td>a campi incrociati</td><td><code>MAK</code></td><td>creazione tabella</td></tr>
+      </tbody>
+    </table></div>
+    <p>Suffissi: <code>_TMP</code> per tabelle temporanee e oggetti che ci lavorano sopra. Le intestazioni di gruppo come <code>MSys_DF01_}-----@</code> restano: separano i gruppi nel riquadro di spostamento e non sono oggetti di lavoro.</p>
+  </div>
+
+  <div class="sub">
+    <h3>Dai nomi di oggi ai nomi proposti</h3>
+    <div class="tbl"><table class="w-wide">
+      <thead><tr><th>Oggi</th><th>Proposto</th><th>Cosa cambia</th></tr></thead>
+      <tbody>
+        <tr><td><code>MSys_DF01_COMANDI_Qry01_01_SELECT_TUTTI</code></td><td><code>MSys_DF01_Qry01_01_SEL_COMANDI_TUTTI</code></td><td>il tipo segue subito il codice; ruolo di 3 lettere</td></tr>
+        <tr><td><code>Msys_DF01Qry01_01_COMANDI_TUTTI</code></td><td><code>MSys_DF01_Qry01_02_SEL_COMANDI_TUTTI</code></td><td>manca il <code>_</code> dopo DF01; da unificare con la precedente se fanno la stessa cosa</td></tr>
+        <tr><td><code>MSSys_DF02_Qry01_01_SELECT_TIPO_OGGETTO</code></td><td><code>MSys_DF02_Qry01_01_SEL_TIPO_OGGETTO</code></td><td><code>MSSys_</code> esce dal filtro <code>MSys_*</code></td></tr>
+        <tr><td><code>MSsys_DF05_Qry01_ATTRIBUTI</code></td><td><code>MSys_DF05_Qry01_01_SEL_ATTRIBUTI</code></td><td>stesso problema, e manca il progressivo</td></tr>
+        <tr><td><code>MSys_TAB402_Qry01_02_VISUAL_PAG_MASTER_Insert_TMP</code></td><td><code>MSys_TB40_Qry02_03_INS_PAGINE_TMP</code></td><td><b>applicato il 14/11</b>; <code>Qry02</code> = lavora sulla tabella Tb02</td></tr>
+        <tr><td><code>MSys_TAB401_Frm01_01_GE_TabContr_MASTER</code></td><td><code>MSys_TB40_Frm01_S01_PROGETTI</code></td><td><b>applicato il 14/11</b>; è una sottoform: <code>S01</code></td></tr>
+        <tr><td><code>Msys_DF01_Frm01_M01_GE_COMANDI</code></td><td><code>MSys_DF01_Frm01_M01_COMANDI</code></td><td>già quasi conforme; <code>GE_</code> è implicito in <code>M01</code></td></tr>
+        <tr><td><code>Msys_DF11_Mdl01_COLLEGA_PROGETTI</code></td><td><code>MSys_DF11_Mdl01_COLLEGA_PROGETTI</code></td><td>solo il prefisso</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="sub">
+    <h3>Le chiavi di estrazione</h3>
+    <p>In Access <code>*</code> vale qualsiasi testo, <code>?</code> un carattere, <code>#</code> una cifra. Grazie alla larghezza fissa, <code>????</code> copre qualunque codice di mini-progetto.</p>
+    <div class="tbl"><table class="w-mid">
+      <thead><tr><th>Chiave (LIKE)</th><th>Estrae</th></tr></thead>
+      <tbody>
+        <tr><td><code>MSys_*</code></td><td>tutto il super-progetto (le tabelle di sistema come <code>MSysObjects</code> restano fuori grazie al <code>_</code>)</td></tr>
+        <tr><td><code>MSys_DF*</code></td><td>tutte le definizioni</td></tr>
+        <tr><td><code>MSys_DF1#_*</code></td><td>le definizioni di progetto, DF10–DF19</td></tr>
+        <tr><td><code>MSys_TB4#_*</code></td><td>tutto il sistema MASTER</td></tr>
+        <tr><td><code>MSys_TB40_Qry02_*</code></td><td>le query sulle pagine (tabella Tb02 di TB40)</td></tr>
+        <tr><td><code>MSys_DF01_*</code></td><td>tutto il mini-progetto DF01</td></tr>
+        <tr><td><code>MSys_DF01_Qry*</code></td><td>le query di DF01</td></tr>
+        <tr><td><code>MSys_????_Qry##_##_UPD_*</code></td><td>tutte le query di aggiornamento del progetto</td></tr>
+        <tr><td><code>MSys_????_Frm##_M##_*</code></td><td>tutte le form principali</td></tr>
+        <tr><td><code>MSys_????_Frm##_S##_*</code></td><td>tutte le sottoform</td></tr>
+        <tr><td><code>MSys_*_TMP</code></td><td>tutti gli oggetti temporanei</td></tr>
+      </tbody>
+    </table></div>
+    <pre class="code"><span class="c">' tutte le query di aggiornamento del super-progetto, dall'interno di Access</span>
+SELECT Name FROM MSysObjects
+WHERE Name LIKE "MSys_????_Qry##_##_UPD_*" AND Type = 5;
+<span class="c">' Type: 1 tabella locale · 6 collegata · 5 query · -32768 form · -32764 report · -32761 modulo</span></pre>
+    <p>Il carattere <code>_</code> è un carattere normale nelle query di Access e nell'operatore <code>Like</code> di VBA. Diventa un jolly solo con ADO in modalità ANSI-92: in quel caso si scrive <code>[_]</code>.</p>
+  </div>
+
+  <div class="sub">
+    <h3>Regole</h3>
+    <ul class="rules">
+      <li>Il prefisso è sempre <code>MSys_</code>, scritto così. Le maiuscole non cambiano il risultato del filtro, ma una lettera in più sì.</li>
+      <li>Il codice del mini-progetto ha sempre 4 caratteri: <code>TB40</code>, mai <code>TAB401</code> o <code>TB0401</code>.</li>
+      <li>I numeri hanno sempre 2 cifre: <code>Qry01_03</code>, mai <code>Qry1_3</code>.</li>
+      <li>L'ordine dei segmenti non cambia: progetto, mini-progetto, tipo e numeri, ruolo, descrizione.</li>
+      <li>La descrizione è in maiuscolo, con <code>_</code> tra le parole, senza spazi né accenti.</li>
+      <li>Al massimo 64 caratteri (limite di Access); meglio restare sotto i 45.</li>
+      <li>Un oggetto ha un solo nome: niente date, "copia di" o <code>_OLD</code> nel nome. Le versioni stanno in git, i dismessi in <code>ZZ_OLD\</code>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ #06 -->
+<section id="cartelle">
+  <div class="sec-head"><div class="eyebrow">#06#</div><h2>Le cartelle</h2></div>
+  <div class="two">
+    <div class="sub" style="margin-top:0">
+      <h3>Albero proposto</h3>
+<pre class="tree"><span class="h">MSYS\</span>
+├─ 00_DOC\                 <span class="c">master plan, convenzioni</span>
+├─ MSYS_ATTIVA_GEST\       <span class="c">applicazione MASTER</span>
+├─ MSys_DF00\              <span class="c">modello da copiare</span>
+├─ MSys_DF01 … DF09\       <span class="c">definizioni oggetti</span>
+├─ MSys_DF10 … DF19\       <span class="c">definizioni progetto</span>
+├─ MSys_TB01 … TB29\       <span class="c">archivi</span>
+├─ MSys_TB30 … TB39\       <span class="c">utilità</span>
+├─ MSys_TB40 … TB49\       <span class="c">sistema MASTER</span>
+├─ MSys_TB90 … TB99\       <span class="c">servizio</span>
+└─ ZZ_OLD\                 <span class="c">dismesso, fuori dai filtri</span></pre>
+    </div>
+    <div class="sub" style="margin-top:0">
+      <h3>Dentro ogni mini-progetto</h3>
+<pre class="tree"><span class="h">MSys_DF11\</span>
+├─ MDB\
+│  ├─ MSys_DF11.mdb        <span class="c">back-end: solo tabelle</span>
+│  └─ GE_MSys_DF11.mdb     <span class="c">front-end: tutto il resto</span>
+├─ OBJECT\                 <span class="c">oggetti in testo (git)</span>
+├─ HELP\                   <span class="c">PDF e note</span>
+├─ AA_SALVATAGGI\          <span class="c">copie datate</span>
+└─ README_DF11.md          <span class="c">scopo, tabelle, chiave</span></pre>
+      <p>Lo schema esiste già nel nuovo albero. Manca la separazione netta: oggi molti back-end contengono anche form e query (per esempio <code>MSys_DF01.mdb</code> ha 3 form), quindi si rischia di modificare la copia sbagliata.</p>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>Dove va ogni cartella di oggi</h3>
+    <p>Contenuto rilevato aprendo i database in sola lettura; tra parentesi il numero di righe.</p>
+    <div class="tbl"><table class="w-wide">
+      <thead><tr><th>Cartella di oggi</th><th>Cosa contiene</th><th>Proposta</th><th>Azione</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="4">Sistema MASTER</td></tr>
+        <tr><td><code>MSYS_ATTIVA_GEST</code> / <code>MSYS_ATTIVA_GEST_OGGETTI</code></td><td>front-end MASTER: 60 collegamenti, 197 query, 55 form; presente in tutti e due gli alberi</td><td>applicazione MASTER</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>MSys_TB40</code> <span class="old">nuova, 14/11</span></td><td>MSys_TB40.mdb: Tb01 progetti (12), Tb02 pagine (57), più le TMP; GE_MSys_TB40.mdb con query, form e moduli comuni</td><td>TB40 sistema MASTER</td><td><span class="chip k">fatto</span></td></tr>
+        <tr><td><code>TAB_CONTROL_MASTER_(401_402_501_502)</code></td><td>TAB401 e TAB402 copiate in MSys_TB40; restano 501/502 del Tab Control SEMPLICE</td><td>501/502 → TB41</td><td><span class="chip d">decidi</span></td></tr>
+        <tr><td><code>Msys_TB40_PROG_MASTER</code></td><td>MSys_TB40_PROG_MASTER (12) e MSys_TAB40_PROG_MASTER (12), vecchie copie</td><td>superata da MSys_TB40</td><td><span class="chip a">archivia</span></td></tr>
+        <tr><td><code>MSys_TB41_VISUAL_PAG_MASTER</code></td><td>MSys_TB41_VISUAL_PAG_MASTER (58), vecchia copia</td><td>superata da MSys_TB40</td><td><span class="chip a">archivia</span></td></tr>
+        <tr><td><code>MSys_FORMS_MASTER</code></td><td>SottoFormMaster e MSys_TUTTI_TB01/TB02: sistema dismesso il 14/11</td><td>—</td><td><span class="chip a">archivia</span></td></tr>
+        <tr class="grp"><td colspan="4">Definizioni</td></tr>
+        <tr><td><code>MSys_DF00</code>, <code>MSYS_BASE</code></td><td>modello di mini-progetto; MSYS_BASE_MODELLO con tabelle MODELLO_Tb01…</td><td>DF00 modello</td><td><span class="chip u">unisci in DF00</span></td></tr>
+        <tr><td><code>MSys_DF01 … DF06</code></td><td>comandi, tipi oggetto, quote, attributi tabella; DF06 senza database</td><td>DF01–DF09</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>MSys_DF10 … DF14</code></td><td>database, codici progetto, oggetti necessari, DLL, path</td><td>DF10–DF19; DF11 anagrafe unica</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>TAB_CONTROL</code></td><td>MSys_DF19_CODICI_CONTROLS (7), MSys_TB20_Control_PROPRIETA (1310)</td><td>DF19 + TB20</td><td><span class="chip d">decidi</span></td></tr>
+        <tr class="grp"><td colspan="4">Archivi</td></tr>
+        <tr><td><code>MSys_TB01_PROGETTI</code></td><td>Msys_TB01_PROGETTI (24), PROGETTI_Msys_TB01_PROJECT (24), Msys_TUTTI_PROGETTI.mdb</td><td>doppione di DF11</td><td><span class="chip u">unisci in DF11</span></td></tr>
+        <tr><td><code>MSys_TB02_TIPO_OGGETTI</code></td><td>Msys_TB02_TIPO_OGGETTI (43)</td><td>sovrapposto a DF12</td><td><span class="chip d">decidi</span></td></tr>
+        <tr><td><code>MSys_TB03_ELENCO_OGGETTI</code></td><td>Msys_TB03_ELENCO_ObjProgetti (377) e un database LLPP</td><td>catalogo unico degli oggetti</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>MSys_ELENCO</code></td><td>MSys_ELENCO_ObjProgetti (244)</td><td>doppione di TB03</td><td><span class="chip u">unisci in TB03</span></td></tr>
+        <tr><td><code>MSys_FORMS</code>, <code>QUERY</code>, <code>TABELLE</code>, <code>MODULI</code>, <code>REPORT</code>, <code>MACRO</code>, <code>PAGINE</code>, <code>Msys_TB05_FORMS</code></td><td>un inventario per tipo: 35 · 86 · 75 · 49 · 2 · 3 · 43 · 2</td><td>query su TB03 filtrate per tipo</td><td><span class="chip u">unisci in TB03</span></td></tr>
+        <tr><td><code>MSys_TB04_DB_ESTERNO</code></td><td>MSYS_TB04_DB_ESTERNO (4)</td><td>sovrapposto a DF10 (database)</td><td><span class="chip d">decidi</span></td></tr>
+        <tr><td><code>Msys_TB12_FILES</code></td><td>Msys_TB12_FILES (1)</td><td>TB12 file</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>MSys_TB99_LINK</code></td><td>LINK (43), LINK_Object (508), LINK_PATH_DB (43)</td><td>TB99 servizio collegamenti</td><td><span class="chip k">tieni</span></td></tr>
+        <tr class="grp"><td colspan="4">Utilità</td></tr>
+        <tr><td><code>Msys_TB30_UTIL</code></td><td>Frm21 IMPORTA_OGGETTI, 44 query</td><td>TB30 import / export</td><td><span class="chip k">tieni</span></td></tr>
+        <tr><td><code>MsysUTIL</code>, <code>MSys_ESPORTA_IMPORTA</code>, <code>MSYS_OBJECT_DB_EST</code>, <code>TMP_ESPORTA_*</code>, <code>TMP_IMPORTA_*</code></td><td>strumenti di import / export precedenti</td><td>confluiscono in TB30</td><td><span class="chip u">unisci in TB30</span></td></tr>
+        <tr><td><code>MSys_GE_FILE</code></td><td>classi clsFileSystem, clsLogger, clsDBInspector</td><td>libreria classi, fascia TB30–TB39</td><td><span class="chip d">decidi il codice</span></td></tr>
+        <tr><td><code>MSYS_MENU</code></td><td>GEST_MENU_Tb01_VOCI (7), GEST_MENU_TB02_FUNZIONI (23), prefisso proprio</td><td>mini-progetto menu o progetto a parte</td><td><span class="chip d">decidi</span></td></tr>
+        <tr><td><code>TREVIEW</code></td><td>Tree (37), Tree_CLASSI_STAMPA_DI_CONTROLLO (128.355)</td><td>visualizzazione ad albero</td><td><span class="chip d">decidi</span></td></tr>
+        <tr class="grp"><td colspan="4">Archivio</td></tr>
+        <tr><td><code>MSYS_OGGETTI_OLD</code>, <code>TMP_OGGETTI_DA_CANCELLARE</code>, <code>MSys_TUTTI_MODELLI</code></td><td>vecchio materiale; GE_LLPP_ATTI appartiene a un altro progetto</td><td>ZZ_OLD</td><td><span class="chip a">archivia</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ============================================================ #07 -->
+<section id="inventario">
+  <div class="sec-head"><div class="eyebrow">#07#</div><h2>Cosa ha mostrato l'inventario</h2></div>
+  <p>Queste sono le cause concrete della difficoltà a vedere il quadro: la stessa informazione vive in più posti, con nomi diversi.</p>
+  <ol class="find">
+    <li><b>L'anagrafe dei progetti esiste in cinque tabelle.</b> Lo stesso codice può avere descrizioni diverse a seconda di dove lo si legge.
+      <span class="ev">Msys_DF11_COD_PROGETTO · Msys_TB01_PROGETTI (24) · MSys_TB05_CODICI_PROGETTO (1) · MSys_TB40_PROG_MASTER (12, vecchia copia) · MSys_TB40_Tb01_PROGETTI (12, in uso, ex TAB401)</span></li>
+    <li><b>L'elenco degli oggetti esiste in almeno dieci tabelle</b>, una per tipo più tre elenchi generali.
+      <span class="ev">TB99_LINK_Object (508) · TB03_ELENCO_ObjProgetti (377) · MSys_ELENCO_ObjProgetti (244) · MSys_QUERY (86) · MSys_TABELLE (75) · MSys_MODULI (49) · MSys_PAGINE (43) · MSys_FORMS (35) · MSys_MACRO (3) · MSys_REPORT (2)</span></li>
+    <li><b>Le tabelle del MASTER erano in doppia copia.</b> <span class="reco">Risolto il 14/11: l'unica fonte è MSys_TB40.mdb.</span>
+      <span class="ev">MSys_TAB402_VISUAL_PAG_MASTER (58, in uso) e MSys_TB41_VISUAL_PAG_MASTER (58) · MSys_TAB401_… (12) e MSys_TB40_PROG_MASTER (12)</span></li>
+    <li><b>Il prefisso è scritto in cinque modi.</b> I primi tre passano il filtro <code>MSys_*</code>, gli ultimi due no.
+      <span class="ev">MSys_ · Msys_ · MSYS_ · MSSys_DF02_Qry01_01_SELECT_TIPO_OGGETTO · MSsys_DF05_Qry01_ATTRIBUTI</span></li>
+    <li><b>Il tipo di oggetto cambia posizione nel nome</b>, quindi nessun filtro a posizione fissa funziona.
+      <span class="ev">MSys_DF01_COMANDI_Qry01_01_… · Msys_DF01Qry01_01_… · MSys_DF02_Qry01_01_…</span></li>
+    <li><b>I back-end contengono anche form e query</b>, copie di quelle del front-end.
+      <span class="ev">MSys_DF01.mdb: 3 form, 4 query · MSys_DF02.mdb: 2 form, 3 query · MSys_DF03.mdb: 2 form</span></li>
+    <li><b>Nelle cartelle MSys ci sono database di un altro progetto (LLPP).</b>
+      <span class="ev">MSys_GE_FILE\LLPP_ATTI_DF01_CodiceOpera.mdb · MSys_TB03_ELENCO_OGGETTI\LLPP_ATTI_TB06_PROCEDIMENTI.mdb · TMP_IMPORTA_MODULI\LLPP_ATTI_GESTIONE.mdb</span></li>
+    <li><b>Il menu usa un prefisso suo</b>, quindi nessun filtro <code>MSys_*</code> lo trova.
+      <span class="ev">GEST_MENU_Tb01_VOCI · GEST_MENU_TB02_FUNZIONI</span></li>
+    <li><b>Ci sono due alberi in parallelo</b> e il database MASTER esiste in entrambi.
+      <span class="ev">PROGETTI_MDB\MSYS\MSYS_ATTIVA_GEST · PROGETTI_MDB\MSYS_OGGETTI\MSYS\MDB\MSYS_ATTIVA_GEST_OGGETTI</span></li>
+  </ol>
+</section>
+
+<!-- ============================================================ #08 -->
+<section id="roadmap">
+  <div class="sec-head"><div class="eyebrow">#08#</div><h2>Roadmap</h2></div>
+  <p>Ogni fase lascia il sistema funzionante. L'ordine conta: prima le regole, poi le fonti uniche, per ultima la rinomina, che tocca tutto.</p>
+  <ol class="road">
+    <li><b>Fissare le regole.</b> Approvare definizioni, fasce dei codici e grammatica dei nomi (questa pagina). Nessun file viene toccato.</li>
+    <li><b>Una sola anagrafe dei progetti.</b> DF11 diventa la fonte dei codici; in TB40 il codice si sceglie da DF11 con una casella combinata. TB01 e TB05 vanno in archivio.</li>
+    <li><b>Un solo mini-progetto per il MASTER.</b> <span class="reco">Fatto il 14/11/2026.</span> TAB401 e TAB402 sono diventate <code>MSys_TB40_Tb01_PROGETTI</code> e <code>MSys_TB40_Tb02_PAGINE</code> nello stesso back-end, con relazione e integrità referenziale. Nel MASTER del nuovo albero sono stati aggiornati collegamenti, 8 query, 5 form, codice e dati delle pagine; la Form MASTER è stata provata con il progetto <code>MSys</code>, anche con il doppio click sul codice progetto. Corretta la query che copia il progetto scelto nella TMP.</li>
+    <li><b>Un solo catalogo degli oggetti.</b> TB03 con il tipo preso da DF02; gli inventari per tipo diventano query come <code>MSys_TB03_Qry01_01_SEL_FORM</code>.</li>
+    <li><b>Un solo albero di cartelle.</b> Tutto in <code>PROGETTI_MDB\MSYS</code>; il dismesso in <code>ZZ_OLD\</code>; i database LLPP fuori da MSys.</li>
+    <li><b>Rinomina graduale.</b> Una tabella di corrispondenza vecchio nome → nuovo nome e uno script che rinomina e aggiorna i riferimenti, un mini-progetto alla volta, partendo da DF01.</li>
+  </ol>
+</section>
+
+<!-- ============================================================ #09 -->
+<section id="decisioni">
+  <div class="sec-head"><div class="eyebrow">#09#</div><h2>Decisioni da prendere</h2></div>
+  <ol class="dec">
+    <li><b>Codice TB41, ora libero:</b> usarlo per il Tab Control SEMPLICE (oggi 501/502), con la stessa struttura di TB40? <span class="reco">Consigliato: sì, stesso schema Tb01 progetti + Tb02 pagine.</span></li>
+
+    <li><b>Token <code>Tb01</code> nel nome delle tabelle:</b> <code>MSys_DF01_Tb01_COMANDI</code> oppure <code>MSys_DF01_COMANDI</code>? <span class="reco">Consigliato: con il token, così i filtri per tipo funzionano anche sulle tabelle.</span></li>
+    <li><b>Ruolo delle query:</b> sigla (<code>SEL</code>, <code>UPD</code>) oppure fasce numeriche come nel modello di TB30 (01 select, 10 group, 25 union, 60 update)? <span class="reco">Consigliato: sigla, si legge senza tabella di decodifica.</span></li>
+    <li><b>Menu <code>GEST_MENU</code>:</b> diventa un mini-progetto MSys (per esempio nella fascia TB20–TB29) o resta un progetto a parte?</li>
+    <li><b>Oggetti necessari per progetto:</b> DF12 (<code>Msys_DF12_ObjProgetti</code>) oppure TB02 (<code>Msys_TB02_TIPO_OGGETTI</code>)? Le due tabelle descrivono la stessa cosa.</li>
+    <li><b>TREVIEW e TAB_CONTROL:</b> restano nel super-progetto o vanno in archivio?</li>
+  </ol>
+</section>
+
+<footer>Master Plan MSys · inventario del 14/11/2026, aggiornato con la creazione di MSys_TB40 · i numeri tra parentesi sono le righe delle tabelle al momento della lettura.</footer>
+
+</div>
+
+</body>
+</html>

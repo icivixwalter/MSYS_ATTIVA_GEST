@@ -1,0 +1,254 @@
+'// CARICA_Mdl01_LIBRERIE - NEL PROGETTO ---> c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS_OGGETTI\MSYS\MDB\MSys_GE_FILE\MDB\MSys_GE_FILE.mdb
+'//START "APRI PROGETTO CLASSE" "c:\Casa\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS_OGGETTI\MSYS\MDB\MSys_GE_FILE\MDB\MSys_GE_FILE.mdb"
+
+Option Compare Database
+Option Explicit
+
+
+      '//LE @LIBRERIE NECESSARIE PER IL FUNZIONAMENTO DELLA CLASSE'
+
+         '//'   |NAME_s                           |LIBRERIA_DLL_s  PATH_s
+         '//'   |---------------------------------|-----------------------------------------------------------------------
+         '//'   |VBA VBE6.DLL                     |C:\Program Files (x86)\Common Files\Microsoft Shared\VBA\VBA6\VBE6.DLL
+         '//'   |Access  MSACC9.OLB               |C:\Program Files (x86)\Microsoft Office\Office\MSACC9.OLB
+         '//'   |Office  MSO9.DLL                 |C:\Program Files (x86)\Microsoft Office\Office\MSO9.DLL
+         '//'   |ADODB   msado21.tlb              |C:\Program Files (x86)\Common Files\System\ado\msado21.tlb
+         '//'   |DAO dao360.dll                   |C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\dao360.dll
+         '//'   |---------------------------------|-----------------------------------------------------------------------
+    
+    
+'2025_10_28_MODULO_LIBRERIE = creato un modulo per l'inserimento automatico delle librerie.
+Sub ImpostaRiferimenti()
+    Dim ref As Reference
+    Dim refList As Variant
+    Dim i As Integer
+    Dim refPath As String
+    Dim refName As String
+    Dim giàPresente As Boolean
+
+    ' Array con nome e percorso delle librerie
+    refList = Array( _
+        Array("VBE6", "C:\Program Files (x86)\Common Files\Microsoft Shared\VBA\VBA6\VBE6.DLL"), _
+        Array("Access", "C:\Program Files (x86)\Microsoft Office\Office\MSACC9.OLB"), _
+        Array("Office", "C:\Program Files (x86)\Microsoft Office\Office\MSO9.DLL"), _
+        Array("ADODB", "C:\Program Files (x86)\Common Files\System\ado\msado21.tlb"), _
+        Array("DAO", "C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\dao360.dll") _
+    )
+
+    ' Scorre la lista e aggiunge se mancante
+    For i = LBound(refList) To UBound(refList)
+        refName = refList(i)(0)
+        refPath = refList(i)(1)
+        giàPresente = False
+
+        ' Controlla se il riferimento esiste già
+        For Each ref In Application.References
+            If InStr(1, ref.fullPath, refName, vbTextCompare) > 0 Then
+                giàPresente = True
+                Exit For
+            End If
+        Next ref
+
+        ' Se mancante, lo aggiunge
+        If Not giàPresente Then
+            On Error Resume Next
+            Application.References.AddFromFile refPath
+            If Err.Number = 0 Then
+                Debug.Print "Aggiunto riferimento: " & refName
+            Else
+                Debug.Print "Errore aggiungendo " & refName & ": " & Err.Description
+                Err.Clear
+            End If
+            On Error GoTo 0
+        Else
+            Debug.Print "Già presente: " & refName
+        End If
+    Next i
+
+    MsgBox "Verifica completata. Controlla la finestra Immediata (Ctrl+G).", vbInformation
+End Sub
+
+
+
+
+
+
+'it.comp.appl.Access
+'Discussione:
+'Come posso aggiungere un riferimento DAO tramite codice VB in ACCESS 2000?
+'(troppo vecchio per rispondere)
+'Alex Lous
+'17 anni fa
+'Permalink
+'Ciao,
+'esiste il modo di fare aggiungere dal codice di apertura di una
+'maschera la libreria DAO36 ai riferimenti predefiniti in ACCESS2000?
+
+'Oppure
+
+'esiste un file di configurazione di ACCEss 2000 in cui inserire la
+'libreria DAO come predefinita?
+
+'Spero che qualcuno possa aiutarmi
+
+'Grazie
+'Tante
+
+'Alex
+'ALESSANDRO Baraldi
+'17 anni fa
+'Permalink
+'Post by Alex Lous
+'Ciao,
+'esiste il modo di fare aggiungere dal codice di apertura di una
+'maschera la libreria DAO36 ai riferimenti predefiniti in ACCESS2000?
+'Oppure
+'esiste un file di configurazione di ACCEss 2000 in cui inserire la
+'libreria DAO come predefinita?
+'Spero che qualcuno possa aiutarmi
+'Grazie
+'Tante
+'Alex
+'Prima verifica che non sia già referenziato con questa funzione
+'poi dai un'occhiata all'oggetto Reference in particolare
+'al Metodo .AddFromFile(strNomeFile)
+
+
+'//REFERENZIARE LA LIBRERIA DAO DA CODICE
+Public Function IsDAO_Referenced() As Boolean
+'==========================================================================
+'Name : IsDAO_Referenced (Function)
+'Purpose : Verifica se Sono Settati i Riferimenti alle Lib. DAO
+'Author : Alessandro Baraldi
+'Web_Site : http://digilander.iol.it/ik2zok/
+'E.Mail : ***@libero.it
+'Date : 01 febbraio 2002
+'Called by :
+'Calls :
+'Inputs : Nothing
+'Output : True only if is DAO Reference SET
+'@controllo.librerie.attive
+'==========================================================================
+
+On Error GoTo 0
+Dim ref As Access.Reference
+Dim blnBroken As Boolean
+
+IsDAO_Referenced = False
+Application.SetOption "Error Trapping", 2
+
+For Each ref In Application.References
+    blnBroken = ref.IsBroken
+    Debug.Print "Libreria attiva: " & ref.Name; " path   ------> " & ref.fullPath
+    
+'todo: da problemi con cDAOGUI ??
+'    If ref.Name = "DAO" And ref.Kind = 0 And StrComp(ref.Guid, cDAOGUID, 1) = 0 And Not blnBroken Then
+'        IsDAO_Referenced = True
+'    Exit For
+
+    'End If
+Next ref
+
+Set ref = Nothing
+
+End Function
+
+
+'//ITERA NELLA LIBRERIA DI REFERECES
+Function IteraReferenze() As Boolean
+    Dim ref As Reference
+    Dim objRefEvents As New References
+
+    On Error GoTo Error_IteraReferenze
+    ' Create new reference on References object variable.
+    'ERRATO --> Set ref = objRefEvents.evtReferences.AddFromFile(strFileName)
+    'objRefEvents.Item (1)
+    
+    
+Exit_IteraReferenze:
+    Exit Function
+
+Error_IteraReferenze:
+    MsgBox Err & ": " & Err.Description
+    IteraReferenze = False
+    Resume Exit_IteraReferenze
+End Function
+
+
+
+
+
+'NON FUNZIONA MA E' UN ESEMPIO
+Sub Test()
+'esegue un ciclo sui riferimenti presenti
+'nel progetto attivo scrivendo nella finestra
+'immediata il Nome del riferimento, e gli
+'argomenti necessari per aggiungere un riferimento
+'tramite il metodo AddFromGuid
+'Dim oVBP As VBProject     @non.funziona
+
+Dim oVBP As AccessObject
+Dim dbs As Object
+
+Dim oRef As Reference
+    Set oVBP = Application.CurrentProject         'Application.VBE.ActiveVBProject
+        For Each oRef In oVBP
+            Debug.Print oRef.Name
+            Debug.Print oRef.Guid
+            Debug.Print oRef.Major
+            Debug.Print oRef.Minor
+        Next
+End Sub
+
+
+
+
+'//STAMPA_LE_LIBRERIE_ATTIVE
+'//================================================================================================//
+Private Sub attiva_STAMPARE_Refereces()
+    '//CHIAMO LA FUNZIONE STAMPA LE LIBRERIE ATTIVE
+    STAMPARE_Refereces
+End Sub
+
+'//controllo librerie del progetto corrente, _
+@stampo.libreria,  @stampo.referenze @le.librerie.stampo
+Public Function STAMPARE_Refereces()
+Dim ref As Access.Reference
+Dim blnBroken As Boolean
+Dim icount As Integer
+Dim str1 As String
+
+
+  Dim obj As AccessObject, dbs As Object
+ 
+    Set dbs = Application
+    'Set ref = dbs.References
+        
+        Debug.Print "'LIBRERIE REFERENZIATE NEL PROGETTO DELL'UFFICIO"
+        Debug.Print "'--------------------------------------------------------"
+        Debug.Print
+        For Each ref In Application.References
+            icount = icount + 1
+            Debug.Print "'nro               -- > " & icount
+            str1 = str1 & Chr$(13)
+            str1 = str1 & "nro              -- > " & icount & Chr$(13)
+            
+            Debug.Print "'ref.Name          -- > " & ref.Name
+            str1 = str1 & "ref.Name         -- > " & ref.Name & Chr$(13)
+            
+            Debug.Print "'ref.Guid          -- > " & ref.Guid
+            str1 = str1 & "ref.Guid         -- > " & ref.Guid & Chr$(13)
+            
+            Debug.Print "'ref.FullPath      -- > " & ref.fullPath
+            str1 = str1 & "ref.FullPath     -- > " & ref.fullPath & Chr$(13)
+            str1 = str1 & Chr$(13)
+             
+        Next ref
+
+        MsgBox "STAMPA LE LIBRERIE REFERENZIATE NEL PROGETTO DELL'UFFICIO " & Chr$(13) _
+                & str1
+
+
+End Function
+
+'//================================================================================================//

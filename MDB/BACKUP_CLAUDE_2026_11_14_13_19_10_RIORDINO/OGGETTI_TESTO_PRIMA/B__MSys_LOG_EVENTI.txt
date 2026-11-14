@@ -1,0 +1,118 @@
+Option Compare Database
+Option Explicit
+'==================================================================================================
+'  MODULO  : MSys_LOG_EVENTI
+'  SCOPO   : log passo-passo del codice. Ogni chiamata scrive la STESSA riga su:
+'              1) finestra Immediata (Debug.Print)
+'              2) file  <cartella del database>\Logs\LogEventi.txt
+'  CREATO  : 2026-11-14
+'  FORMATO : aaaa-mm-gg hh:nn:ss | Classe: X | Funzione: Y | Sez/Par: 18.06 | Esito: OK     | Evento: ...
+'  ESITI   : INIZIO, OK, INFO, AVVISO, ERRORE, FINE
+'--------------------------------------------------------------------------------------------------
+'  INDICE DELLE SEZIONI E DEI PARAGRAFI
+'--------------------------------------------------------------------------------------------------
+'  #01#    IMPOSTAZIONI = costanti generali del log
+'          #01.01# = LOG_ATTIVO        = interruttore generale (True = scrive, False = non scrive nulla)
+'          #01.02# = LOG_CARTELLA_s / LOG_FILE_s = sottocartella e nome del file di log
+'  #02#    LOG_Scrivi = scrive una riga di log (finestra Immediata + file, testo identico)
+'          #02.01# = compongo la riga
+'          #02.02# = Debug.Print della riga
+'          #02.03# = creo la cartella Logs se non esiste
+'          #02.04# = scrivo la riga in coda al file
+'  #03#    LOG_Errore = scrive una riga ERRORE con numero, descrizione, sezione e paragrafo
+'  #04#    LOG_Separatore = scrive una riga di separazione (es. all'apertura di una form)
+'  #05#    LOG_PercorsoFile = restituisce il percorso completo del file di log
+'  #06#    LOG_Chiamante = descrive form e controllo attivi (chi ha avviato la procedura)
+'          #06.01# = form attiva
+'          #06.02# = controllo attivo e form/sottomaschera che lo contiene
+'==================================================================================================
+
+'##################################################################################################
+'## #01# = IMPOSTAZIONI = costanti generali del log
+'##################################################################################################
+'//#01.01# = interruttore generale
+Public Const LOG_ATTIVO As Boolean = True
+'//#01.02# = sottocartella e nome file (relativi alla cartella del database corrente)
+Private Const LOG_CARTELLA_s As String = "Logs"
+Private Const LOG_FILE_s As String = "LogEventi.txt"
+
+'##################################################################################################
+'## #02# = LOG_Scrivi = scrive una riga di log (finestra Immediata + file, testo identico)
+'##################################################################################################
+Public Sub LOG_Scrivi(ByVal par_Classe_s As String, _
+                      ByVal par_Funzione_s As String, _
+                      ByVal par_SezPar_s As String, _
+                      ByVal par_Esito_s As String, _
+                      ByVal par_Evento_s As String)
+Dim sRiga_s As String
+Dim sCartella_s As String
+Dim iFile_i As Integer
+
+    If Not LOG_ATTIVO Then Exit Sub
+    '//il log non deve MAI bloccare l'applicazione
+    On Error Resume Next
+
+    '//#02.01# = compongo la riga
+    sRiga_s = Format(Now, "yyyy-mm-dd hh:nn:ss") & _
+              " | Classe: " & par_Classe_s & _
+              " | Funzione: " & par_Funzione_s & _
+              " | Sez/Par: " & Left(par_SezPar_s & Space(5), 5) & _
+              " | Esito: " & Left(par_Esito_s & Space(6), 6) & _
+              " | Evento: " & par_Evento_s
+
+    '//#02.02# = Debug.Print della riga (identica a quella del file)
+    Debug.Print sRiga_s
+
+    '//#02.03# = creo la cartella Logs se non esiste
+    sCartella_s = CurrentProject.Path & "\" & LOG_CARTELLA_s
+    If Len(Dir(sCartella_s, vbDirectory)) = 0 Then MkDir sCartella_s
+
+    '//#02.04# = scrivo la riga in coda al file
+    iFile_i = FreeFile
+    Open sCartella_s & "\" & LOG_FILE_s For Append As #iFile_i
+    Print #iFile_i, sRiga_s
+    Close #iFile_i
+End Sub
+
+'##################################################################################################
+'## #03# = LOG_Errore = scrive una riga ERRORE con numero, descrizione, sezione e paragrafo
+'##################################################################################################
+Public Sub LOG_Errore(ByVal par_Classe_s As String, _
+                      ByVal par_Funzione_s As String, _
+                      ByVal par_SezPar_s As String, _
+                      ByVal par_NumErr_l As Long, _
+                      ByVal par_DescErr_s As String)
+    LOG_Scrivi par_Classe_s, par_Funzione_s, par_SezPar_s, "ERRORE", _
+               "Err " & par_NumErr_l & ": " & par_DescErr_s & "  -> codice fermo al paragrafo #" & par_SezPar_s & "#"
+End Sub
+
+'##################################################################################################
+'## #04# = LOG_Separatore = scrive una riga di separazione (es. all'apertura di una form)
+'##################################################################################################
+Public Sub LOG_Separatore(ByVal par_Titolo_s As String)
+    LOG_Scrivi "----------", "----------", "-----", "------", "========== " & par_Titolo_s & " =========="
+End Sub
+
+'##################################################################################################
+'## #05# = LOG_PercorsoFile = restituisce il percorso completo del file di log
+'##################################################################################################
+Public Function LOG_PercorsoFile() As String
+    LOG_PercorsoFile = CurrentProject.Path & "\" & LOG_CARTELLA_s & "\" & LOG_FILE_s
+End Function
+
+
+
+'##################################################################################################
+'## #06# = LOG_Chiamante = descrive form e controllo attivi (chi ha avviato la procedura)
+'##        VBA non fornisce lo stack delle chiamate: form e controllo attivi indicano da dove e partita l'azione
+'##################################################################################################
+Public Function LOG_Chiamante() As String
+Dim sForm_s As String, sCtl_s As String, sPadre_s As String
+    On Error Resume Next
+    '//#06.01# = form attiva
+    sForm_s = "(nessuna)": sForm_s = Screen.ActiveForm.Name
+    '//#06.02# = controllo attivo e form/sottomaschera che lo contiene
+    sCtl_s = "(nessuno)": sCtl_s = Screen.ActiveControl.Name
+    sPadre_s = "": sPadre_s = Screen.ActiveControl.Parent.Name
+    LOG_Chiamante = "form attiva=" & sForm_s & " | controllo attivo=" & sCtl_s & IIf(Len(sPadre_s) > 0, " (in " & sPadre_s & ")", "")
+End Function

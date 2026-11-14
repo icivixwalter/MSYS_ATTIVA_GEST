@@ -1,0 +1,2 @@
+DELETE MSys_TABELLE_tmp.*
+FROM MSys_TABELLE_tmp;

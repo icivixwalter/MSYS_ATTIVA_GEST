@@ -1,0 +1,5 @@
+INSERT INTO TreeTemporanea ( NODO_ID, ParentID, NomeCartella_s, TipoAdiacenza_s, Percorso_s )
+SELECT [Tree].[Id], [Tree].[ParentID], [Tree].[NomeCartella_s], [Tree].[TipoAdiacenza_s], [Tree].[Percorso_s]
+FROM Tree LEFT JOIN Tree AS Tree_1 ON [Tree].[Id]=Tree_1.ParentID
+GROUP BY [Tree].[Id], [Tree].[ParentID], [Tree].[NomeCartella_s], [Tree].[TipoAdiacenza_s], [Tree].[Percorso_s]
+HAVING (((Tree.ParentID)=1));

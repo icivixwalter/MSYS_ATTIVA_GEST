@@ -1,0 +1,1135 @@
+Version =19
+VersionRequired =19
+Checksum =-445005575
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8900
+    DatasheetFontHeight =10
+    ItemSuffix =56
+    Left =990
+    Top =915
+    Right =13020
+    Bottom =5175
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x60ad9f04126ce640
+    End
+    GUID = Begin
+        0x3f0d46f75da70641a07187b2b53ed438
+    End
+    NameMap = Begin
+        0x0acc0e55000000001ac81fe6b15ff846bc6c103f8033b1b700000000783cca07 ,
+        0x136ce64000000000000000004d005300790073005f0054004100420035003000 ,
+        0x32005f00510072007900300031005f00300031005f0056004900530055004100 ,
+        0x4c005f005000410047005f00530045004d0050004c004900430045005f005400 ,
+        0x4d005000000000000000098af95abf2e7c46bb9390db651999e2070000001ac8 ,
+        0x1fe6b15ff846bc6c103f8033b1b74e0052004f005f004f004700470045005400 ,
+        0x54004f005f0069000000000000005f8fcbaefe605742bcd1d89832210c4e0700 ,
+        0x00001ac81fe6b15ff846bc6c103f8033b1b74e004f00540041005f004f004700 ,
+        0x47004500540054004f005f007300000000000000f3f62ccebea25d488d05cd7b ,
+        0x602e00fe070000001ac81fe6b15ff846bc6c103f8033b1b75400490050004f00 ,
+        0x470047004500540054004f005f007300000000000000b933b65d576b8b4497e1 ,
+        0xd9a6717a187d070000001ac81fe6b15ff846bc6c103f8033b1b74e004f004d00 ,
+        0x45004f00470047004500540054004f005f007300000000000000a0f2239dde13 ,
+        0x184a9daacf5dbde80163070000001ac81fe6b15ff846bc6c103f8033b1b74e00 ,
+        0x4f004d00450070006100670069006e0061005f00730000000000000064872283 ,
+        0xd9e32246a9e3a5f5a660bed2070000001ac81fe6b15ff846bc6c103f8033b1b7 ,
+        0x560049005300490042004c0045005f006200000000000000a00a935c4baa3249 ,
+        0xb8bc0c3af2296423070000001ac81fe6b15ff846bc6c103f8033b1b743004f00 ,
+        0x44005f00500052004f0047004500540054004f005f0073000000000000001b59 ,
+        0x06f62453e94f93896437487a21fb00000000ae375772116ce640000000000000 ,
+        0x00004d007300790073005f0044004600310031005f00500052004f0047004500 ,
+        0x54005400490000000000000086dde7fda216e1429b2cd8049a649cf207000000 ,
+        0x1b5906f62453e94f93896437487a21fb43004f0044005f00500052004f004700 ,
+        0x4500540054004f005f0073000000000000004fa233533ef74649901103a743e2 ,
+        0x5cef070000001b5906f62453e94f93896437487a21fb500052004f0047004500 ,
+        0x540054004f005f00730000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000004d005300790073005f005400 ,
+        0x55005400540045005f004c0045005f0050004100470049004e00450000000000 ,
+        0x00007629c3ac15b6d044bbc78f99f734d8ea070000001ac81fe6b15ff846bc6c ,
+        0x103f8033b1b7440041005400410049004e0053005f006400000000000000de18 ,
+        0xbf802eb2664da7b41e27d137c9ef070000001b5906f62453e94f93896437487a ,
+        0x21fb44004100540041004100470047005f00640000000000000033d810804dd0 ,
+        0xfb40af69cd790ec5aafe070000001ac81fe6b15ff846bc6c103f8033b1b74400 ,
+        0x4100540041004100470047005f0064000000000000006e5cfd3a01f78d469bf1 ,
+        0x1fd4ace72d51070000001ac81fe6b15ff846bc6c103f8033b1b74f0052004100 ,
+        0x5f004100470047005f006400000000000000ddece0c79162f247b0805c831e85 ,
+        0x698f070000001ac81fe6b15ff846bc6c103f8033b1b743004f0044005f004600 ,
+        0x4f0052004d0053005f0073000000000000000000000000000000000000000000 ,
+        0x00000c000000050000000000000000000000000000000000
+    End
+    RecordSource ="MSys_TAB502_Qry01_01_VISUAL_PAG_SEMPLICE_TMP"
+    BeforeUpdate ="[Event Procedure]"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000506298ff3d0200009027eb9f3d020000b28b83b2ff7f0000 ,
+        0x010403069c007c0353ef8001010009009a0b3408640001000f00580202000100 ,
+        0x5802030001004134008a83b2ff7f00009827eb9f3d020000ffffffff00000000 ,
+        0x216ec2052bb20000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000000000000000000000000000000000000000000050524956 ,
+        0xe230000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000180000000000102710271027 ,
+        0x00001027000000000000000088007c0300000000000000000000000000000000 ,
+        0x0000000000000000030000000000000000001000503403002888040000000000 ,
+        0x000000000000010000000000000000000000000000000000e7b14b4c03000000 ,
+        0x05000a00ff000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0100000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000088000000534d544a0000000010007800 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080013001e000100000000000000000000000000000000000000000000005044 ,
+        0x4643726561746f723a0000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin Section
+            Height =7470
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x1e1416a3ed6ae2409a706aad1d3882f0
+            End
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5277
+                    Top =1536
+                    Width =1584
+                    Height =300
+                    ColumnWidth =1635
+                    ColumnOrder =1
+                    TabIndex =2
+                    Name ="NRO_OGGETTO_i_Txt"
+                    ControlSource ="NRO_OGGETTO_i"
+                    GUID = Begin
+                        0x3e0aa2fd6852974cbe06cc6d3f9fc5f6
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =1536
+                            Width =1584
+                            Height =300
+                            Name ="NRO_OGGETTO_i_Lbl"
+                            Caption ="NRO_OGGETTO"
+                            GUID = Begin
+                                0x124de5ddd300594ab03ea220320b56b3
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =228
+                    Top =3000
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta27"
+                    Caption ="01___________________________________CampiTB01_GESTIONE"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0xa61ae655115f484ab4c487b63e4d3471
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =285
+                    Top =4830
+                    Width =7155
+                    Height =270
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta33"
+                    Caption ="CM___________________________________UtilitaTabelle = COMANDI DA ESEGUIRE"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x568dd7439dc4c545934353cd545bec78
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =5295
+                    Width =1584
+                    ColumnWidth =1710
+                    ColumnOrder =7
+                    TabIndex =1
+                    GUID = Begin
+                        0xdc070bcdfeb31746a45f04f38914f721
+                    End
+                    Name ="NOTA_OGGETTO_s_TXT"
+                    ControlSource ="NOTA_OGGETTO_s"
+                    RowSourceType ="Table/Query"
+                    StatusBarText ="Modello Form utilizzato"
+                    AfterUpdate ="[Event Procedure]"
+                    OnDblClick ="[Event Procedure]"
+                    DefaultValue ="\"Comando\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =5295
+                            Width =1584
+                            Height =255
+                            Name ="NOTA_OGGETTO_s_LBL"
+                            Caption =">>NOTA OGGETTO"
+                            GUID = Begin
+                                0xdbd10a5351338a4aa81e8e9510833e3c
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    Left =285
+                    Top =150
+                    Width =6693
+                    Height =221
+                    FontWeight =700
+                    BackColor =16777215
+                    ForeColor =2366701
+                    Name ="Etichetta36"
+                    Caption ="00___________________________________LE PAGINE DA CARICARE_TMP"
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0x50fe783880be544fa925edc744e1068a
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5270
+                    Top =1956
+                    Width =1584
+                    Height =300
+                    ColumnWidth =1425
+                    ColumnOrder =2
+                    TabIndex =3
+                    Name ="TIPOGGETTO_s_TXT"
+                    ControlSource ="TIPOGGETTO_s"
+                    GUID = Begin
+                        0x1440552d12025548b20d3d8f7a87b26b
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =1956
+                            Width =1584
+                            Height =300
+                            Name ="TIPOGGETTO_s_Lbl"
+                            Caption ="TIPOGGETTO"
+                            GUID = Begin
+                                0xfbb5f5b131a9d242ac67207792cec8eb
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =3276
+                    Width =1584
+                    Height =300
+                    ColumnWidth =6960
+                    ColumnOrder =4
+                    TabIndex =4
+                    BackColor =65535
+                    ForeColor =255
+                    Name ="NOMEOGGETTO_s_Txt"
+                    ControlSource ="NOMEOGGETTO_s"
+                    OnDblClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x2c0f4174cc33cc48827b65ca3d0e17c5
+                    End
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            Left =300
+                            Top =3276
+                            Width =1584
+                            Height =300
+                            BackColor =65535
+                            ForeColor =255
+                            Name ="NOMEOGGETTO_Lbl"
+                            Caption =">>NOMEOGGETTO"
+                            GUID = Begin
+                                0x7d76e9b47fbd4f46b3e906f6416c7c8b
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5282
+                    Top =3696
+                    Width =1584
+                    Height =300
+                    ColumnWidth =2910
+                    ColumnOrder =5
+                    TabIndex =5
+                    Name ="NOMEpagina_s_Txt"
+                    ControlSource ="NOMEpagina_s"
+                    GUID = Begin
+                        0xcc998a1887dfaa4b8400a9c7658c9e84
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =3696
+                            Width =1584
+                            Height =300
+                            Name ="NOMEpagina_Lbl"
+                            Caption ="NOMEpagina"
+                            GUID = Begin
+                                0x050bff87ca68004e852a3c59b2cb42c2
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6014
+                    Top =4260
+                    ColumnOrder =6
+                    TabIndex =6
+                    Name ="VISIBLE_b_TXT"
+                    ControlSource ="VISIBLE_b"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xadea498c8c142e46986fd9a21b34b96a
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =4146
+                            Width =1584
+                            Height =300
+                            Name ="VISIBLE_b_Lbl"
+                            Caption ="VISIBLE_b"
+                            GUID = Begin
+                                0x33f5dc61c7ad0743aad6952689199e1b
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =5670
+                    Width =1584
+                    ColumnWidth =2205
+                    ColumnOrder =8
+                    TabIndex =7
+                    ColumnInfo ="\"\";\"\";\"10\";\"90\""
+                    GUID = Begin
+                        0xcd1b67f4d7ace14ba7adbf92d014a4ad
+                    End
+                    Name ="COD_PROGETTO_s_Txt"
+                    ControlSource ="COD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[COD_PROGETTO_s], [Msys_DF11_PROGETTI].[PROGETTO_s] "
+                        "FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTION; "
+                    StatusBarText ="Modello Form utilizzato"
+                    DefaultValue ="\"Comando\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =5670
+                            Width =1584
+                            Height =255
+                            Name ="COD_PROGETTO_s_Lbl"
+                            Caption ="COD_PROGETTO"
+                            GUID = Begin
+                                0x34874906ed32724d9226b8f71a832e90
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =6045
+                    Width =1584
+                    ColumnOrder =9
+                    TabIndex =8
+                    GUID = Begin
+                        0x5cce5d352ec7d84f9614cda3174664e5
+                    End
+                    Name ="CasellaCombinata49"
+                    ControlSource ="NRO_OGGETTO_i"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [MSys_TUTTE_LE_PAGINE].[COD_PROGETTO_s] FROM MSys_TUTTE_LE_PAGINE GROUP B"
+                        "Y [MSys_TUTTE_LE_PAGINE].[COD_PROGETTO_s] ORDER BY [MSys_TUTTE_LE_PAGINE].[COD_P"
+                        "ROGETTO_s] WITH OWNERACCESS OPTION; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =6045
+                            Width =1584
+                            Height =255
+                            Name ="Etichetta50"
+                            Caption ="COD_PROGETTO"
+                            GUID = Begin
+                                0x5f3eb9188d34e641aade88ae64a1523e
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =6465
+                    Width =1584
+                    ColumnOrder =10
+                    TabIndex =9
+                    ColumnInfo ="\"\";\"\";\"8\";\"8\""
+                    GUID = Begin
+                        0xe7f5bd9eceda754fad9fad9b25c41250
+                    End
+                    Name ="DATAINS_d_TXT"
+                    ControlSource ="DATAINS_d"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[DATAAGG_d], [Msys_DF11_PROGETTI].[PROGETTO_s], [Msy"
+                        "s_DF11_PROGETTI].[COD_PROGETTO_s] FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTIO"
+                        "N; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =6465
+                            Width =1584
+                            Height =255
+                            Name ="Etichetta54"
+                            Caption ="DATAINS_d"
+                            GUID = Begin
+                                0xf9a1fef09163fc42ac22909cfd695246
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =6840
+                    Width =1584
+                    ColumnOrder =11
+                    TabIndex =10
+                    ColumnInfo ="\"\";\"\";\"8\";\"8\""
+                    GUID = Begin
+                        0xe98b8e5cddc1cb4e847ff033e90bb403
+                    End
+                    Name ="DATAAGG_d_TXT"
+                    ControlSource ="DATAAGG_d"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Msys_DF11_PROGETTI].[DATAAGG_d], [Msys_DF11_PROGETTI].[PROGETTO_s], [Msy"
+                        "s_DF11_PROGETTI].[COD_PROGETTO_s] FROM Msys_DF11_PROGETTI WITH OWNERACCESS OPTIO"
+                        "N; "
+                    StatusBarText ="Modello Form utilizzato"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =6840
+                            Width =1584
+                            Height =255
+                            Name ="DATAAGG_d_LBL"
+                            Caption ="DATAAGG_d"
+                            GUID = Begin
+                                0x8bef11b16ba4494dafe8b3615453a6d5
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =5282
+                    Top =7215
+                    Width =1584
+                    ColumnOrder =12
+                    TabIndex =11
+                    Name ="ORA_AGG_d_TXT"
+                    ControlSource ="ORA_AGG_d"
+                    StatusBarText ="Modello Form utilizzato"
+                    GUID = Begin
+                        0x6efbf6beb9ad024eabd964510c2a1887
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =7215
+                            Width =1584
+                            Height =255
+                            Name ="ORA_AGG_d_LBL"
+                            Caption ="ORA_AGG_d"
+                            GUID = Begin
+                                0x2a1d165d4f7e564d879d2599a6e07854
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5270
+                    Top =2376
+                    Width =1584
+                    Height =300
+                    ColumnWidth =1665
+                    ColumnOrder =3
+                    TabIndex =12
+                    Name ="COD_FORMS_s_TXT"
+                    ControlSource ="COD_FORMS_s"
+                    GUID = Begin
+                        0x8052a7b5be43db479f6d0d2883f0b9fa
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =2376
+                            Width =1584
+                            Height =300
+                            Name ="COD_FORMS_s_LBG"
+                            Caption ="COD_FORMS_s"
+                            GUID = Begin
+                                0x22501fa82827e14595511e309872c01d
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5277
+                    Top =960
+                    Width =1584
+                    Height =300
+                    ColumnOrder =0
+                    BackColor =62207
+                    ForeColor =0
+                    Name ="Help_Txt"
+                    OnDblClick ="[Event Procedure]"
+                    DefaultValue ="\"??\""
+                    FontName ="Tahoma"
+                    GUID = Begin
+                        0x80354ff1a2aa6f49975bab6f6a633028
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =960
+                            Width =1584
+                            Height =300
+                            BackColor =16777215
+                            ForeColor =0
+                            Name ="Help_LBL"
+                            Caption ="??"
+                            FontName ="Tahoma"
+                            GUID = Begin
+                                0x6fa63a41d6208a42bbf617b10c4fb16d
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+'//MODIFICHE ED INTEGRAZIONI
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+'//CODICE DI ESTRAZIONE:    Attenzione per estrarre gli oggetti di funzionamento per le la _
+                gestione delle sottoform per la FORM MASTER utilizzare il codice: _
+                    ----> tutti_tb01
+                    
+                    
+                    
+'//2024_10_21_ATTIVO_HELP: imposto l'help delle pagine da caricare nella FORM MASTER _
+        Ho creato un pdf help per la gestione delle pagine da caricare sulla form Principale _
+        master, le pagine vengono distinte in base al codice progetto.
+
+
+
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+
+
+
+
+
+
+Option Compare Database
+Option Explicit
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+'//       LE VARIABILI DI MODULO
+
+'//LE VARIABILI DATABASE
+'//....................................................................//
+    Dim DaoDB As DAO.Database          '//occorre il riferimento alla libreria  Microsoft DAO 3.6 Object Libray
+    
+    
+    
+    Dim DaoWks As DAO.Workspace
+    Dim DaoRs As DAO.Recordset
+
+    Dim ADODB As Database
+    Dim AdodaoRs As Recordset
+    Dim sSql As String                          '//STRINGA SQL
+    '//Dim Path_s As String                        '//la path
+
+
+    '//Contatori
+    Dim icount As Integer
+    Dim dbl_count As Double
+    
+   
+    'Le variabili generiche
+    Dim Vv1 As Variant
+    Dim Dbl1 As Double
+    Dim Int1 As Integer
+    Dim Long1 As Long
+    Dim str1 As String
+    
+    '//Messaggi di errore
+    Dim ProceduraMessaggioErrore_s As String    '//Errore procedura
+    Dim ProceduraAttivaEseguita_s As String     '//Errore Attivita eseguita
+
+
+
+Private Sub Form_BeforeUpdate(Cancel As Integer)
+'//@aggiornamento del record , aggiorno le date
+    Me.DATAAGG_d_TXT = Date
+    Me.ORA_AGG_d_TXT = Time()
+    Me.COD_PROGETTO_s_TXT = Me.Parent!COD_PROGETTO_s_TXT
+End Sub
+
+'....................................................................
+
+'//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+
+
+    
+
+
+
+Private Sub Form_Open(Cancel As Integer)
+    
+Me.Recalc
+
+End Sub
+
+
+
+
+
+
+Private Sub NOTA_OGGETTO_s_TXT_DblClick(Cancel As Integer)
+
+   '//@aggiorna.le.pagine - della FORM MASTER
+     '//INSIEME FORMS _
+        Form è l'insieme che rappresenta tutte le maschere aperte a cui puoi fare riferimento con il nome _
+        ed attivare le sue proprieta come la funzione ..MSys_TUTTE_LE_PAGINE_Carica_pFunction
+    forms![MSys_FORM_M01_GESTIONE_OGGETTI_MSys].MSys_TUTTE_LE_PAGINE_Carica_pFunction
+    '//se non metti recalc da errore di procedura obblicatorio dopo l'aggiornamento delle 12 pagine.
+    forms![MSys_FORM_M01_GESTIONE_OGGETTI_MSys].Recalc
+    
+End Sub
+
+
+
+
+
+
+
+
+'// ***INIZIO RICERCA DELLE FORM
+'//--------------------------------------------------------------------------------//
+'//NOTE: questo è un modello di routine _
+        @modello@di@routine o @@RICERCA@FORM@NEL@DB
+'//
+'//FUNZIONE             --> RICERCA DELLE FORM
+'//PARAMETRI            --> Null
+'//CODICE               --> @@RICERCA@FORM@NEL@DB
+'//--------------------------------------------------------------------------------//
+
+
+
+Private Sub NOMEOGGETTO_s_Txt_DblClick(Cancel As Integer)
+
+On Error GoTo Err_NOMEOGGETTO_s_Txt_DblClick
+
+
+    '//ATTIVITA DI RICERCA OGGETTI
+    '==================================================================================================
+    'Note: LA RICERCA DEGLI OGGETTI NEL DATABASE CORRENTE ed in questo caro ricerca le form _
+          che vengono utilizzate nel progetto della form autocaricante @ricerca@form@del@progetto
+
+        
+        
+        
+    
+        
+        '// FUNZIONE CERCA OGGETTI
+        '//--------------------------------------------------------------------------------//-----//
+        '//CODICE-------->CERCA_OGGETTI.01.ChiamaFunzione
+        '//Parametri per il tipo oggetto, indicare : _
+            par_sxTIPOGGETTO    = "Tabelle"/"Query"/"Form"/"Report"/"Pagine"/"Moduli" _
+            par_sxNOMEOGGETTO   = Nome dell'oggetto
+                    
+                Dim sxTIPOGGETTO As String
+                Dim sxNOMEOGGETTO As String
+                Dim str1 As String
+                Dim Bool1 As Boolean
+        
+                
+                sxTIPOGGETTO = "FORMS"
+                sxNOMEOGGETTO = NOMEOGGETTO_s_Txt
+                
+                
+                    '1) ISTANZIO LA CLASSE
+                            '........................................................
+                            
+                            'Recupero la stringa da applicare alla
+                            'successiva classe
+                            '
+                            'sxCODOGGETTO = ""
+                            '//trovo il codice oggetto mediante il codice attivita
+                            'sxCODOGGETTO = TROVA_CLASSE_DI_GESTIONE_pFunct(par_sxCODATTIVITA)
+                             
+                            'ISTANZIO LA CLASSE CLASSE_GESTIONE_OGGETTI_DATABASE
+                            'Assegno e creo l'oggetto di classe
+                            '--->
+                                Dim MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE As CLASSE_GESTIONE_OGGETTI_DATABASE
+                            '--->
+                                Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = New CLASSE_GESTIONE_OGGETTI_DATABASE
+                                
+                                
+                            
+                                'PARAMETRI DI ESTRAZIONE
+                                'Recupero la stringa da applicare alla
+                                'successiva classe
+                                 '---> sxCODOGGETTO = ""
+                                 '---> sxCODOGGETTO = MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.RECUPERO_CODOGGETTO_da_TMP_pbFunct
+                           
+                            
+                            '--->                     Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+            
+                            '//--------------------------------------------------------------------------------//-//
+                            
+                
+                '//CHIAMO LA FUNZIONE CONTROLLO OGETTI TABLE
+                '//CODICE----------> pfRICERCA_NEL_DB_OGGETTI_Table.Funzione.Call,  @CERCA.TABELLA  @CERCA.OGGETTO.TABELLA
+                '//--------------------------------------------------------------------------------//----------//
+                '// i parametri ricevuti sono   : par_Scelta db             = path db che puo essere database corrente o esterno
+                '//                             : par_sx_Name_Table         = Nome della Tabella
+                '//                             : par_sx_Proprieta_Table    = La proprieta della tabella
+                '//                             : par_ix_Operazione         = Tipo di operazione da eseguire (1=inserire tabella; 2=cancellare tabella)???
+                '//                             : par_bx_Flag_b             = Segnala se l'operazione è stata effettuata ??? sviluppare
+                '// nota                        : viene chiamata la funzione del modulo UTIL_MDL40_N05_CONTROLLO_OGGETTI_DB_TABLES.CHIAMA_pfRICERCA_NEL_DB_OGGETTI_Table()
+                '// PARAMETRI RESTITUITI        :Boolean                    = True per tabella Trovata, FALSE per una tabella non trovata.
+                    
+                    str1 = sxNOMEOGGETTO
+                    Bool1 = MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.pfRICERCA_NEL_DB_OGGETTI_Form("", str1, "Proprieta", 0, 0, False)
+                    
+                    If Bool1 = False Then
+                        MsgBox "L'oggetto Tabella: " & str1 & " .. NON TROVATA ????", vbExclamation, "FUNZIONE DI RICERCA TABELLE"
+                    
+                    Else
+                        MsgBox "L'oggetto Tabella: " & str1 & " E' STATA TROVATA!", vbExclamation, "FUNZIONE DI RICERCA TABELLE"
+                    End If
+                    
+
+                sxTIPOGGETTO = vbNull
+                sxNOMEOGGETTO = vbNull
+                str1 = vbNull
+                Bool1 = vbNull
+                Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+
+                '//--------------------------------------------------------------------------------//----------//
+        
+        '//*** FINE ***
+        '// FUNZIONE CERCA OGGETTI
+        '//--------------------------------------------------------------------------------//-----//
+        
+        
+
+
+Exit_NOMEOGGETTO_s_Txt_DblClick:
+    Exit Sub
+
+Err_NOMEOGGETTO_s_Txt_DblClick:
+    MsgBox Err.Description
+    Resume Exit_NOMEOGGETTO_s_Txt_DblClick
+    
+End Sub
+
+'// ***INIZIO RICERCA DELLE FORM
+'//--------------------------------------------------------------------------------//
+
+
+
+
+
+
+'//@BLOCCO@PAGINA@12_(la pagina 12 non puo essere disattivata)_@PAG@12
+
+Private Sub VISIBLE_b_TXT_Click()
+    If Me.TIPOGGETTO_s_TXT = "SottoForm_12" Then
+        If Me.VISIBLE_b_TXT = False Then
+            Me.VISIBLE_b_TXT = True
+            Me.VISIBLE_b_TXT.Requery
+            MsgBox "ATTENZIONE LA PAGINA 12 NON PUO ESSERE DISATTIVATA!", vbCritical, "MSG PAGINA 12"
+        End If
+    End If
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+'***********************************************************************************************************************
+'                           HELP *** INIZIO ***
+'// @01 = APRO HELP VISUALIZZA PAGINE MASTER
+'***********************************************************************************************************************
+
+
+
+'//EVENTO_DOPPIO_CLICK
+  '//=================================================================================================================//
+  '//MODELLO ROUTINE DOPPIO CLICK = ..... _
+    CODICE----> Help_Txt_DblClick
+  '//=================================================================================================================//
+  '//Parametri che possono essere cambiati collettivamente:
+  '//--------------------------------------------------------------@
+  '//
+  '//DENOMINAZIONE---------> Help_Txt_DblClick
+  '//TIPO------------------> ROUTINE pubblica.
+  '//ATTIVITA--------------> APRI FILE PDF HELP = Apro il file help
+  '//ProceduraMessaggioErrore_s = "APRI FILE PDF HELP"
+  '//ProceduraAttivaEseguita_s = "Help_Txt_DblClick"
+  '//
+  '//--------------------------------------------------------------@
+  '//PARAMETRI-------------> Nessuno
+  '//VALORE_DI_RITORNO-----> Nulla
+  '//CODICE----------------> Help_Txt_DblClick.01.00
+  '//
+  '//=================================================================================================================//
+  '//NOTE------------------> Apro il file help con il doppio click
+  '// @01 = APRO HELP VISUALIZZA PAGINE MASTER
+  '//
+
+
+  Private Sub Help_Txt_DblClick(Cancel As Integer)
+
+  On Error GoTo Help_Txt_DblClick_Err
+
+    '//APRO_FORM_FALDONI = Chiamo procedura
+    '//---------------------------------------------------------------------------------------//
+    '//CODICE -----------> Help_Txt_DblClick.01.01
+
+            '//Call Help_Txt_DblClick
+    '//---------------------------------------------------------------------------------------//
+    
+   
+    
+    '//APRO_FORM_FALDONI = Apertura form + aggiornamento nome faldoni
+    '//---------------------------------------------------------------------------------------//
+    '//CODICE -----------> Help_Txt_DblClick.01.02
+    
+                '//RESET
+                ProceduraMessaggioErrore_s = ""
+                ProceduraAttivaEseguita_s = ""
+   
+
+                '//IMPOSTO LE VARIABILI
+                ProceduraMessaggioErrore_s = "ERRORE NELLA PROCEDURA : APRI FILE PDF HELP"
+                ProceduraAttivaEseguita_s = "Help_Txt_DblClick"
+
+
+    
+    '//---------------------------------------------------------------------------------------//
+
+
+       '//APRO PATH O FILE GENERICI
+           '//.....................................................................................................
+              '//File da ricercare e la path Viene attivata la procedura solo se sono valorizzate le variabili
+                                               
+              '//IMPOSTO LE VARIABILI PATH E FILE
+              '//
+                Dim MyFile_s As String
+              '//
+                Dim MyPath_s  As String
+
+           
+               
+                 MyFile_s = ""
+                 MyPath_s = ""
+                 
+                 str1 = "c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS_OGGETTI\MSYS\OBJECT\HELP\HELP_FORM\"
+                 '//PATH O FILE = Inserire o una path oppure una path+file con percoso esteso.
+                 '
+                 
+                 
+                 MyPath_s = str1
+                 MyFile_s = "HELP_MSys_TUTTI_TB01Frm01_02_FORM_MASTER_VISUAL_PAGINE.pdf"
+                 
+                 
+                    '........................................................
+                            
+                            'Recupero la stringa da applicare alla
+                            'successiva classe
+                            '
+                            'sxCODOGGETTO = ""
+                            '//trovo il codice oggetto mediante il codice attivita
+                            'sxCODOGGETTO = TROVA_CLASSE_DI_GESTIONE_pFunct(par_sxCODATTIVITA)
+                             
+                            'ISTANZIO LA CLASSE CLASSE_GESTIONE_OGGETTI_DATABASE
+                            'Assegno e creo l'oggetto di classe
+                            '--->
+                                Dim MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE As CLASSE_GESTIONE_OGGETTI_DATABASE
+                            '--->
+                                Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = New CLASSE_GESTIONE_OGGETTI_DATABASE
+                                
+                                
+                            
+                                'PARAMETRI DI ESTRAZIONE
+                                'Recupero la stringa da applicare alla
+                                'successiva classe
+                                 '---> sxCODOGGETTO = ""
+                                 '---> sxCODOGGETTO = MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.RECUPERO_CODOGGETTO_da_TMP_pbFunct
+                           
+                            
+                            '--->                     Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+            
+                            '//--------------------------------------------------------------------------------//-//
+                            
+                  
+                 If str1 > "" Then
+                 MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE.APRO_PATH_O_FILE_GENERICI_pSub (MyPath_s & MyFile_s)
+                 
+                 
+                 '//RILASCIO LA MEMORIA = rilascio l'oggetto ed attivo il distruttore della classe
+                 '
+                 Set MyCls_CLASSE_GESTIONE_OGGETTI_DATABASE = Nothing
+                 
+                 Else
+                         MsgBox "ATTENZIONE I PARAMETRI file e path non sono valorizzati per l'apertura del file - Uscita dalla Routine", vbExclamation
+                 
+                 End If 'If par_FileAtto_s > "" And Str1 > "" Then
+                 
+           '//.....................................................................................................
+          
+Help_Txt_DblClick_Err:
+    Debug.Print "uscita dalla routine : " & ProceduraMessaggioErrore_s
+    Debug.Print ProceduraAttivaEseguita_s
+   
+    Exit Sub
+    
+    MsgBox Err.Description & " " & ProceduraMessaggioErrore_s & " - " & ProceduraAttivaEseguita_s & " --> errore Error$ -> : " & Error$
+    Debug.Print ProceduraMessaggioErrore_s
+    Debug.Print ProceduraAttivaEseguita_s
+    Debug.Assert "BLOCCO PROCEDURA -> " & ProceduraAttivaEseguita_s
+
+    Stop
+    Resume Help_Txt_DblClick_Err
+    
+  End Sub
+  '//'//DENOMINAZIONE---------> Help_Txt_DblClick *** FINE ***
+  '//=================================================================================================================//
+
+
+
+
+'***********************************************************************************************************************
+'                           HELP *** FINE ***
+'
+'***********************************************************************************************************************

@@ -1,0 +1,4 @@
+Errore durante l'importazione dell'oggetto 'MSys_TB40_Frm01_S01_PROGETTI'.
+
+Incontrato errore alla riga 123.
+Proprietà non applicabile al controllo.

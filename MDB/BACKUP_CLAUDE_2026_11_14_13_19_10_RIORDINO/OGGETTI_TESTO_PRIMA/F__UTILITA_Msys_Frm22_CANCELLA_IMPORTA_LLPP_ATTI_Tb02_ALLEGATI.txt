@@ -1,0 +1,2868 @@
+Version =19
+VersionRequired =19
+Checksum =234827550
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15080
+    DatasheetFontHeight =10
+    ItemSuffix =125
+    Left =585
+    Top =675
+    Right =10695
+    Bottom =9930
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x77c2d5cdf9b5e440
+    End
+    GUID = Begin
+        0xb57c42580e920949b0c8015d2eb8df9b
+    End
+    NameMap = Begin
+        0x0acc0e5500000000000000000000000000000000000000000c00000005000000 ,
+        0x0000000000000000000000000000
+    End
+    Caption ="Gestione Oggetti LLPP_ATTI_Tb02_Allegati.mdb"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x003079387f0000000f00000000000000f02f79387f00000051e232e6f67f0000 ,
+        0x010403069c007c030fdf8007010009009a0b3408640001000700580201000200 ,
+        0x580203000100413400c0e3e6f67f000000000000000000009df9bfe6f67f0000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000000000000000000000000000000000000000000050524956 ,
+        0xe230000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000180000000000102710271027 ,
+        0x00001027000000000000000088007c0300000000000000000100000000000000 ,
+        0x0000000000000000030000000000000000001000503403002888040000000000 ,
+        0x000000000000010000000000000000000000000000000000e7b14b4c03000000 ,
+        0x05000a00ff000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0100000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000088000000534d544a0000000010007800 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080013001e000100000000000000000000000000000000000000000000005044 ,
+        0x4643726561746f723a0000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000000000
+    End
+    OnLoad ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin Tab
+            Width =5103
+            Height =3402
+            FontName ="Tahoma"
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =1417
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0xe3acf06646375946a9e3d6b11a04bcf6
+            End
+            Begin
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    TextAlign =2
+                    Top =75
+                    Width =14625
+                    Height =495
+                    FontSize =14
+                    FontWeight =700
+                    BackColor =6723891
+                    ForeColor =255
+                    Name ="LBL_TIT01_TXT"
+                    Caption ="Gestione Oggetti LLPP_ATTI_Tb02_Allegati.mdb"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x5e8aa13bcea435489a06ba391b3764c4
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2828
+                    Top =810
+                    Width =11802
+                    Height =315
+                    ColumnOrder =0
+                    Name ="sourceDBPath_s_Txt"
+                    GUID = Begin
+                        0xcb6ab1a2f228f94cb3488d9037856ca0
+                    End
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            Left =330
+                            Top =810
+                            Width =2325
+                            Height =315
+                            BackColor =65535
+                            ForeColor =255
+                            Name ="sourceDBPath_s_LBL"
+                            Caption =">> PATH E DB ESTERNO"
+                            GUID = Begin
+                                0x7976728b3506c84a8689e85a33d34640
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =7716
+            BackColor =16777088
+            Name ="Corpo"
+            GUID = Begin
+                0x00be651725e7694681778ab251d858f9
+            End
+            Begin
+                Begin Tab
+                    OverlapFlags =85
+                    Left =90
+                    Top =30
+                    Width =14850
+                    Height =7680
+                    Name ="TabCtl_01"
+                    GUID = Begin
+                        0x3deb6de0e27b4e4db898162387fa007e
+                    End
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =225
+                            Top =435
+                            Width =14580
+                            Height =7140
+                            Name ="Pag_01"
+                            Caption ="LE IMPORTAZIONI (01)"
+                            GUID = Begin
+                                0xf75e7d3a9d2e9540bac9b6072ec9dc18
+                            End
+                            Begin
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =306
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    Name ="Cmd_IMPORTA_TUTTI_GLI_OGGETTI"
+                                    Caption ="IMPORTA TUTTI GLI OGGETTI FORM_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI FORM"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xd96fb920c343c84b969ec427e514f4ce
+                                    End
+                                End
+                                Begin Label
+                                    BackStyle =1
+                                    OverlapFlags =215
+                                    Left =300
+                                    Top =675
+                                    Width =10830
+                                    Height =270
+                                    BackColor =62207
+                                    ForeColor =255
+                                    Name ="TIT_LBL_01"
+                                    Caption ="IMPORTA PROGETTO I SEGUENTI OGGETTI: FORM + TABLE + QUERY + REPORT + MODULI"
+                                    GUID = Begin
+                                        0x57eb3379784d11468a722d437a4fa79d
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =618
+                                    Top =2070
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =1
+                                    ForeColor =255
+                                    Name ="Cmd_Importa_FORM_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x3185dbc12552c247b7a9834030b51067
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =1950
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    TabIndex =2
+                                    Name ="Cmd_IMPORTA_LINK_TABELLE"
+                                    Caption ="IMPORTA LINK TABELLE LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA LINK TABELLE"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x5b8762c6ec14694e9d0a8cbb9b87d1a6
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =2382
+                                    Top =2070
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =3
+                                    ForeColor =255
+                                    Name ="Importa_TABLE_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xe83065f96f431048b6b9f7eb1af09eb6
+                                    End
+                                End
+                                Begin Label
+                                    BackStyle =1
+                                    OverlapFlags =215
+                                    Left =330
+                                    Top =2925
+                                    Width =10830
+                                    Height =270
+                                    BackColor =62207
+                                    ForeColor =255
+                                    Name ="TIT_LBL_02"
+                                    Caption ="CANCELLA DAL  PROGETTO I SEGUENTI OGGETTI: FORM + TABLE + QUERY + REPORT + MODUL"
+                                        "I"
+                                    GUID = Begin
+                                        0x0c407e2fe07ddf4e818144aa850acd01
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =390
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =4
+                                    Name ="Cmd_CANCELLA_TUTTI_GLI_OGGETTI"
+                                    Caption ="CANCELLA TUTTI GLI OGGETTI FORM_Tb02_Allegati"
+                                    StatusBarText ="DELETE TUTTO"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xde37bf0573da6243a241283c627ec304
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =690
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =5
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_FORM_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x6675e256fc69ef40a05aa4ed5885ea33
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =2034
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =6
+                                    Name ="Cmd_CANCELLA_LINK_TABELLE"
+                                    Caption ="CANCELLA LINK TABELLE LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="DELETE OGGETTI"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x7867f0bfc3aa7842b00349efbff50be0
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =2454
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =7
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_TABLE_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xf8a2e377890d704083fbadcb8892f7c0
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3858
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    TabIndex =8
+                                    Name ="Cmd_IMPORTA_QUERY"
+                                    Caption ="IMPORTA QUERY LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI QUERY"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xd48c03fb6547244cba32e08b24db0d1b
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =4170
+                                    Top =2070
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =9
+                                    ForeColor =255
+                                    Name ="Cmd_Importa_QUERY_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x6ca1b57c8ade5f499e2bab76822a0f1a
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3942
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =10
+                                    Name ="Cmd_CANCELLA_QUERY"
+                                    Caption ="CANCELLA QUERY LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI TABLE"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x8cf4e92fbf86784b9fdf55db03549028
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =4242
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =11
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_QUERY_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x55156c31c2d0ef41957fcd98b04a16e0
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =5586
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    TabIndex =12
+                                    ForeColor =0
+                                    Name ="Cmd_IMPORTA_FORM"
+                                    Caption ="IMPORTA FORMS LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI TABLE"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x3f32625e9602c34794833e86d2b0f915
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =5898
+                                    Top =2070
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =13
+                                    ForeColor =255
+                                    Name ="Cmd_Importa_REPORT_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x2f72b90613fe304798122db1e331fa18
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =5670
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =14
+                                    Name ="Cmd_CANCELLA_FORM"
+                                    Caption ="CANCELLA FORMS LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI TABLE"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x5d138f151e4bf8458274e8b479f63c50
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =5970
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =15
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_REPORT_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x2cee231fd56467429d64b2869ac26388
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7374
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =16
+                                    ForeColor =0
+                                    Name ="Cmd_CANCELLA_MODULI"
+                                    Caption ="CANCELLA MODULES LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="DELETE MODULI"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x86cc1a3695aafc4b8658155e59e2f742
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7710
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =17
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_MODULI_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0x62f9cdd3f994b3408ff96f7160e7ea9e
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7290
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    TabIndex =18
+                                    ForeColor =0
+                                    Name ="Cmd_IMPORTA_MODULI"
+                                    Caption ="IMPORTA MODULES LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA OGGETTI MODULES"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x7885c447a8c8524e9d04b8f325cc70ed
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7638
+                                    Top =2070
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =19
+                                    ForeColor =255
+                                    Name ="Cmd_Importa_MODULI_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xbb15845115ccaf4dbf31d5bd4e6fffbd
+                                    End
+                                End
+                                Begin Label
+                                    BackStyle =1
+                                    OverlapFlags =215
+                                    Left =285
+                                    Top =6195
+                                    Width =10830
+                                    Height =270
+                                    BackColor =62207
+                                    ForeColor =255
+                                    Name ="TIT_LBL_03"
+                                    Caption ="CANCELLA DAL  PROGETTO I SEGUENTI OGGETTI: FORM + TABLE + QUERY + REPORT + MODUL"
+                                        "I"
+                                    GUID = Begin
+                                        0x4d55ea66d4f1fe4ba31efb0755e08b69
+                                    End
+                                End
+                                Begin CommandButton
+                                    Enabled = NotDefault
+                                    OverlapFlags =215
+                                    Left =291
+                                    Top =6583
+                                    Width =1260
+                                    Height =672
+                                    TabIndex =20
+                                    Name ="Cmd_DELETE_TUTTO"
+                                    Caption ="01.03) DELETE.TUTTO"
+                                    StatusBarText ="DELETE TUTTO"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xc47c428b289ad5479078c08900ec7f60
+                                    End
+                                End
+                                Begin CommandButton
+                                    Enabled = NotDefault
+                                    OverlapFlags =215
+                                    Left =1935
+                                    Top =6583
+                                    Width =1260
+                                    Height =672
+                                    TabIndex =21
+                                    Name ="Cmd_IMPORTA_OGGETTI_CIVILIA"
+                                    Caption ="02.03)IMPORTA.TUTTO"
+                                    StatusBarText ="IMPORTA TUTTO"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x628c65637849a3449b59c70895292d6b
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =8958
+                                    Top =1059
+                                    Width =1515
+                                    Height =672
+                                    TabIndex =22
+                                    ForeColor =0
+                                    Name ="Cmd_IMPORTA_REPORT"
+                                    Caption ="IMPORTA REPORTS LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="IMPORTA REPORTS"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0x5794fda843e8ae4babb290eb740076fb
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =9246
+                                    Top =2094
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =23
+                                    ForeColor =255
+                                    Name ="Cmd_Importa_MACRO_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xb13deb7d56b68c4ab09f9535d38fe1bd
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =9084
+                                    Top =3345
+                                    Width =1590
+                                    Height =672
+                                    TabIndex =24
+                                    ForeColor =0
+                                    Name ="Cmd_CANCELLA_REPORT"
+                                    Caption ="CANCELLA REPORTS LLPP_ATTI_Tb02_Allegati"
+                                    StatusBarText ="DELETE REPORTS"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xa7b1ceffb5af684182f530ed850ad75b
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =9462
+                                    Top =4125
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =25
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_MACRO_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xec0f151c53e5dd44b93d6db370e39011
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =285
+                                    Top =4800
+                                    Width =1260
+                                    Height =672
+                                    TabIndex =26
+                                    Name ="Cmd_Delete_FILE_LOG"
+                                    Caption ="01.07) DELETE LOG*.*"
+                                    StatusBarText ="DELETE FILE LOG.TXT"
+                                    FontName ="Calibri"
+                                    GUID = Begin
+                                        0xee4de9954c07c0458218412220c07bd5
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =513
+                                    Top =5592
+                                    Width =567
+                                    Height =324
+                                    FontSize =11
+                                    TabIndex =27
+                                    ForeColor =255
+                                    Name ="Cmd_Delete_FILE_LOG_HELP"
+                                    Caption ="HelpLinkTb5"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadad000dadada ,
+                                        0xadadad0bb00dadaddadada0bb00adadaadadada00dadadaddadada0b00dadada ,
+                                        0xadadad0b00adadaddadada0b00dadadaadadad0bb00dadaddada00d0bb00dada ,
+                                        0xada0b00d0bb00daddad0b00ad0b00adaada0bb000bb00daddada0bbbbb00dada ,
+                                        0xadada000000dadad
+                                    End
+                                    FontName ="Calibri"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    GUID = Begin
+                                        0xbd07aae5ad18e84ab7f9d7e32e4ae45d
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =225
+                            Top =435
+                            Width =14580
+                            Height =7140
+                            Name ="Pag_10"
+                            ControlTipText ="GESTIONE OGGETTI UTILITA (10)"
+                            Caption ="GESTIONE OGGETTI UTILITA (10)"
+                            GUID = Begin
+                                0x884e10eda6dbde40a8ee4379597b56de
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            DisplayWhen =2
+            Height =0
+            BackColor =-2147483633
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x076da87dd76ff04493d0c1d1ffe14d04
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+'//DENOMINAZIONE    -> Modello_Funzione_Pfunct
+Option Compare Database
+'//Variabili di database e GENERALI
+'//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+'DAO
+Dim DaoDB As DAO.Database
+Dim DaoWks As DAO.Workspace
+Dim DaoRs As DAO.Recordset
+Dim DaoRs_Lett As DAO.Recordset
+
+'ADO
+Dim ADODB As Database
+Dim AdodaoRs As Recordset
+
+'Contatori
+Dim icount As Integer
+Dim iTOTcount As Integer
+Dim dbl_count As Double
+
+'Le variabili generiche
+Dim sSql As String                                          '//Stringa di estrazione SQL
+Dim sSql_Lett As String                                     '//Stringa di estrazione SQL
+
+'Variabili generali
+Dim str1 As String
+Dim Int1 As Integer
+Dim Int2 As Integer
+Dim Int3 As Integer
+Dim Lng1 As Long
+Dim Dbl1 As Double
+Dim Bln1 As Boolean
+Dim Vv1 As Variant
+Dim obj1 As Object
+
+'Gestione parametri comandi
+Dim sxParamCmd_3 As String
+
+
+'Larghezza e numero di colonna
+Dim sLarg_Col As String
+Dim iNum_Col As Integer
+
+
+'//ERRORI PROCEDURA_FUNCTION O ROUTINE
+Dim ProceduraMessaggioErrore_s As String
+Dim ProceduraAttivaEseguita_s As String
+
+
+
+
+
+
+'//==============================================================================================================//
+'// CLASSE: Form_UTILITA_Msys_Frm21_IMPORTA_OGGETTI
+'// VERSIONE: 2025_02_12 - COMPLETA E FUNZIONANTE
+'// DESCRIZIONE:
+'//   Form di utilità per importare o cancellare collettivamente le tabelle collegate (@TABELLE) del mini-progetto.
+'//
+'// SEGNALIBRI PRINCIPALI:
+'//   @01 GetTabellaPaths_LINK_TABELLE -> Elenco tabelle e percorsi MDB
+'//   @02 Importa_LINK_TABELLE_PFunct -> Collega tabelle con log dettagliato
+'//   @03 CancellaTabelleCollegate_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati -> Cancella tabelle collegate senza log
+'//   @04 EliminaTabellaSeEsiste_LINK_TABELLE -> Elimina tabella singola
+'//   @05 FileEsiste -> Controllo esistenza file
+'//   @06 CancellaTutto_INK_TABELLE -> Cancella tutte le tabelle con log
+'//   @UTIL_01 RefreshDatabaseView -> Aggiorna riquadro oggetti di Access
+'//   @EVT_Load  Form_Load -> Inizializzazione della form
+'//
+'// NOTE:
+'//   - Commenti originali lasciati invariati
+'//   - Gestione errori standardizzata
+'//==============================================================================================================//
+
+
+'//*********************************************************************************************************************************//
+'//                                          IMPORTA O CANCELLA TABELLE LINK                          *** INIZIO ***
+'//*********************************************************************************************************************************//
+'// CODICE PER LA SOSTITUZIONE COLLETTIVA
+'// - Permette di cancellare o importare le @TABELLE del mini-progetto.
+'// - Funzioni principali, QUESTI SONO I @CODICI@COLLETTIVI:
+'//         @CODICE@COLLETTIVO  --->     LLPP_ATTI_Tb02_Allegati
+'//
+'//         TABELLE LINK        --->     LINK_TABELLE_LLPP_ATTI_Tb02_Allegati
+'//         QUERY               --->     QUERY_LLPP_ATTI_Tb02_Allegati
+'//         REPORT              --->     REPORT_LLPP_ATTI_Tb02_Allegati
+'//         MODULI              --->     MODULI_LLPP_ATTI_Tb02_Allegati
+'//         FORM                --->     FORM_LLPP_ATTI_Tb02_Allegati
+'//
+'// Segnalibri numerati:
+'//   @01 GetTabellaPaths_LINK_TABELLE -> Elenco tabelle e percorsi MDB
+'//   @02 Importa_LINK_TABELLE_PFunct -> Collega tabelle, log dettagliato
+'//   @03 CancellaTabelleCollegate_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati -> Cancella tabelle collegate, senza log
+'//   @04 EliminaTabellaSeEsiste_LINK_TABELLE -> Elimina tabella singola
+'//   @05 FileEsiste -> Controllo esistenza file
+'//   @06 CancellaTutto_INK_TABELLE -> Cancella tutte le tabelle con log
+'//
+'//   MODIFICHE ESEGUITE
+'//      2025_08_08
+'//            TESTO BUTTON   = all'attivazione e caricamento della form VENGONO CARICATI LE LABEL DEI BUTTON
+'//            SEMPLICFIAZIONI  = ha cancellato tutte le routine ridodanti
+'//
+'//*********************************************************************************************************************************//
+
+
+'//**********************************************************************************************************//
+'//             COMDANDI CMD, TABELLE, QUERY FORM, REPORT, MODULI E CLASSI   *** INIZIO ***
+'//**********************************************************************************************************//
+
+
+' ============================================================
+' COMANDO: @CMD@IMPORTA@TUTTO
+' ============================================================
+Public Sub Cmd_IMPORTA_TUTTI_GLI_OGGETTI_Click()
+    On Error GoTo Err_Cmd_IMPORTA_TUTTI_GLI_OGGETTI_Click
+    
+       
+        Importa_LINK_TABELLE_PFunct
+        Importa_MODULI_PFunct
+        Importa_QUERY_PFunct
+        Importa_REPORT_PFunct
+        Importa_FORM_PFunct
+
+Exit_Cmd_IMPORTA_TUTTI_GLI_OGGETTI_Click:
+    Exit Sub
+
+Err_Cmd_IMPORTA_TUTTI_GLI_OGGETTI_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_IMPORTA_TUTTI_GLI_OGGETTI_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: @CMD@CANCELLA@TUTTO
+' ============================================================
+Public Sub Cmd_CANCELLA_TUTTI_GLI_OGGETTI_Click()
+    On Error GoTo Err_Cmd_CANCELLA_TUTTI_GLI_OGGETTI_Click
+    
+    CancellaTutto_QUERY
+    CancellaTutto_FORM
+    CancellaTutto_INK_TABELLE
+    CancellaTutto_INK_TABELLE
+    CancellaTutto_REPORT
+
+
+Exit_Cmd_CANCELLA_TUTTI_GLI_OGGETTI_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_TUTTI_GLI_OGGETTI_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_TUTTI_GLI_OGGETTI_Click
+End Sub
+
+
+
+
+' ============================================================
+' COMANDO: @CMD@IMPORTA@TABELLE@LINK
+' ============================================================
+Public Sub Cmd_IMPORTA_LINK_TABELLE_Click()
+    On Error GoTo Err_Cmd_IMPORTA_LINK_TABELLE_Click
+    
+    Call Importa_LINK_TABELLE_PFunct
+
+Exit_Cmd_IMPORTA_LINK_TABELLE_Click:
+    Exit Sub
+
+Err_Cmd_IMPORTA_LINK_TABELLE_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_IMPORTA_LINK_TABELLE_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: @CMD@CANCELLA@TABELLE@LINK
+' ============================================================
+Public Sub Cmd_CANCELLA_LINK_TABELLE_Click()
+    On Error GoTo Err_Cmd_CANCELLA_LINK_TABELLE_Click
+ 
+    Call CancellaTutto_INK_TABELLE
+       
+Exit_Cmd_CANCELLA_LINK_TABELLE_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_LINK_TABELLE_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_LINK_TABELLE_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: Importa @CMD QUERY
+' ============================================================
+Public Sub Cmd_IMPORTA_QUERY_Click()
+    On Error GoTo Err_Cmd_IMPORTA_QUERY_Click
+    
+    Call Importa_QUERY_PFunct
+
+Exit_Cmd_IMPORTA_QUERY_Click:
+    Exit Sub
+
+Err_Cmd_IMPORTA_QUERY_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_IMPORTA_QUERY_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: CANCELLA @CMD QUERY
+' ============================================================
+Public Sub Cmd_CANCELLA_QUERY_Click()
+    On Error GoTo Err_Cmd_CANCELLA_QUERY_Click
+    
+    Call CancellaTutte_QUERY
+
+Exit_Cmd_CANCELLA_QUERY_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_QUERY_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_QUERY_Click
+End Sub
+
+
+
+
+' ============================================================
+' COMANDO: @CMD@FORM@Importa
+' ============================================================
+Public Sub Cmd_Importa_FORM_Click()
+    On Error GoTo Err_Cmd_Importa_FORM_Click
+    
+    Call Importa_FORM_PFunct
+
+Exit_Cmd_Importa_FORM_Click:
+    Exit Sub
+
+Err_Cmd_Importa_FORM_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_Importa_FORM_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: @CMD@FORM@CANCELLA
+' ============================================================
+Public Sub Cmd_CANCELLA_FORM_Click()
+    On Error GoTo Err_Cmd_CANCELLA_FORM_Click
+    
+    Call CancellaTutto_FORM
+
+Exit_Cmd_CANCELLA_FORM_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_FORM_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_FORM_Click
+End Sub
+
+
+
+
+
+' ============================================================
+' COMANDO: @CMD@MODULI@Importa
+' ============================================================
+Public Sub Cmd_IMPORTA_MODULI_Click()
+    On Error GoTo Err_Cmd_IMPORTA_MODULI_Click
+    
+    Importa_MODULI_PFunct
+
+Exit_Cmd_IMPORTA_MODULI_Click:
+    Exit Sub
+
+Err_Cmd_IMPORTA_MODULI_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_IMPORTA_MODULI_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: @CMD@MODULI@CANCELLA
+' ============================================================
+Public Sub Cmd_CANCELLA_MODULI_Click()
+    On Error GoTo Err_Cmd_CANCELLA_MODULI_Click
+    
+    Call CancellaTutti_MODULI
+
+Exit_Cmd_CANCELLA_MODULI_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_MODULI_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_MODULI_Click
+End Sub
+
+
+
+
+
+' ============================================================
+' COMANDO: @CMD@REPORT@Importa
+' ============================================================
+Public Sub Cmd_Importa_REPORT_Click()
+    On Error GoTo Err_Cmd_Importa_REPORT_Click
+    
+    Importa_REPORT_PFunct
+
+Exit_Cmd_Importa_REPORT_Click:
+    Exit Sub
+
+Err_Cmd_Importa_REPORT_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_Importa_REPORT_Click
+End Sub
+
+
+' ============================================================
+' COMANDO: @CMD@REPORT@CANCELLA
+' ============================================================
+Public Sub Cmd_CANCELLA_REPORT_Click()
+    On Error GoTo Err_Cmd_CANCELLA_REPORT_Click
+    
+    Call CancellaTutto_REPORT
+
+Exit_Cmd_CANCELLA_REPORT_Click:
+    Exit Sub
+
+Err_Cmd_CANCELLA_REPORT_Click:
+    MsgBox Err.Description
+    Resume Exit_Cmd_CANCELLA_REPORT_Click
+End Sub
+
+
+
+
+
+
+'//**********************************************************************************************************************************************************//
+'//             @COMDANDI@CMD, TABELLE, QUERY FORM, REPORT, MODULI E CLASSI   *** INIZIO ***
+'//
+'//
+'//*********************************************************************************************************************************************************//
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                          IMPORTA O CANCELLA TABELLE LINK                          *** INIZIO ***
+'////*********************************************************************************************************************************//
+
+' ============================================================
+' @01 FUNZIONE GetTabellaPaths_LINK_TABELLE
+' SCOPO:
+'   Restituisce una Collection di Array(NomeTabella, PercorsoFile).
+'   - Controlla se i file esistono
+'   - Esclude righe vuote
+' NOTE:
+'   Questo è il modello che hai fornito e che volevi mantenere.   @collection@TABELLE@LINK@MODELLO@COLLECTION
+' ============================================================
+Public Function GetTabellaPaths_LINK_TABELLE() As Collection
+    On Error GoTo GestErrore
+    
+    Dim TabellaPath As New Collection
+    Dim PercorsoFile As String
+    
+    ' === RESET campo di appoggio (se esiste in un form) ===
+    sourceDBPath_s_Txt = ""
+    Me.sourceDBPath_s_Txt.Requery
+    
+    ' === GRUPPO_01 DATABASE: LLPP_ATTI_Tb02_ALLEGATI.mdb ===
+    '-----------------------------------------------------------------------------------------------------------------------
+        PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb02_ALLEGATI\MDB\LLPP_ATTI_Tb02_ALLEGATI.mdb"
+        
+        ' === Verifica esistenza file ===
+        If Not FileEsiste(PercorsoFile) Then
+            MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation
+            Set GetTabellaPaths_LINK_TABELLE = TabellaPath
+            Exit Function
+        End If
+        
+        ' === Aggiunta nomi tabella direttamente alla Collection (ogni elemento è Array(Nome, Percorso)) ===
+        TabellaPath.Add Array("LLPP_ATTI_Tb02_{@====================================@}_ALLEGATI", PercorsoFile)
+        TabellaPath.Add Array("LLPP_ATTI_Tb02_Allegati", PercorsoFile)
+        TabellaPath.Add Array("LLPP_DF05_FALDONI", PercorsoFile)
+        
+    '-----------------------------------------------------------------------------------------------------------------------
+    ' === GRUPPO_02 DATABASE: LLPP_ATTI_Tb01_GESTIONE.mdb ===
+        '-----------------------------------------------------------------------------------------------------------------------
+        PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb01_GESTIONE\MDB\LLPP_ATTI_Tb01_GESTIONE.mdb"
+        
+        ' === Verifica esistenza file ===
+        If Not FileEsiste(PercorsoFile) Then
+            MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation
+            Set GetTabellaPaths_LINK_TABELLE = TabellaPath
+            Exit Function
+        End If
+        
+        ' === Aggiunta nomi tabella direttamente alla Collection (ogni elemento è Array(Nome, Percorso)) ===
+        TabellaPath.Add Array("LLPP_ATTI_Tb01_}-----------------------------------------------@", PercorsoFile)
+        TabellaPath.Add Array("LLPP_ATTI_Tb01_Gestione", PercorsoFile)
+        TabellaPath.Add Array("LLPP_ATTI_Tb01_{@=============================================@}", PercorsoFile)
+        
+    '-----------------------------------------------------------------------------------------------------------------------
+    
+    ' === Aggiorna campo Txt Form PATH DB  ===
+    sourceDBPath_s_Txt = PercorsoFile
+    
+    ' === Restituzione collection ===
+    Set GetTabellaPaths_LINK_TABELLE = TabellaPath
+    Exit Function
+
+GestErrore:
+    MsgBox "Errore in GetTabellaPaths_LINK_TABELLE: " & Err.Description, vbExclamation, "Errore"
+    Set GetTabellaPaths_LINK_TABELLE = Nothing
+End Function
+
+
+' ============================================================
+' @02 FUNZIONE Importa_LINK_TABELLE_PFunct
+' SCOPO:
+'   Collega tutte le tabelle definite in GetTabellaPaths.
+'   - Controlla NomeTabella e PercorsoFile
+'   - Scrive un log dettagliato
+'
+' MODIFICHE APPLICATE:
+'   - Usa la Collection di Array come specificato (Item è Variant che contiene un Array)
+'   - Estrae NomeTabella e PercorsoFile con CStr/Trim$ per sicurezza
+'   - Migliore gestione di Err.Clear e On Error per ogni iterazione
+' ============================================================
+Public Function Importa_LINK_TABELLE_PFunct()
+    On Error GoTo Importa_Err
+
+    Dim TabellaPath As Collection
+    Set TabellaPath = GetTabellaPaths_LINK_TABELLE()
+    
+    Dim NomeTabella As String
+    Dim PercorsoFile As String
+    Dim i As Long
+    Dim LogFile As Integer
+    Dim LogFileName As String
+    Dim ConteggioOk As Long
+    Dim ConteggioErr As Long
+    Dim Item As Variant        ' ogni elemento è un Array -> deve essere Variant
+
+    If TabellaPath Is Nothing Then
+        MsgBox "Errore: impossibile ottenere la collection delle tabelle.", vbExclamation
+        Exit Function
+    End If
+
+    If TabellaPath.Count = 0 Then
+        MsgBox "La collection delle tabelle è vuota. Nessuna operazione effettuata.", vbInformation
+        Exit Function
+    End If
+
+    ' Creazione file log
+    LogFileName = CurrentProject.Path & "\CollegaTabelle_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+
+    Print #LogFile, "Log esecuzione funzione: CollegaTabelle_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+
+    ConteggioOk = 0
+    ConteggioErr = 0
+
+    ' Ciclo su tutte le tabelle
+    For i = 1 To TabellaPath.Count
+        Item = TabellaPath(i)     ' Item è Array: Item(0)=Nome, Item(1)=Percorso
+
+        ' Estrazione sicura in variabili tipizzate
+        NomeTabella = Trim$(CStr(Item(0) & ""))
+        PercorsoFile = Trim$(CStr(Item(1) & ""))
+
+        ' Controllo valori vuoti
+        If Len(NomeTabella) = 0 Or Len(PercorsoFile) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome tabella o percorso vuoto"
+            ConteggioErr = ConteggioErr + 1
+            GoTo ProssimaTabella_Importa
+        End If
+
+        ' Controllo percorso file
+        If Not FileEsiste(PercorsoFile) Then
+            Print #LogFile, Now & " - ERRORE: Percorso file NON valido per " & NomeTabella & " -> " & PercorsoFile
+            ConteggioErr = ConteggioErr + 1
+            GoTo ProssimaTabella_Importa
+        End If
+
+        ' Elimina tabella se già esiste, poi crea collegamento
+        On Error Resume Next
+        Err.Clear
+        EliminaTabellaSeEsiste_LINK_TABELLE NomeTabella
+        DoCmd.TransferDatabase acLink, "Microsoft Access", PercorsoFile, acTable, NomeTabella, NomeTabella, False
+
+        If Err.Number = 0 Then
+            Print #LogFile, Now & " - OK: " & NomeTabella & " -> " & PercorsoFile
+            ConteggioOk = ConteggioOk + 1
+        Else
+            Print #LogFile, Now & " - ERRORE: " & NomeTabella & " -> " & Err.Description
+            ConteggioErr = ConteggioErr + 1
+            Err.Clear
+        End If
+
+ProssimaTabella_Importa:
+        On Error GoTo 0
+    Next i
+
+    ' Riepilogo log
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "TOTALE TABELLE COLLEGATE: " & ConteggioOk
+    Print #LogFile, "TOTALE ERRORI/SKIPPED: " & ConteggioErr
+    Close #LogFile
+
+    MsgBox "Operazione LINK TABELLE completata!" & vbCrLf & _
+           "Tabelle collegate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log salvato in: " & LogFileName, vbInformation
+
+Importa_LINK_TABELLE_PFunct_Exit:
+    Exit Function
+
+Importa_Err:
+    MsgBox "Errore: " & Err.Description, vbExclamation, "Errore di collegamento tabelle"
+    Resume Importa_LINK_TABELLE_PFunct_Exit
+End Function
+
+
+
+' ============================================================
+' @04 FUNZIONE EliminaTabellaSeEsiste_LINK_TABELLE
+' SCOPO:
+'   Elimina una tabella dal database corrente se esiste
+' NOTA:
+'   Funzione identica all'originale — compatibile con la Collection di Array
+' ============================================================
+Public Sub EliminaTabellaSeEsiste_LINK_TABELLE(NomeTabella As Variant)
+    On Error Resume Next
+    Dim tdf As DAO.TableDef
+    For Each tdf In CurrentDb.TableDefs
+        If tdf.Name = NomeTabella Then
+            CurrentDb.TableDefs.Delete NomeTabella
+            Exit For
+        End If
+    Next tdf
+    On Error GoTo 0
+End Sub
+
+
+
+' ============================================================
+' @06 FUNZIONE CancellaTutto_INK_TABELLE
+' SCOPO:
+'   Cancella tutte le tabelle collegate definite in GetTabellaPaths.
+'   - Scrive log dettagliato su file
+'   - Controlla validità NomeTabella
+'   - Verifica l’esistenza della tabella nel DB corrente e la elimina
+'
+' MODIFICHE APPLICATE:
+'   - Usa la Collection contenente Array come richiesto (Item è Variant)
+'   - Converte in stringa con CStr/Trim$ per evitare errori tipo Variant/Null
+' ============================================================
+Public Function CancellaTutto_INK_TABELLE()
+    On Error GoTo CancellaTutto_INK_TABELLE_Err
+
+    Dim TabellaPath As Collection
+    Set TabellaPath = GetTabellaPaths_LINK_TABELLE()
+
+    ' === Controllo collection vuota ===
+    If TabellaPath Is Nothing Then
+        MsgBox "Errore: impossibile ottenere la collection delle tabelle.", vbExclamation
+        Exit Function
+    End If
+
+    If TabellaPath.Count = 0 Then
+        MsgBox "La collection delle tabelle è vuota. Nessuna tabella da cancellare.", vbInformation
+        Exit Function
+    End If
+
+    Dim i As Long
+    Dim Item As Variant        ' ogni elemento è un Array -> deve essere Variant
+    Dim NomeTabella As String
+    Dim PercorsoFile As String
+    Dim ConteggioOk As Long
+    Dim ConteggioErr As Long
+    Dim tdf As DAO.TableDef
+    Dim TabellaEsiste As Boolean
+    Dim LogFile As Integer
+    Dim LogFileName As String
+
+    ' === Inizializza log ===
+    LogFileName = CurrentProject.Path & "\CANC_TutteTabelleCollegate_PFunct_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+
+    Print #LogFile, "Log esecuzione funzione: CancellaTutteTabelleCollegate_LINK_TABELLE"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+
+    ConteggioOk = 0
+    ConteggioErr = 0
+
+    ' === Ciclo sugli elementi della collection ===
+    For i = 1 To TabellaPath.Count
+        Item = TabellaPath(i) ' ogni elemento è un array con NomeTabella e PercorsoFile
+
+        ' --- Estrazione sicura in variabili tipizzate ---
+        NomeTabella = Trim$(CStr(Item(0) & ""))
+        PercorsoFile = Trim$(CStr(Item(1) & ""))
+        
+        ' --- Controllo nome tabella vuoto ---
+        If Len(NomeTabella) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome tabella vuota"
+            ConteggioErr = ConteggioErr + 1
+            GoTo ProssimaTabella_Cancella
+        End If
+
+        ' --- Verifica se la tabella esiste nel DB corrente ---
+        TabellaEsiste = False
+        For Each tdf In CurrentDb.TableDefs
+            If tdf.Name = NomeTabella Then
+                TabellaEsiste = True
+                Exit For
+            End If
+        Next tdf
+            
+        ' === Aggiorna campo Txt Form PATH DB  ===
+        sourceDBPath_s_Txt = PercorsoFile
+        
+        If TabellaEsiste Then
+            On Error Resume Next
+            Err.Clear
+            EliminaTabellaSeEsiste_LINK_TABELLE NomeTabella
+            If Err.Number = 0 Then
+                Print #LogFile, Now & " - OK: Eliminata " & NomeTabella
+                ConteggioOk = ConteggioOk + 1
+            Else
+                Print #LogFile, Now & " - ERRORE: " & NomeTabella & " -> " & Err.Description
+                ConteggioErr = ConteggioErr + 1
+                Err.Clear
+            End If
+            On Error GoTo 0
+        Else
+            Print #LogFile, Now & " - NON TROVATA: " & NomeTabella
+            ConteggioErr = ConteggioErr + 1
+        End If
+
+ProssimaTabella_Cancella:
+    Next i
+
+    ' === Riepilogo log ===
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "TOTALE TABELLE ELIMINATE: " & ConteggioOk
+    Print #LogFile, "TOTALE ERRORI/SKIPPED: " & ConteggioErr
+    Close #LogFile
+
+    ' === aggiorna riquadro oggetti ===
+    Call RefreshDatabaseView
+
+    MsgBox "Cancellazione LINK TABELLE completata!" & vbCrLf & _
+           "Tabelle eliminate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log salvato in: " & LogFileName, vbInformation
+
+CancellaTutto_INK_TABELLE_Exit:
+    Exit Function
+
+CancellaTutto_INK_TABELLE_Err:
+    MsgBox "Errore: " & Err.Description, vbExclamation, "Errore cancellazione tabelle"
+    Resume CancellaTutto_INK_TABELLE_Exit
+End Function
+
+'//*********************************************************************************************************************************//
+'//                                          IMPORTA O CANCELLA TABELLE LINK                          *** FINE ***
+'//*********************************************************************************************************************************//
+
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@QUERY  O @CANCELLA@ QUERY                       *** INIZIO ***             //
+'//*********************************************************************************************************************************//
+
+' ============================================================
+' FUNZIONE GetQueryPaths_QUERY
+' SCOPO:
+'   Restituisce una Collection di Array(NomeQuery, PercorsoFile)
+'   che definisce le query da importare dal DB sorgente.  @collection@QUERY
+'
+' NOTE:
+'   - Ogni elemento della Collection è un Variant che contiene un Array:
+'       Item(0) = NomeQuery
+'       Item(1) = PercorsoFile
+'   - Verifica l'esistenza del file sorgente prima di aggiungere gli elementi
+' ============================================================
+Public Function GetQueryPaths_QUERY() As Collection
+    On Error GoTo GestErrore
+    
+    Dim QueryPath As New Collection
+    Dim PercorsoFile As String
+    
+    ' === Percorso del file sorgente contenente le query ===
+    PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb02_ALLEGATI\MDB\LLPP_ATTI_Tb02_ALLEGATI.mdb"
+    
+    ' === Verifica esistenza file (se manca restituisco collection vuota) ===
+    If Not FileEsiste(PercorsoFile) Then
+        MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation, "File non trovato"
+        Set GetQueryPaths_QUERY = QueryPath
+        Exit Function
+    End If
+    
+    ' === Elenco query da importare (ogni riga: Array(NomeQuery, PercorsoFile)) ===
+    QueryPath.Add Array("LLPP_ATTI_Qry02_01_}--------------------------------------SELECT", PercorsoFile)
+    QueryPath.Add Array("LLPP_ATTI_Qry02_01_Allegati", PercorsoFile)
+
+    '// le unioni
+    QueryPath.Add Array("LLPP_ATTI_Qry02_25_}--------------------------------------UNION", PercorsoFile)
+    QueryPath.Add Array("LLPP_ATTI_Qry02_26_UNION_FileAtto_Atti_Allegati", PercorsoFile)
+    QueryPath.Add Array("LLPP_ATTI_Qry02_26_UNION_FileAtto_Atti_Allegati_RICERCA", PercorsoFile)
+    QueryPath.Add Array("LLPP_ATTI_Qry02_30_}-------------------------------------CONTR", PercorsoFile)
+    QueryPath.Add Array("LLPP_ATTI_Qry02_30_CONTROLLO_Allegati", PercorsoFile)
+    
+    ' === Restituzione collection ===
+    Set GetQueryPaths_QUERY = QueryPath
+    Exit Function
+
+GestErrore:
+    MsgBox "Errore in GetQueryPaths_QUERY: " & Err.Description, vbExclamation, "Errore"
+    Set GetQueryPaths_QUERY = Nothing
+End Function
+
+
+' ============================================================
+' FUNZIONE Importa_QUERY_PFunct
+' SCOPO:
+'   Importa tutte le query definite in GetQueryPaths_QUERY
+'   - Scrive log dettagliato
+'
+' MODIFICHE APPLICATE:
+'   - Estrazione sicura Item(0)/Item(1) con Trim$(CStr(...))
+'   - Verifiche FileEsiste prima di importare
+'   - Gestione Err.Clear tra le iterazioni
+' ============================================================
+Public Function Importa_QUERY_PFunct()
+    On Error GoTo ErrHandler
+
+    Dim QueryPath As Collection
+    Set QueryPath = GetQueryPaths_QUERY()
+    
+    Dim NomeQuery As String
+    Dim PercorsoFile As String
+    Dim i As Long
+    Dim LogFile As Integer
+    Dim LogFileName As String
+    Dim ConteggioOk As Long
+    Dim ConteggioErr As Long
+    Dim Item As Variant
+    
+    If QueryPath Is Nothing Then
+        MsgBox "Errore: impossibile ottenere la collection delle query.", vbExclamation
+        Exit Function
+    End If
+
+    If QueryPath.Count = 0 Then
+        MsgBox "Nessuna query da collegare.", vbInformation
+        Exit Function
+    End If
+    
+    ' File log (cartella CurrentProject.Path)
+    LogFileName = CurrentProject.Path & "\CollegaQuery_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    Print #LogFile, "Log esecuzione funzione: Importa_QUERY_PFunct"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+
+    ConteggioOk = 0
+    ConteggioErr = 0
+
+    ' Ciclo
+    For i = 1 To QueryPath.Count
+        Item = QueryPath(i)
+        
+        ' Estrazione sicura
+        NomeQuery = Trim$(CStr(Item(0) & ""))
+        PercorsoFile = Trim$(CStr(Item(1) & ""))
+        
+        ' Controllo NomeQuery
+        If Len(NomeQuery) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome query vuoto (indice " & i & ")"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        ' Controllo file sorgente
+        If Not FileEsiste(PercorsoFile) Then
+            Print #LogFile, Now & " - ERRORE: File non trovato -> " & PercorsoFile & " (Query: " & NomeQuery & ")"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        ' Elimina se già esiste (silenzioso, gestione errori dentro la routine)
+        EliminaQuerySeEsiste_QUERY NomeQuery
+        
+        ' Collega / importa la query dal DB sorgente
+        On Error Resume Next
+        Err.Clear
+        DoCmd.TransferDatabase _
+            TransferType:=acImport, _
+            DatabaseType:="Microsoft Access", _
+            DatabaseName:=PercorsoFile, _
+            objectType:=acQuery, _
+            Source:=NomeQuery, _
+            Destination:=NomeQuery, _
+            StructureOnly:=False
+
+        If Err.Number = 0 Then
+            Print #LogFile, Now & " - OK: " & NomeQuery & " (Import da: " & PercorsoFile & ")"
+            ConteggioOk = ConteggioOk + 1
+        Else
+            Print #LogFile, Now & " - ERRORE: " & NomeQuery & " -> " & Err.Description
+            ConteggioErr = ConteggioErr + 1
+            Err.Clear
+        End If
+        On Error GoTo 0
+
+Prossimo:
+    Next i
+    
+    ' Riepilogo
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale collegate: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    ' Aggiorna vista oggetti (se presente)
+    On Error Resume Next
+    Call RefreshDatabaseView
+    On Error GoTo 0
+
+    MsgBox "Operazione IMPORTA QUERY completata!" & vbCrLf & _
+           "Collegate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+    Exit Function
+
+ErrHandler:
+    MsgBox "Errore in Importa_QUERY_PFunct: " & Err.Description, vbExclamation, "Errore"
+End Function
+
+
+' ============================================================
+' SUB CancellaTutto_QUERY
+' SCOPO:
+'   Cancella tutte le query collegate definite in GetQueryPaths_QUERY
+' NOTE:
+'   Funzione semplice che itera la Collection e chiama EliminaQuerySeEsiste...
+' ============================================================
+Public Sub CancellaTutto_QUERY()
+    Dim QueryPath As Collection
+    Set QueryPath = GetQueryPaths_QUERY()
+    
+    If QueryPath Is Nothing Then Exit Sub
+    If QueryPath.Count = 0 Then Exit Sub
+    
+    Dim i As Long
+    Dim Item As Variant
+    Dim NomeQuery As String
+    
+    For i = 1 To QueryPath.Count
+        Item = QueryPath(i)
+        
+        ' Copio l’elemento in una variabile String per evitare errore "by reference"
+        NomeQuery = Trim$(CStr(Item(0) & ""))
+        
+        If Len(NomeQuery) > 0 Then
+            EliminaQuerySeEsiste_QUERY NomeQuery
+        End If
+    Next i
+    
+    ' Aggiorna vista oggetti se possibile
+    On Error Resume Next
+    Call RefreshDatabaseView
+    On Error GoTo 0
+    
+    MsgBox "Cancellazione QUERY completata!", vbInformation
+End Sub
+
+
+' ============================================================
+' FUNZIONE CancellaTutte_QUERY
+' SCOPO:
+'   Cancella tutte le query collegate definite in GetQueryPaths_QUERY
+'   - Scrive log dettagliato
+' ============================================================
+Public Function CancellaTutte_QUERY() As Boolean
+    On Error GoTo ErrHandler
+    
+    Dim QueryPath As Collection
+    Set QueryPath = GetQueryPaths_QUERY()
+    
+    If QueryPath Is Nothing Then
+        MsgBox "Errore: impossibile ottenere la collection delle query.", vbExclamation
+        CancellaTutte_QUERY = False
+        Exit Function
+    End If
+    
+    If QueryPath.Count = 0 Then
+        MsgBox "Nessuna query da cancellare.", vbInformation
+        CancellaTutte_QUERY = True
+        Exit Function
+    End If
+    
+    Dim i As Long, Item As Variant
+    Dim NomeQuery As String
+    Dim ConteggioOk As Long, ConteggioErr As Long
+    Dim LogFile As Integer, LogFileName As String
+    
+    LogFileName = CurrentProject.Path & "\CancellaQuery_LINK_TABELLE_LLPP_ATTI_Tb02_Allegati_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    
+    Print #LogFile, "Log esecuzione funzione: CancellaTutte_QUERY"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+    
+    ConteggioOk = 0
+    ConteggioErr = 0
+    
+    For i = 1 To QueryPath.Count
+        Item = QueryPath(i)
+        NomeQuery = Trim$(CStr(Item(0) & ""))
+        
+        If Len(NomeQuery) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome vuoto (indice " & i & ")"
+            ConteggioErr = ConteggioErr + 1
+            GoTo ProssimoCanc
+        End If
+        
+        If ESISTE_QUERY(NomeQuery) Then
+            EliminaQuerySeEsiste_QUERY NomeQuery
+            If Not ESISTE_QUERY(NomeQuery) Then
+                Print #LogFile, Now & " - OK: Eliminata " & NomeQuery
+                ConteggioOk = ConteggioOk + 1
+            Else
+                Print #LogFile, Now & " - ERRORE: Non eliminata " & NomeQuery
+                ConteggioErr = ConteggioErr + 1
+            End If
+        Else
+            Print #LogFile, Now & " - NON TROVATA: " & NomeQuery
+            ConteggioErr = ConteggioErr + 1
+        End If
+ProssimoCanc:
+    Next i
+    
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale eliminate: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    ' Aggiorna vista oggetti
+    On Error Resume Next
+    Call RefreshDatabaseView
+    On Error GoTo 0
+    
+    MsgBox "Cancellazione completata!" & vbCrLf & _
+           "Eliminate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+
+    CancellaTutte_QUERY = (ConteggioErr = 0)
+    Exit Function
+    
+ErrHandler:
+    MsgBox "Errore in CancellaTutte_QUERY: " & Err.Description, vbExclamation
+    CancellaTutte_QUERY = False
+End Function
+
+
+' ============================================================
+' SUB EliminaQuerySeEsiste_QUERY
+' SCOPO:
+'   Elimina una query dal database corrente se esiste
+' ============================================================
+Public Sub EliminaQuerySeEsiste_QUERY(NomeQuery As String)
+    On Error Resume Next
+    If Len(Trim$(NomeQuery)) > 0 Then
+        CurrentDb.QueryDefs.Delete NomeQuery
+    End If
+    On Error GoTo 0
+End Sub
+
+
+' ============================================================
+' FUNZIONE ESISTE_QUERY
+' SCOPO:
+'   Verifica se una query esiste nel DB corrente
+' ============================================================
+Public Function ESISTE_QUERY(NomeQuery As String) As Boolean
+    Dim qdf As DAO.QueryDef
+    ESISTE_QUERY = False
+    On Error Resume Next
+    For Each qdf In CurrentDb.QueryDefs
+        If qdf.Name = NomeQuery Then
+            ESISTE_QUERY = True
+            Exit For
+        End If
+    Next qdf
+    On Error GoTo 0
+End Function
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@QUERY  O @CANCELLA@ QUERY                       *** FINE ***               //
+'//*********************************************************************************************************************************//
+
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@FORM  O @CANCELLA@FORM                         *** INIZIO ***                 //
+'//*********************************************************************************************************************************//
+
+
+' ============================================================
+' FUNZIONE GetFormPaths_FORM
+' SCOPO:
+'   Restituisce una collection di Array(NomeForm, PercorsoFile)
+'   che definisce le form da collegare dal DB sorgente.  @collection@form
+' ============================================================
+Public Function GetFormPaths_FORM() As Collection
+    On Error GoTo GestErrore
+    
+    Dim FormPath As New Collection
+    Dim PercorsoFile As String
+    
+    ' === Percorso del file sorgente contenente le form ===
+    PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb02_ALLEGATI\MDB\LLPP_ATTI_Tb02_Allegati.mdb"
+    
+    ' === Verifica esistenza file ===
+    If Not FileEsiste(PercorsoFile) Then
+        MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation
+        Set GetFormPaths_FORM = FormPath
+        Exit Function
+    End If
+    
+    ' === Elenco form da collegare (aggiunte come Array nella Collection) ===
+    FormPath.Add Array("LLPP_ATTI_FrmS02_01_{==============================}_ALLEG", PercorsoFile)
+    FormPath.Add Array("LLPP_ATTI_FrmS02_01_Gestione_ALLEGATI", PercorsoFile)
+    FormPath.Add Array("MODELLO_FrS01_{=================================}_MODELLO", PercorsoFile)
+    
+    ' === Restituzione collection ===
+    Set GetFormPaths_FORM = FormPath
+    Exit Function
+
+GestErrore:
+    MsgBox "Errore in GetFormPaths_FORM: " & Err.Description, vbExclamation, "Errore"
+    Set GetFormPaths_FORM = Nothing
+End Function
+
+
+' ============================================================
+' FUNZIONE Importa_FORM_PFunct
+' SCOPO:
+'   Collega tutte le form definite in GetFormPaths_FORM
+'   - Scrive log dettagliato
+' ============================================================
+Public Function Importa_FORM_PFunct()
+    On Error GoTo ErrHandler
+
+    Dim FormPath As Collection
+    Set FormPath = GetFormPaths_FORM()
+    
+    Dim NomeForm As String
+    Dim PercorsoFile As String
+    Dim i As Long
+    Dim LogFile As Integer
+    Dim LogFileName As String
+    Dim ConteggioOk As Long
+    Dim ConteggioErr As Long
+
+    If FormPath.Count = 0 Then
+        MsgBox "Nessuna form da collegare.", vbInformation
+        Exit Function
+    End If
+    
+    ' File log
+    LogFileName = CurrentProject.Path & "\CollegaForm_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    Print #LogFile, "Log esecuzione funzione: Importa_FORM_PFunct"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+
+    ' Ciclo
+    For i = 1 To FormPath.Count
+        Dim Item As Variant
+        Item = FormPath(i)
+        NomeForm = Item(0)
+        PercorsoFile = Item(1)
+        
+        If Len(NomeForm) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome form vuoto"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        If Not FileEsiste(PercorsoFile) Then
+            Print #LogFile, Now & " - ERRORE: File non trovato -> " & PercorsoFile
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        ' Elimina se già esiste
+        EliminaFormSeEsiste_FORM NomeForm
+        
+        ' Collega (importa la Form dal DB sorgente)
+        On Error Resume Next
+        ' //@cmd@importa@FORM
+        DoCmd.TransferDatabase _
+            TransferType:=acImport, _
+            DatabaseType:="Microsoft Access", _
+            DatabaseName:=PercorsoFile, _
+            objectType:=acForm, _
+            Source:=NomeForm, _
+            Destination:=NomeForm, _
+            StructureOnly:=False
+
+        If Err.Number = 0 Then
+            Print #LogFile, Now & " - OK: " & NomeForm
+            ConteggioOk = ConteggioOk + 1
+        Else
+            Print #LogFile, Now & " - ERRORE: " & NomeForm & " -> " & Err.Description
+            ConteggioErr = ConteggioErr + 1
+            Err.Clear
+        End If
+        On Error GoTo 0
+Prossimo:
+    Next i
+    
+    ' Riepilogo
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale collegate: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    ' === aggiorna riquadro oggetti ===
+    Call RefreshDatabaseView
+
+    MsgBox "Operazione IMPORTA FORM completata!" & vbCrLf & _
+           "Collegate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+    Exit Function
+
+ErrHandler:
+    MsgBox "Errore in Importa_FORM_PFunct: " & Err.Description, vbExclamation
+End Function
+
+
+' ============================================================
+' FUNZIONE CancellaTutto_FORM
+' SCOPO:
+'   Cancella tutte le form collegate definite in GetFormPaths_FORM
+'   - Scrive log dettagliato
+' ============================================================
+Public Function CancellaTutto_FORM()
+    On Error GoTo ErrHandler
+    
+    Dim FormPath As Collection
+    Set FormPath = GetFormPaths_FORM()
+    
+    If FormPath.Count = 0 Then
+        MsgBox "Nessuna form da cancellare.", vbInformation
+        Exit Function
+    End If
+    
+    Dim i As Long, Item As Variant
+    Dim NomeForm As String
+    Dim ConteggioOk As Long, ConteggioErr As Long
+    Dim LogFile As Integer, LogFileName As String
+    
+    LogFileName = CurrentProject.Path & "\CancellaForm_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    
+    Print #LogFile, "Log esecuzione funzione: CancellaTutto_FORM"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+    
+    For i = 1 To FormPath.Count
+        Item = FormPath(i)
+        NomeForm = Trim$(CStr(Item(0)))
+        
+        If Len(NomeForm) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome vuoto"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        If ESISTE_FORM(NomeForm) Then
+            EliminaFormSeEsiste_FORM NomeForm
+            If Not ESISTE_FORM(NomeForm) Then
+                Print #LogFile, Now & " - OK: Eliminata " & NomeForm
+                ConteggioOk = ConteggioOk + 1
+            Else
+                Print #LogFile, Now & " - ERRORE: Non eliminata " & NomeForm
+                ConteggioErr = ConteggioErr + 1
+            End If
+        Else
+            Print #LogFile, Now & " - NON TROVATA: " & NomeForm
+            ConteggioErr = ConteggioErr + 1
+        End If
+Prossimo:
+    Next i
+    
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale eliminate: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    Call RefreshDatabaseView
+    MsgBox "Cancellazione FORM completata!" & vbCrLf & _
+           "Eliminate: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+    Exit Function
+    
+ErrHandler:
+    MsgBox "Errore in CancellaTutto_FORM: " & Err.Description, vbExclamation
+End Function
+
+
+' ============================================================
+' SUB EliminaFormSeEsiste_FORM
+' SCOPO:
+'   Elimina una form dal database corrente se esiste
+' ============================================================
+Public Sub EliminaFormSeEsiste_FORM(NomeForm As String)
+    On Error Resume Next
+    DoCmd.DeleteObject acForm, NomeForm
+    On Error GoTo 0
+End Sub
+
+
+' ============================================================
+' FUNZIONE ESISTE_FORM
+' SCOPO:
+'   Verifica se una form esiste nel DB corrente
+' ============================================================
+Public Function ESISTE_FORM(NomeForm As String) As Boolean
+    Dim obj As AccessObject
+    ESISTE_FORM = False
+    For Each obj In CurrentProject.AllForms
+        If obj.Name = NomeForm Then
+            ESISTE_FORM = True
+            Exit For
+        End If
+    Next obj
+End Function
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@FORM  O @CANCELLA@ FORM                         *** FINE ***                   //
+'//*********************************************************************************************************************************//
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@MODULI  O @CANCELLA@MODULI                         *** INIZIO ***              //
+'//*********************************************************************************************************************************//
+
+
+' ============================================================
+' FUNZIONE GetModulePaths_MODULI @collection@MODULI
+' SCOPO:
+'   Restituisce una collection di Array(NomeModulo, PercorsoFile)
+'   che definisce i moduli da collegare dal DB sorgente. @collection@MODULI
+' ============================================================
+Public Function GetModulePaths_MODULI() As Collection
+    On Error GoTo GestErrore
+    
+    Dim ModulePath As New Collection
+    Dim PercorsoFile As String
+    
+    ' === Percorso del file sorgente contenente i moduli ===
+    PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb02_ALLEGATI\MDB\LLPP_ATTI_Tb02_Allegati.mdb"
+    
+    If Not FileEsiste(PercorsoFile) Then
+        MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation
+        Set GetModulePaths_MODULI = ModulePath
+        Exit Function
+    End If
+    
+    ' === Elenco moduli da collegare ===
+    ModulePath.Add Array("GEST_FrmM00_GESTIONE_Mdl01_ControlloFormAperta", PercorsoFile)
+    ModulePath.Add Array("GEST_FrmM00_GESTIONE_Mdl05_DF05_FALDONI", PercorsoFile)
+    ModulePath.Add Array("GEST_FrmM00_GESTIONE_Mdl05_DF06_FASCICOLI", PercorsoFile)
+    
+    ' === Restituzione collection ===
+    Set GetModulePaths_MODULI = ModulePath
+    
+    Exit Function
+
+GestErrore:
+    MsgBox "Errore in GetModulePaths_MODULI: " & Err.Description, vbExclamation, "Errore"
+    Set GetModulePaths_MODULI = Nothing
+End Function
+
+
+' ============================================================
+' FUNZIONE Importa_MODULI_PFunct
+' SCOPO:
+'   Collega tutti i moduli definiti in GetModulePaths_MODULI
+'   - Scrive log dettagliato
+' ============================================================
+Public Function Importa_MODULI_PFunct()
+    On Error GoTo ErrHandler
+
+    Dim ModulePath As Collection
+    Set ModulePath = GetModulePaths_MODULI()
+    
+    Dim NomeModulo As String
+    Dim PercorsoFile As String
+    Dim i As Long
+    Dim LogFile As Integer
+    Dim LogFileName As String
+    Dim ConteggioOk As Long
+    Dim ConteggioErr As Long
+
+    If ModulePath.Count = 0 Then
+        MsgBox "Nessun modulo da collegare.", vbInformation
+        Exit Function
+    End If
+    
+    ' File log
+    LogFileName = CurrentProject.Path & "\CollegaModulo_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    Print #LogFile, "Log esecuzione funzione: Importa_MODULI_PFunct"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+
+    ' Ciclo
+    For i = 1 To ModulePath.Count
+        Dim Item As Variant
+        Item = ModulePath(i)
+        NomeModulo = Item(0)
+        PercorsoFile = Item(1)
+        
+        If Len(NomeModulo) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome modulo vuoto"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        If Not FileEsiste(PercorsoFile) Then
+            Print #LogFile, Now & " - ERRORE: File non trovato -> " & PercorsoFile
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        ' Elimina se già esiste
+        EliminaModuloSeEsiste_MODULI NomeModulo
+        
+        ' Collega
+        On Error Resume Next
+        
+        '//@cmd@importa@MODULI
+        DoCmd.TransferDatabase _
+            TransferType:=acImport, _
+            DatabaseType:="Microsoft Access", _
+            DatabaseName:=PercorsoFile, _
+            objectType:=acModule, _
+            Source:=NomeModulo, _
+            Destination:=NomeModulo, _
+            StructureOnly:=False
+
+        If Err.Number = 0 Then
+            Print #LogFile, Now & " - OK: " & NomeModulo
+            ConteggioOk = ConteggioOk + 1
+        Else
+            Print #LogFile, Now & " - ERRORE: " & NomeModulo & " -> " & Err.Description
+            ConteggioErr = ConteggioErr + 1
+            Err.Clear
+        End If
+        On Error GoTo 0
+Prossimo:
+    Next i
+    
+    ' Riepilogo
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale collegati: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    ' === aggiorna riquadro oggetti ===
+    Call RefreshDatabaseView
+
+    MsgBox "Operazione IMPORTA MODULI completata!" & vbCrLf & _
+           "Collegati: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+    Exit Function
+
+ErrHandler:
+    MsgBox "Errore in Importa_MODULI_PFunct: " & Err.Description, vbExclamation
+End Function
+
+
+' ============================================================
+' FUNZIONE CancellaTutti_MODULI
+' SCOPO:
+'   Cancella tutti i moduli collegati definiti in GetModulePaths_MODULI
+'   - Scrive log dettagliato
+' ============================================================
+Public Function CancellaTutti_MODULI()
+    On Error GoTo ErrHandler
+    
+    Dim ModulePath As Collection
+    Set ModulePath = GetModulePaths_MODULI()
+    
+    If ModulePath.Count = 0 Then
+        MsgBox "Nessun modulo da cancellare.", vbInformation
+        Exit Function
+    End If
+    
+    Dim i As Long, Item As Variant
+    Dim NomeModulo As String
+    Dim ConteggioOk As Long, ConteggioErr As Long
+    Dim LogFile As Integer, LogFileName As String
+    
+    LogFileName = CurrentProject.Path & "\CancellaModulo_LOG.txt"
+    LogFile = FreeFile
+    Open LogFileName For Output As #LogFile
+    
+    Print #LogFile, "Log esecuzione funzione: CancellaTutti_MODULI"
+    Print #LogFile, "Data/Ora: " & Now()
+    Print #LogFile, "--------------------------------------------"
+    
+    For i = 1 To ModulePath.Count
+        Item = ModulePath(i)
+        NomeModulo = Trim$(CStr(Item(0)))
+        
+        If Len(NomeModulo) = 0 Then
+            Print #LogFile, Now & " - SKIPPED: Nome vuoto"
+            ConteggioErr = ConteggioErr + 1
+            GoTo Prossimo
+        End If
+        
+        If ESISTE_MODULI(NomeModulo) Then
+            EliminaModuloSeEsiste_MODULI NomeModulo
+            If Not ESISTE_MODULI(NomeModulo) Then
+                Print #LogFile, Now & " - OK: Eliminato " & NomeModulo
+                ConteggioOk = ConteggioOk + 1
+            Else
+                Print #LogFile, Now & " - ERRORE: Non eliminato " & NomeModulo
+                ConteggioErr = ConteggioErr + 1
+            End If
+        Else
+            Print #LogFile, Now & " - NON TROVATO: " & NomeModulo
+            ConteggioErr = ConteggioErr + 1
+        End If
+Prossimo:
+    Next i
+    
+    Print #LogFile, "--------------------------------------------"
+    Print #LogFile, "Totale eliminati: " & ConteggioOk
+    Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+    Close #LogFile
+    
+    Call RefreshDatabaseView
+    MsgBox "Cancellazione MODULI completata!" & vbCrLf & _
+           "Eliminati: " & ConteggioOk & vbCrLf & _
+           "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+           "Log: " & LogFileName, vbInformation
+    Exit Function
+    
+ErrHandler:
+    MsgBox "Errore in CancellaTutti_MODULI: " & Err.Description, vbExclamation
+End Function
+
+
+' ============================================================
+' SUB EliminaModuloSeEsiste_MODULI
+' SCOPO:
+'   Elimina un modulo dal database corrente se esiste
+' ============================================================
+Public Sub EliminaModuloSeEsiste_MODULI(NomeModulo As String)
+    On Error Resume Next
+    DoCmd.DeleteObject acModule, NomeModulo
+    On Error GoTo 0
+End Sub
+
+
+' ============================================================
+' FUNZIONE ESISTE_MODULI
+' SCOPO:
+'   Verifica se un modulo esiste nel DB corrente
+' ============================================================
+Public Function ESISTE_MODULI(NomeModulo As String) As Boolean
+    Dim obj As AccessObject
+    ESISTE_MODULI = False
+    For Each obj In CurrentProject.AllModules
+        If obj.Name = NomeModulo Then
+            ESISTE_MODULI = True
+            Exit For
+        End If
+    Next obj
+End Function
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@MODULI  O @CANCELLA@ MODULI                         *** FINE ***               //
+'//*********************************************************************************************************************************//
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@REPORT  O @CANCELLA@REPORT                       *** INIZIO ***                //
+'//*********************************************************************************************************************************//
+
+    ' ============================================================
+    ' FUNZIONE GetReportPaths_REPORT
+    ' SCOPO:
+    '   Restituisce una Collection di Array(NomeReport, PercorsoFile)
+    '   che definisce i report da collegare dal DB sorgente.  @collection@REPORT
+    ' ============================================================
+    Public Function GetReportPaths_REPORT() As Collection
+        On Error GoTo GestErrore
+        
+        Dim ReportPath As New Collection
+        Dim PercorsoFile As String
+        
+        ' === Percorso del file sorgente contenente i report ===
+        PercorsoFile = "y:\LAVORI_PUBBLICI_FINO_AL_30_09_2019\Valter\OPERE_PUBBLICHE\96_ARCHIVI_LLPP_MDB\25_GESTIONE_LLPP_Y\ARCHIVI_ACCESS_LLPP_Y\LLPP_ATTI_Tb02_ALLEGATI\MDB\LLPP_ATTI_Tb02_Allegati.mdb"
+        
+        ' === Verifica esistenza file ===
+        If Not FileEsiste(PercorsoFile) Then
+            MsgBox "File mancante: " & vbCrLf & PercorsoFile, vbExclamation
+            Set GetReportPaths_REPORT = ReportPath
+            Exit Function
+        End If
+        
+        ' === Elenco report da collegare ===
+        'ReportPath.Add Array("LLPP_ATTI_Tb02_Allegati01_Rpt00_}----------------------------------------------@", PercorsoFile)
+        ReportPath.Add Array("LLPP_ATTI_Tb01Reports01_Gestione", PercorsoFile)
+        'ReportPath.Add Array("LLPP_ATTI_Tb02_Allegati01_Rpt01_S01_COMANDI", PercorsoFile)
+        
+        ' === Restituisce la Collection ===
+        Set GetReportPaths_REPORT = ReportPath
+        Exit Function
+
+GestErrore:
+        MsgBox "Errore in GetReportPaths_REPORT: " & Err.Description, vbExclamation, "Errore"
+        Set GetReportPaths_REPORT = Nothing
+    End Function
+
+
+    ' ============================================================
+    ' FUNZIONE Importa_REPORT_PFunct
+    ' SCOPO:
+    '   Collega tutti i report definiti in GetReportPaths_REPORT
+    '   - Scrive log dettagliato
+    ' ============================================================
+    Public Function Importa_REPORT_PFunct()
+        On Error GoTo ErrHandler
+
+        Dim ReportPath As Collection
+        Set ReportPath = GetReportPaths_REPORT()
+        
+        Dim NomeReport As String
+        Dim PercorsoFile As String
+        Dim i As Long
+        Dim LogFile As Integer
+        Dim LogFileName As String
+        Dim ConteggioOk As Long
+        Dim ConteggioErr As Long
+
+        If ReportPath.Count = 0 Then
+            MsgBox "Nessun report da collegare.", vbInformation
+            Exit Function
+        End If
+        
+        ' === File log ===
+        LogFileName = CurrentProject.Path & "\CollegaReport_LOG.txt"
+        LogFile = FreeFile
+        Open LogFileName For Output As #LogFile
+        Print #LogFile, "Log esecuzione funzione: Importa_REPORT_PFunct"
+        Print #LogFile, "Data/Ora: " & Now()
+        Print #LogFile, "--------------------------------------------"
+
+        ' === Ciclo su tutti gli item della Collection ===
+        For i = 1 To ReportPath.Count
+            Dim Item As Variant
+            Item = ReportPath(i)   ' Ogni item è Array(NomeReport, PercorsoFile)
+            NomeReport = Item(0)
+            PercorsoFile = Item(1)
+            
+            If Len(NomeReport) = 0 Then
+                Print #LogFile, Now & " - SKIPPED: Nome report vuoto"
+                ConteggioErr = ConteggioErr + 1
+                GoTo Prossimo
+            End If
+            
+            If Not FileEsiste(PercorsoFile) Then
+                Print #LogFile, Now & " - ERRORE: File non trovato -> " & PercorsoFile
+                ConteggioErr = ConteggioErr + 1
+                GoTo Prossimo
+            End If
+            
+            ' === Elimina se già esiste ===
+            EliminaReportSeEsiste_REPORT NomeReport
+            
+            ' === Collega report dal file sorgente ===
+            On Error Resume Next
+            DoCmd.TransferDatabase _
+                TransferType:=acImport, _
+                DatabaseType:="Microsoft Access", _
+                DatabaseName:=PercorsoFile, _
+                objectType:=acReport, _
+                Source:=NomeReport, _
+                Destination:=NomeReport, _
+                StructureOnly:=False
+            On Error GoTo 0
+
+            ' === Controllo effettivo esistenza ===
+            If ESISTE_REPORT(NomeReport) Then
+                Print #LogFile, Now & " - OK: " & NomeReport
+                ConteggioOk = ConteggioOk + 1
+            Else
+                Print #LogFile, Now & " - ERRORE: " & NomeReport
+                ConteggioErr = ConteggioErr + 1
+            End If
+
+Prossimo:
+        Next i
+        
+        ' === Riepilogo ===
+        Print #LogFile, "--------------------------------------------"
+        Print #LogFile, "Totale collegati: " & ConteggioOk
+        Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+        Close #LogFile
+        
+         ' === aggiorna riquadro oggetti ===
+        Call RefreshDatabaseView
+
+        MsgBox "Operazione IMPORTA REPORT completata!" & vbCrLf & _
+               "Collegati: " & ConteggioOk & vbCrLf & _
+               "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+               "Log: " & LogFileName, vbInformation
+        Exit Function
+
+ErrHandler:
+        MsgBox "Errore in Importa_REPORT_PFunct: " & Err.Description, vbExclamation
+    End Function
+
+
+    ' ============================================================
+    ' FUNZIONE CancellaTutto_REPORT
+    ' SCOPO:
+    '   Cancella tutti i report collegati definiti in GetReportPaths_REPORT
+    '   - Scrive log dettagliato
+    ' ============================================================
+    Public Function CancellaTutto_REPORT()
+        On Error GoTo ErrHandler
+        
+        Dim ReportPath As Collection
+        Set ReportPath = GetReportPaths_REPORT()
+        
+        If ReportPath.Count = 0 Then
+            MsgBox "Nessun report da cancellare.", vbInformation
+            Exit Function
+        End If
+        
+        Dim i As Long, Item As Variant
+        Dim NomeReport As String
+        Dim ConteggioOk As Long, ConteggioErr As Long
+        Dim LogFile As Integer, LogFileName As String
+        
+        ' === File log ===
+        LogFileName = CurrentProject.Path & "\CancellaReport_LOG.txt"
+        LogFile = FreeFile
+        Open LogFileName For Output As #LogFile
+        
+        Print #LogFile, "Log esecuzione funzione: CancellaTutto_REPORT"
+        Print #LogFile, "Data/Ora: " & Now()
+        Print #LogFile, "--------------------------------------------"
+        
+        ' === Ciclo su tutti i report definiti ===
+        For i = 1 To ReportPath.Count
+            Item = ReportPath(i)
+            NomeReport = Trim$(CStr(Item(0)))
+            
+            If Len(NomeReport) = 0 Then
+                Print #LogFile, Now & " - SKIPPED: Nome vuoto"
+                ConteggioErr = ConteggioErr + 1
+                GoTo Prossimo
+            End If
+            
+            If ESISTE_REPORT(NomeReport) Then
+                EliminaReportSeEsiste_REPORT NomeReport
+                If Not ESISTE_REPORT(NomeReport) Then
+                    Print #LogFile, Now & " - OK: Eliminato " & NomeReport
+                    ConteggioOk = ConteggioOk + 1
+                Else
+                    Print #LogFile, Now & " - ERRORE: Non eliminato " & NomeReport
+                    ConteggioErr = ConteggioErr + 1
+                End If
+            Else
+                Print #LogFile, Now & " - NON TROVATO: " & NomeReport
+                ConteggioErr = ConteggioErr + 1
+            End If
+Prossimo:
+        Next i
+        
+        ' === Riepilogo ===
+        Print #LogFile, "--------------------------------------------"
+        Print #LogFile, "Totale eliminati: " & ConteggioOk
+        Print #LogFile, "Totale errori/skipped: " & ConteggioErr
+        Close #LogFile
+        
+        ' === aggiorna riquadro oggetti ===
+        Call RefreshDatabaseView
+        MsgBox "Cancellazione REPORT completata!" & vbCrLf & _
+               "Eliminati: " & ConteggioOk & vbCrLf & _
+               "Errori/Skipped: " & ConteggioErr & vbCrLf & _
+               "Log: " & LogFileName, vbInformation
+        Exit Function
+        
+ErrHandler:
+        MsgBox "Errore in CancellaTutto_REPORT: " & Err.Description, vbExclamation
+    End Function
+
+
+    ' ============================================================
+    ' SUB EliminaReportSeEsiste_REPORT
+    ' SCOPO:
+    '   Elimina un report dal database corrente se esiste
+    ' ============================================================
+    Public Sub EliminaReportSeEsiste_REPORT(NomeReport As String)
+        On Error Resume Next
+        DoCmd.DeleteObject acReport, NomeReport
+        On Error GoTo 0
+    End Sub
+
+
+    ' ============================================================
+    ' FUNZIONE ESISTE_REPORT
+    ' SCOPO:
+    '   Verifica se un report esiste nel DB corrente
+    ' ============================================================
+    Public Function ESISTE_REPORT(NomeReport As String) As Boolean
+        Dim obj As AccessObject
+        ESISTE_REPORT = False
+        For Each obj In CurrentProject.AllReports
+            If obj.Name = NomeReport Then
+                ESISTE_REPORT = True
+                Exit For
+            End If
+        Next obj
+    End Function
+
+
+'//*********************************************************************************************************************************//
+'//                                         @IMPORTA@REPORT  O @CANCELLA@REPORT                       *** FINE ***                  //
+'//*********************************************************************************************************************************//
+
+
+
+
+
+'//**********************************************************************************************************************************************************//
+'//             @COMDANDI@CMD, TABELLE, QUERY FORM, REPORT, MODULI E CLASSI   *** FINE ***
+'//
+'//
+'//*********************************************************************************************************************************************************//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                          @FUNZIONI@COMUNI A TUTTO IL PROGETTO                     *** INIZIO ***
+'//*********************************************************************************************************************************//
+
+' ============================================================
+' @UTIL_01 RefreshDatabaseView
+' SCOPO:
+'   Aggiorna il riquadro oggetti di Access (Navigation Pane)
+'
+' Metodo consigliato: Application.RefreshDatabaseWindow
+' - Forza l’aggiornamento del riquadro oggetti (tabelle, query, form, report, macro, moduli)
+' - Utile dopo operazioni di importazione, eliminazione o modifica oggetti
+'
+' Note:
+' - Alcune versioni recenti di Access eseguono refresh automatico, ma con ritardo.
+' - In alternativa si può usare anche DoCmd.RunCommand acCmdRefresh come fallback.
+' ============================================================
+Public Sub RefreshDatabaseView()
+    On Error Resume Next
+    
+    ' === Metodo principale: refresh Navigation Pane ===
+    Application.RefreshDatabaseWindow
+    
+    ' === Metodo alternativo (fallback) ===
+    'DoCmd.RunCommand acCmdRefresh
+    
+    On Error GoTo 0
+End Sub
+
+
+' ============================================================
+' @05 FUNZIONE FileEsiste
+' SCOPO:
+'   Funzione di utilità che controlla se un file esiste.
+'   Restituisce TRUE se esiste, FALSE altrimenti.
+' ============================================================
+Public Function FileEsiste(PercorsoFile As String) As Boolean
+    On Error Resume Next
+    FileEsiste = (Dir(PercorsoFile, vbNormal) <> "")
+    On Error GoTo 0
+End Function
+
+
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                          @FUNZIONI@COMUNI A TUTTO IL PROGETTO                     *** FINE ***
+'//*********************************************************************************************************************************//
+
+
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                          @EVENTI@FORM A TUTTO IL PROGETTO                     *** INIZIO ***
+'//*********************************************************************************************************************************//
+
+
+' =======================================================================================
+' Evento: Form_Load
+' Descrizione: viene eseguito automaticamente all'apertura della form.
+'              Qui puoi inizializzare variabili, impostare proprietà,
+'              aprire connessioni o caricare dati di avvio.
+' =======================================================================================
+Private Sub Form_Load()
+    On Error GoTo ErrHandler   ' Attiva la gestione degli errori
+    
+    '//IMPOSTO LA VARIABILE
+    str1 = ""
+    str1 = "Gestione Oggetti LLPP_ATTI_Tb02_Allegati.mdb"
+    ' --------------------------------------------------------------
+    ' Inizializzazione delle variabili e impostazioni della form
+    ' --------------------------------------------------------------
+    Me.Caption = str1   ' Imposta il titolo della finestra
+    
+    ' TITLO LABEL
+    Me.LBL_TIT01_TXT.Caption = str1
+    
+    
+    '//LABEL@BUTTON
+        
+        Me.Cmd_CANCELLA_FORM.Caption = "CANCELLA_" & "FORM_Tb02_Allegati"
+        
+        
+        '//TUTTI GLI OGGETTI
+        Me.Cmd_IMPORTA_TUTTI_GLI_OGGETTI.Caption = "IMPORTA TUTTI GLI OGGETTI " & "FORM_Tb02_Allegati"
+        Me.Cmd_CANCELLA_TUTTI_GLI_OGGETTI.Caption = "CANCELLA TUTTI GLI OGGETTI " & "FORM_Tb02_Allegati"
+        
+        '//LINK TABELLE
+        Me.Cmd_IMPORTA_LINK_TABELLE.Caption = "IMPORTA LINK TABELLE " & "LLPP_ATTI_Tb02_Allegati"
+        Me.Cmd_CANCELLA_LINK_TABELLE.Caption = "CANCELLA LINK TABELLE " & "LLPP_ATTI_Tb02_Allegati"
+    
+        '//QUERY
+        Me.Cmd_Importa_QUERY.Caption = "IMPORTA QUERY " & "LLPP_ATTI_Tb02_Allegati"
+        Me.Cmd_CANCELLA_QUERY.Caption = "CANCELLA QUERY " & "LLPP_ATTI_Tb02_Allegati"
+        
+        '//FORM
+        Me.Cmd_Importa_FORM.Caption = "IMPORTA FORMS " & "LLPP_ATTI_Tb02_Allegati"
+        Me.Cmd_CANCELLA_FORM.Caption = "CANCELLA FORMS " & "LLPP_ATTI_Tb02_Allegati"
+        
+        '//MODULI
+        Me.Cmd_Importa_MODULI.Caption = "IMPORTA MODULES " & "LLPP_ATTI_Tb02_Allegati"
+        Me.Cmd_CANCELLA_MODULI.Caption = "CANCELLA MODULES " & "LLPP_ATTI_Tb02_Allegati"
+        
+        
+        '//REPORT
+        Me.Cmd_Importa_REPORT.Caption = "IMPORTA REPORTS " & "LLPP_ATTI_Tb02_Allegati"
+        Me.Cmd_CANCELLA_REPORT.Caption = "CANCELLA REPORTS " & "LLPP_ATTI_Tb02_Allegati"
+        
+        
+        
+
+
+' --------------------------------------------------------------
+' uscita + Gestione errori
+' --------------------------------------------------------------
+
+
+Exit Sub   ' Uscita normale dal metodo
+
+ErrHandler:
+    MsgBox "Errore durante il caricamento della form: " & Err.Description, _
+           vbCritical, "Errore " & Err.Number
+    Resume Next   ' Continua l'esecuzione dopo l'errore (valuta Resume/Exit in base al caso)
+End Sub
+
+
+
+
+
+
+
+
+'//*********************************************************************************************************************************//
+'//                                          @EVENTI@FORM A TUTTO IL PROGETTO                     *** FINE ***
+'//*********************************************************************************************************************************//

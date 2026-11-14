@@ -1,0 +1,415 @@
+Version =19
+VersionRequired =19
+Checksum =-234827648
+Begin Form
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11175
+    RowHeight =330
+    DatasheetFontHeight =10
+    ItemSuffix =15
+    Left =870
+    Top =2220
+    Right =6810
+    Bottom =9360
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x12f9f32bf62ee640
+    End
+    GUID = Begin
+        0x7c478330a5d1da478a656bf41aadeb6e
+    End
+    NameMap = Begin
+        0x0acc0e55000000006ccb86979f4758478260b3b5dda3c9a100000000c050860d ,
+        0xf76de640000000000000000047004500530054005f004d0045004e0055005f00 ,
+        0x5400620030003100510072007900300031005f00300031005f0056004f004300 ,
+        0x4900000000000000bb9dd0e514b9d341978a2c24d28bda35070000006ccb8697 ,
+        0x9f4758478260b3b5dda3c9a143006f0064004d0065006e0075005f0073000000 ,
+        0x0000000001072d8c4c50224fb5312eed79214ff0070000006ccb86979f475847 ,
+        0x8260b3b5dda3c9a14d0065006e0075005f00730000000000000097aad6f5cac9 ,
+        0x7247a579b85972c647ff070000006ccb86979f4758478260b3b5dda3c9a14e00 ,
+        0x6f00740065004d0065006e0075005f0073000000000000001115e597bb808b4c ,
+        0xb15f9644bba10ca8070000006ccb86979f4758478260b3b5dda3c9a143004f00 ,
+        0x4d0041004e0044004f005f0073000000000000006eacf61035e0b7408ebe2569 ,
+        0xbdd128cb070000006ccb86979f4758478260b3b5dda3c9a14900440000000000 ,
+        0x00009beda37aab3d194793381d7f0db3e5e4070000006ccb86979f4758478260 ,
+        0xb3b5dda3c9a143004f0044005f00500052004f0047004500540054004f005f00 ,
+        0x7300000000000000c756cba8bc98ad4892b90ae179a8d07501000000b107cfcb ,
+        0x5682e6409f475847f760083047004500530054005f004d0045004e0055005f00 ,
+        0x5400620030003200460072006d00300031005f005300300031005f0046005500 ,
+        0x4e005a0049004f004e0049000000000000009f0ca40e8a8ca74aa2c6c83a1dfc ,
+        0xea540000000058961073b46be640e8921a00c756cba847004500530054005f00 ,
+        0x4d0045004e0055005f005400420030003200510072007900300031005f003000 ,
+        0x31005f00460055004e005a0049004f004e0049000000000000005021d5ab399c ,
+        0x424b8650c88814911dde070000009f0ca40e8a8ca74aa2c6c83a1dfcea544300 ,
+        0x6f0064004d0065006e0075005f0073000000
+    End
+    RecordSource ="GEST_MENU_Tb01Qry01_01_VOCI"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =6270
+            BackColor =-2147483633
+            Name ="Corpo"
+            GUID = Begin
+                0x64bc8b651c03bd49ae838fe2a12143eb
+            End
+            Begin
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =4
+                    ListWidth =14175
+                    Left =3121
+                    Top =570
+                    ColumnWidth =2715
+                    BackColor =65535
+                    ForeColor =255
+                    GUID = Begin
+                        0x446adb829ab0624b99b6f2e5e84e14e1
+                    End
+                    Name ="CodMenu_s_txt"
+                    ControlSource ="CodMenu_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="3402;2268;1701;1134"
+                    StatusBarText ="03 - Indirizzo esteso (viene aggiornato automaticamente) -"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            Left =570
+                            Top =570
+                            Width =1215
+                            Height =240
+                            BackColor =65535
+                            ForeColor =255
+                            Name ="CodMenu_s_LBL"
+                            Caption =">>CodMenu"
+                            GUID = Begin
+                                0x7d8b801d84e8c043a7f4c8abe56db7f2
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =3117
+                    Top =906
+                    ColumnWidth =3180
+                    TabIndex =1
+                    GUID = Begin
+                        0x76c19862f2679e4385339fac70434933
+                    End
+                    Name ="Menu_s_TXT"
+                    ControlSource ="Menu_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="3402;1701;1701"
+                    StatusBarText ="02 - Toponimo -"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =906
+                            Width =1215
+                            Height =240
+                            Name ="Menu_s_LBL"
+                            Caption ="Menu"
+                            GUID = Begin
+                                0x1a13b47ef6ab6b479bb651077d811239
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =3
+                    ListWidth =8505
+                    Left =3117
+                    Top =1246
+                    ColumnWidth =2340
+                    TabIndex =2
+                    GUID = Begin
+                        0xba41ccce2c8daa4884043fe9217691e7
+                    End
+                    Name ="NoteMenu_s_TXT"
+                    ControlSource ="NoteMenu_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="2268;2835;1701"
+                    StatusBarText ="03 - Indirizzo -"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1246
+                            Width =1215
+                            Height =240
+                            Name ="NoteMenu_s_LBL"
+                            Caption ="NoteMenu"
+                            GUID = Begin
+                                0x49c081c7e885b74cbaa17f72cd0adb23
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =5
+                    ListWidth =14175
+                    Left =3117
+                    Top =1586
+                    ColumnWidth =5805
+                    TabIndex =3
+                    GUID = Begin
+                        0x059ed3f951f04c40904c9d0f24357efa
+                    End
+                    Name ="COMANDO_s_TXT"
+                    ControlSource ="COMANDO_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="1701;3969;1701;1701;1134"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1586
+                            Width =1215
+                            Height =240
+                            Name ="COMANDO_s_LBL"
+                            Caption ="COMANDO"
+                            GUID = Begin
+                                0x76d505b49f838149b03772560870213c
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =3121
+                    Top =2625
+                    ColumnWidth =1125
+                    TabIndex =5
+                    Name ="TxtStrad"
+                    ControlSource ="ID"
+                    GUID = Begin
+                        0x29af29eba0a6464ab0c40a22f18956e5
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =570
+                            Top =2625
+                            Width =1215
+                            Height =240
+                            Name ="ID_LBL"
+                            Caption ="ID"
+                            GUID = Begin
+                                0x329df7e9d3271349aa014b5872a82ead
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =5
+                    ListWidth =14175
+                    Left =3117
+                    Top =1946
+                    TabIndex =4
+                    GUID = Begin
+                        0x43ec7ce83037734b95435b04cf03580d
+                    End
+                    Name ="COD_PROGETTO_s_TXT"
+                    ControlSource ="COD_PROGETTO_s"
+                    RowSourceType ="Table/Query"
+                    ColumnWidths ="1701;3969;1701;1701;1134"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1946
+                            Width =1215
+                            Height =240
+                            Name ="COD_PROGETTO_s_LBL"
+                            Caption ="COD_PROGETTO"
+                            GUID = Begin
+                                0xda45ffbc2c66f94c969f48c9380989f9
+                            End
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =825
+                    Top =3660
+                    Width =10230
+                    Height =2610
+                    TabIndex =6
+                    Name ="GEST_MENU_Tb02Frm01_S01_FUNZIONI"
+                    SourceObject ="Form.GEST_MENU_Tb02Frm01_S01_FUNZIONI"
+                    LinkChildFields ="CodMenu_s"
+                    LinkMasterFields ="CodMenu_s"
+                    GUID = Begin
+                        0xdc18d14d6022d843a51ec250f00c648e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =825
+                            Top =3420
+                            Width =3105
+                            Height =240
+                            Name ="Etichetta14"
+                            Caption ="GEST_MENU_Tb02Frm01_S01_FUNZIONI:"
+                            GUID = Begin
+                                0xb47e2a2aecc55d41ade496f6d7072c80
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Indirizzo_DblClick(Cancel As Integer)
+  
+
+
+End Sub
+
+'//CodMenu_s_txt_DblClick = SALVO MENU IN TMP
+'//NOTE:  con il doppio click salvo il menu nella tabella TMP delle _
+        voci menu GEST_MENU_Tb01_VOCI_TMP E SALVO LE FUNZIONI IN TABELLA TMP
+Private Sub CodMenu_s_txt_DblClick(Cancel As Integer)
+    '//@SALVA@menu@Tmp_(il doppio click per salvare il menu selezionato nella tmp) _
+        01) svuoto la tabella voci tmp e delle funzioni tmp _
+        02) SE IL RS FUNZIONI HA IL MENU CONTROLLO RS SE IL RS E' POPOLATO = _
+            salva in tmp i MENU SOLO SE il MENU esiste nella tabella _
+            tb02 LE FUNZIONI, per cui viene fatto un controllo di popolamento _
+            del rs aperto sulla tabella FUNZIONI. Se il menu esiste la query _
+            estrae un rs e la tabella è popolata, altrimenti se il rs = nullo _
+            non viene fatto l'accodamento ma viene emesso um msg di avviso che _
+            il menu non esiste nelle FUNZIONI. _
+        03) 03 = IL RS E' POPOLATO ESISTE IL MENU E QUINDI INSERISCO LE FUNZIONI IN TMP _
+            dai menu recupera le voci delle funzioni e lo salva nella _
+            tabella tmp delle FUNZIONI_TMP
+        
+    
+    '//01)
+    DoCmd.OpenQuery "GEST_MENU_Tb01Qry01_01_VOCI_TMP_Delete"
+    DoCmd.OpenQuery "GEST_MENU_TB02Qry01_01_FUNZIONI_TMP_Delete"
+    
+                
+                
+                '//02 = SE IL RS FUNZIONI HA IL MENU CONTROLLO RS SE IL RS E' POPOLATO
+                
+                sSql = sSql & "SELECT GEST_MENU_TB02_FUNZIONI.*, GEST_MENU_TB02_FUNZIONI.CodMenu_s AS CONTROLLO_MENU, * "
+                sSql = sSql & "FROM GEST_MENU_TB02_FUNZIONI "
+                sSql = sSql & "WHERE (((GEST_MENU_TB02_FUNZIONI.CodMenu_s) = '" & Me.CodMenu_s_txt & "'))"
+                sSql = sSql & "WITH OWNERACCESS OPTION;"
+
+
+                '//ITERO NELLA TABELLA
+                '//.....................................................................................................
+                '//NOTE------------>:Tramite una Select vengono individuati i valori da restiuire.
+                '//Codice---------->:DAO_RECORDSET_pSub.01.itero
+                
+                     '//Apro il Database
+                     Set DaoDB = DBEngine.Workspaces(0).Databases(0)
+                     '//Apro un Recordset dal parametro ssql
+                     Set DaoRs = DaoDB.OpenRecordset(sSql)
+                    
+                    '//SE IL RS E' POPOLATO
+                    If DaoRs.EOF = False And DaoRs.BOF = False Then
+                        '//Posizione Primo record
+                        DaoRs.MoveFirst
+                             
+                                    '//Uscita Rs e chiusura oggetti
+                                    DaoRs.Close
+                                    Set DaoRs = Nothing
+                                    
+                                    
+                                    sSql = ""
+                                    sSql = sSql & "INSERT INTO "
+                                    sSql = sSql & "GEST_MENU_Tb01_VOCI_TMP "
+                                    sSql = sSql & "( CodMenu_s, COD_PROGETTO_s, Menu_s  ) "
+                                    sSql = sSql & "SELECT '" & Me.CodMenu_s_txt & "' As [codice_menu] , "
+                                    sSql = sSql & "'" & Me.COD_PROGETTO_s_TXT & "' AS [COD_PROGETTO] ,"
+                                    sSql = sSql & "'" & Me.Menu_s_TXT & "' AS [MENU] "
+                                    sSql = sSql & "WITH OWNERACCESS OPTION;"
+                                    
+                                    '//controllo ed esecuzione
+                                    Debug.Print sSql
+                                    CurrentDb.Execute sSql
+                                    
+                                        
+                                    '//03 = IL RS E' POPOLATO ESISTE IL MENU E QUINDI INSERISCO LE FUNZIONI IN TMP
+                                    DoCmd.OpenQuery "GEST_MENU_TB02Qry01_02_INSERT_FUNZIONI_To_TMP"
+
+                        Else
+                            MsgBox "ATTENZIONE NON ESISTE IL MENU ---> " & Me.CodMenu_s_txt & " NELLE FUNZIONI, INSERIRE LE FUNZIONI!"
+                        End If  '//If DAORs.EOF = False And DAORs.BOF = False Then
+                        
+                
+                    '//*** fine ***
+                    '//ITERO NELLA TABELLA
+                    '//.....................................................................................................
+                
+    
+
+
+    
+                                    
+    Me.Recalc
+    
+  
+End Sub
