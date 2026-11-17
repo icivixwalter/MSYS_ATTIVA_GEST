@@ -1,6 +1,7 @@
 //ATTENZIONE AGLI SPAZI DI FINE RIGA non ci devono essere altrimenti non salva
 //questo è il secondo esempio con path e file liberi senza .\ e sembra che funziona
 //............................................................................//
+.git\
 .gitattributes
 .gitignore
 AA__________________________________________________________________________AA.txt
@@ -21,6 +22,8 @@ MSYS_N02________________________________________________________________MSYS.txt
 OBJECT\
 Project_MSYS_ATTIVA_GEST.sublime-project
 Project_MSYS_ATTIVA_GEST.sublime-workspace
+README.md
+README_CHATGPT.MD
 README_MSYS_ATTIVA_GEST.md
 ZIP_7ZIP_________________________________________________________________ZZ.txt
 ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
