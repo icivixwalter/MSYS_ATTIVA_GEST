@@ -27,6 +27,19 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "git_OpenGitHub.bat",
+			"file_size": 96,
+			"file_write_time": 134391660759084486,
+			"settings":
+			{
+				"buffer_size": 93,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -295,6 +308,36 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "git_OpenGitHub.bat",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],

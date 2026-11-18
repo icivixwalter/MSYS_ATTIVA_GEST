@@ -10,6 +10,9 @@ REM
 REM  - se nella cartella del bat esiste gia' il repository: esegue il pull
 REM  - se NON esiste la .git: crea il repository e scarica tutto da GitHub
 REM    (basta copiare questo bat in una cartella vuota e lanciarlo)
+REM  - alla fine, se c'e' ZIP_MSYS_FILE_LIBERI.zip, ricrea nella cartella
+REM    madre MSYS\ i file liberi (*.bat *.txt *.md *.sublime-project)
+REM    SOLO se mancano: i file gia' presenti non vengono toccati
 REM
 REM  REGOLA: .git e .gitignore restano SOLO sul PC e negli zip 7-Zip,
 REM          NON vanno MAI su GitHub:
@@ -145,6 +148,7 @@ if errorlevel 1 (echo *** ERRORE CHECKOUT: leggere i messaggi sopra *** & pause 
 
 :FINE
 call :ripristina_gitignore
+call :file_liberi_madre
 echo.
 echo === ULTIMI COMMIT ===
 git log --oneline -5
@@ -166,6 +170,24 @@ findstr /x /l /c:"%~1" ".git\info\exclude" >nul 2>&1
 if not errorlevel 1 exit /b 0
 >> ".git\info\exclude" echo.
 >> ".git\info\exclude" echo(%~1
+exit /b 0
+
+REM =====================================================================
+REM  :file_liberi_madre  -> dopo il pull ricrea nella cartella MADRE
+REM       (c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\) i file liberi
+REM       *.bat *.txt *.md *.sublime-project salvati nello zip
+REM       ZIP_MSYS_FILE_LIBERI.zip : SOLO quelli che MANCANO, i file gia'
+REM       presenti non vengono toccati. Se nella cartella non ci sono lo zip
+REM       e il bat di ripristino (altri progetti) non fa nulla.
+REM =====================================================================
+:file_liberi_madre
+REM  percorso completo: cmd potrebbe non cercare i bat nella cartella corrente
+if not exist "%CD%\ZIP_MSYS_FILE_LIBERI_RIPRISTINA.bat" exit /b 0
+if not exist "%CD%\ZIP_MSYS_FILE_LIBERI.zip" exit /b 0
+echo.
+echo === FILE LIBERI DELLA CARTELLA MADRE: estraggo solo quelli che mancano ===
+call "%CD%\ZIP_MSYS_FILE_LIBERI_RIPRISTINA.bat" SOLO_MANCANTI
+if errorlevel 1 echo *** ATTENZIONE: file liberi non ripristinati - vedere ZIP_MSYS_FILE_LIBERI_RIPRISTINA_LOG.txt ***
 exit /b 0
 
 REM =====================================================================
