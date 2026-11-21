@@ -1,2 +1,0 @@
-SELECT "Albero Tree TMP" AS TXTQry, TreeTemporanea.*, *
-FROM TreeTemporanea;

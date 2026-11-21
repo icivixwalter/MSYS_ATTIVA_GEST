@@ -1,4 +1,0 @@
-SELECT MSysObjects.Type AS kEYType, MSysObjects.ParentId AS KEYParentId, "--->" AS TXTCampi, MSysObjects.Flags, MSysObjects.Type, MSysObjects.Connect, MSysObjects.Database, MSysObjects.Name
-FROM MSysObjects
-WHERE (((MSysObjects.Flags)=0) AND ((MSysObjects.Type)=1) AND ((MSysObjects.Name) Like "*" & [RICERCA TABLE] & "*"))
-WITH OWNERACCESS OPTION;

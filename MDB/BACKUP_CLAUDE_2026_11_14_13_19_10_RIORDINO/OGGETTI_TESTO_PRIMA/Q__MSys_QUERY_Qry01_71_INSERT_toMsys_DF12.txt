@@ -1,5 +1,0 @@
-INSERT INTO MSys_ELENCO_ObjProgetti ( Scel_b, Name1_s, IdOrd_lng, NRO_OGGETTO_i, TIPOGGETTO_s, COD_PROGETTO_s, PROGETTO_s, DATAINS_d, TIMEOPER_d )
-SELECT [MSys_QUERY].[Scel_b], [MSys_QUERY].[Name1_s], [MSys_QUERY].[ID_QRY_lng], [MSys_QUERY].[NRO_OGGETTO_i], "QUERY" AS TIPOGGETTO_s, "MSys" AS COD_PROGETTO_s, "PROGETTO MSys" AS PROGETTO_s, [MSys_QUERY].[DATAINS_d], [MSys_QUERY].[TIMEOPER_d]
-FROM MSys_QUERY LEFT JOIN MSys_ELENCO_ObjProgetti ON [MSys_QUERY].[Name1_s]=[MSys_ELENCO_ObjProgetti].[Name1_s]
-WHERE ((([MSys_QUERY].[Scel_b])=True) And (([MSys_ELENCO_ObjProgetti].[Name1_s]) Is Null))
-WITH OWNERACCESS OPTION;

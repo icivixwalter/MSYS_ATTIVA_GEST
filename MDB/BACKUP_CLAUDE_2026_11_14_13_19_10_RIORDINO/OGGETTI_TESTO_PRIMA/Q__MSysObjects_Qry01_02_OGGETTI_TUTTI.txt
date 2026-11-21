@@ -1,3 +1,0 @@
-SELECT MSysObjects.Type, MSysObjects.Connect, MSysObjects.Database, MSysObjects.Id, MSysObjects.Lv, MSysObjects.LvExtra, MSysObjects.LvModule, MSysObjects.LvProp, MSysObjects.Name, MSysObjects.Owner, MSysObjects.ParentId, MSysObjects.RmtInfoLong, MSysObjects.RmtInfoShort, "--->" AS TXTKey, MSysObjects.Type AS kEYType, MSysObjects.ParentId AS KEYParentId, "--->" AS TXTCampi
-FROM MSysObjects
-WITH OWNERACCESS OPTION;

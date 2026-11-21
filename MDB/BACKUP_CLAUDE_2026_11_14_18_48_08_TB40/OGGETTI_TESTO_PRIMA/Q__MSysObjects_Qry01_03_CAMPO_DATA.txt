@@ -1,2 +1,0 @@
-SELECT Name, Type, CDate([DateCreate]) AS DataCreazione, CDate([DateUpdate]) AS DataModifica
-FROM MSysObjects;

@@ -1,3 +1,0 @@
-SELECT Tree.Id AS PADRE_ID, Tree.Id, Tree.ParentID, Tree.NomeCartella_s, Tree.TipoAdiacenza_s, Tree.Percorso_s
-FROM Tree LEFT JOIN Tree AS Tree_1 ON Tree.Id = Tree_1.ParentID
-GROUP BY Tree.Id, Tree.Id, Tree.ParentID, Tree.NomeCartella_s, Tree.TipoAdiacenza_s, Tree.Percorso_s;

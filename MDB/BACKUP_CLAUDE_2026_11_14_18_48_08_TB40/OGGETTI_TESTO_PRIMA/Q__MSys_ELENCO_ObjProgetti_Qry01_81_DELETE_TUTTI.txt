@@ -1,2 +1,0 @@
-DELETE MSys_ELENCO_ObjProgetti.*
-FROM MSys_ELENCO_ObjProgetti;

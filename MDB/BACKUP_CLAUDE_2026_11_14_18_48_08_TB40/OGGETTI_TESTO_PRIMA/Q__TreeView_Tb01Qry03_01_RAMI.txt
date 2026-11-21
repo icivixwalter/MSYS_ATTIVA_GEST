@@ -1,4 +1,0 @@
-SELECT [Tree].[Id], [Tree].[ParentID], [Tree].[NomeCartella_s]
-FROM Tree
-WHERE ((([Tree].[ParentID])>0))
-WITH OWNERACCESS OPTION;

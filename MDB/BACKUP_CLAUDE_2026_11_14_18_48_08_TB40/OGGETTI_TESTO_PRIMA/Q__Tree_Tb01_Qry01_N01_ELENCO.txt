@@ -1,2 +1,0 @@
-SELECT Tree.*, "Albero Tree" AS TXTQry, Tree.Id AS Id_KEY, *
-FROM Tree;

@@ -1,2 +1,0 @@
-SELECT Msys_DF14_DLL_LIBRERIE.*, "Query delle librerie DLL collegate ai progetti - Msys_DF14Qry01_01_DLL_LIBRERIE" AS T
-FROM Msys_DF14_DLL_LIBRERIE;

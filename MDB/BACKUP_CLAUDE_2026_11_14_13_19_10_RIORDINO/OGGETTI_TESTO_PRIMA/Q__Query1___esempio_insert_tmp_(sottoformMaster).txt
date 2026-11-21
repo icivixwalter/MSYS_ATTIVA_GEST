@@ -1,2 +1,0 @@
-SELECT SottoFormMaster_Tb02_Vis_Pagine_Msys_TMP.COD_PROGETTO_s, SottoFormMaster_Tb02_Vis_Pagine_Msys_TMP.VISIBLE_b
-FROM SottoFormMaster_Tb02_Vis_Pagine_Msys_TMP;
