@@ -28,17 +28,15 @@
 	"buffers":
 	[
 		{
-			"file": "git_OpenGitHub.bat",
-			"file_size": 96,
-			"file_write_time": 134391660759084486,
+			"file": "README_MSYS_ATTIVA_GEST.md",
+			"file_size": 2568,
+			"file_write_time": 134305892284861445,
 			"settings":
 			{
-				"buffer_size": 93,
+				"buffer_size": 2505,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -310,25 +308,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "git_OpenGitHub.bat",
+					"file": "README_MSYS_ATTIVA_GEST.md",
 					"selected": true,
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 93,
+						"buffer_size": 2505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								92,
-								40
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+							"mde.match_heading_hashes": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
