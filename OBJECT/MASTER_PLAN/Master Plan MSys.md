@@ -240,7 +240,7 @@ Il carattere `_` è un carattere normale nelle query di Access e nell'operatore 
 MSYS\
 ├─ 00_DOC\                 master plan, convenzioni
 ├─ MSYS_ATTIVA_GEST\       applicazione MASTER
-├─ MSys_DF00\              modello da copiare
+├─ MSys_AA_PROJECT_E_MASTER_PLAN\              modello da copiare
 ├─ MSys_DF01 … DF09\       definizioni oggetti
 ├─ MSys_DF10 … DF19\       definizioni progetto
 ├─ MSys_TB01 … TB29\       archivi
@@ -278,7 +278,7 @@ Contenuto rilevato aprendo i database in sola lettura; tra parentesi il numero d
 | `MSys_TB41_VISUAL_PAG_MASTER` | MSys_TB41_VISUAL_PAG_MASTER (58), copia | TB41 pagine MASTER | tieni |
 | `MSys_FORMS_MASTER` | SottoFormMaster e MSys_TUTTI_TB01/TB02: sistema dismesso il 14/11 | — | archivia |
 | Definizioni |  |  |  |
-| `MSys_DF00`, `MSYS_BASE` | modello di mini-progetto; MSYS_BASE_MODELLO con tabelle MODELLO_Tb01… | DF00 modello | unisci in DF00 |
+| `MSys_AA_PROJECT_E_MASTER_PLAN`, `MSYS_BASE` | modello di mini-progetto; MSYS_BASE_MODELLO con tabelle MODELLO_Tb01… | DF00 modello | unisci in DF00 |
 | `MSys_DF01 … DF06` | comandi, tipi oggetto, quote, attributi tabella; DF06 senza database | DF01–DF09 | tieni |
 | `MSys_DF10 … DF14` | database, codici progetto, oggetti necessari, DLL, path | DF10–DF19; DF11 anagrafe unica | tieni |
 | `TAB_CONTROL` | MSys_DF19_CODICI_CONTROLS (7), MSys_TB20_Control_PROPRIETA (1310) | DF19 + TB20 | decidi |
